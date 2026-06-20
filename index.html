@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NetHack中文版 (Nethack-cn)</title>
+  <meta name="description" content="NetHack-cn（基于NetHack 5.0.0）的汉化（本地化）版的介绍页面。提供游戏下载，并收录了社区网站和资源的链接……">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="canonical" href="index.html">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="index.html">NetHack-cn</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+        <div class="trigger">
+          <a class="page-link" href="index.html">主页</a>
+          <a class="page-link" href="releases/index.html">下载</a>
+          <a class="page-link" href="contributions/index.html">贡献</a>
+          <a class="page-link" href="guidebook/guidebook.html">说明手册</a>
+          <a class="page-link" href="donations/index.html">联系我们</a>
+          <a class="page-link" href="https://github.com/StackC00ki3/Nethack-cn">GitHub</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">NetHack中文版 （Nethack-cn）</h1>
+        </header>
+ 
+        <div class="post-content">
+          <p style="font-size: 18px;"><a href="https://nethack.org"><b>NetHack</b></a>是一款以文本显示为主的<b>类《<a href="https://dnd.fandom.com/zh/">龙与地下城</a>》（<a href="https://dungeons.fandom.com/wiki/">Dungeons & Dragons(tm)</a> - like）</b>游戏。其标准<b>tty</b>显示界面和命令结构类似于<a href="https://nethackwiki.com/wiki/Rogue_(game)"><b>Rogue</b></a>。大多数平台还提供了其他更具图形化的显示选项。本站是该游戏其中一种基于<a href="https://github.com/NetHack/NetHack/tree/NetHack-5.0">原版5.0.0</a>（以后会有更多）的非官方汉化版（<a href="https://github.com/StackC00ki3/Nethack-cn">Nethack-cn</a>）的介绍页面。</p>
+ 
+          <figure>
+            <img src="assets/images/screenshot1.png" alt="游戏画面" />
+            <figcaption>
+              <em>开发中画面，使用外观：curses</em>
+            </figcaption>
+          </figure>
+ 
+          <div class="post-content">
+            <p id="intro"></p>
+ 
+            <h2 id="gameplay">游戏玩法</h2>
+            <p>要开始游戏，你实际上只需掌握两个<a href="guidebook/guidebook.html#toc_4"><b>命令</b></a>。命令<span class="kbdsym"><a href="guidebook/guidebook.html#toc_4" class="mw-redirect" title="?">?</a></span>会显示可用命令列表（以及其他信息），而命令<span class="kbdsym"><a href="guidebook/guidebook.html#toc_4" class="mw-redirect" title="?">/</a></span>则可识别你所看到的屏幕上的事物。<br>要赢得游戏（而非仅仅为了打破他人的高分记录而玩），你必须找到位于地牢第20层以下某处的<b>岩德护身符</b>，并将其带出。很少有人能达成这一目标；大多数人终其一生都未能成功。那些成功者将作为英雄中的英雄载入史册——随后他们又会想方设法让游戏变得更加困难。如果这款游戏对你来说已经变得太容易了，请参阅手册中的“<a href="guidebook/guidebook.html#toc_8">conduct</a>”章节。<br>当游戏结束时，无论是因为你死亡、退出，还是从洞穴中逃脱，NetHack都会向你提供一份得分榜。评分基于你行为的许多方面，但粗略估算约等于可将你在洞穴中发现的金币数量+(你的（实际）经验值×4)。带到出口的宝石可能价值不菲。若因自身原因死亡，将扣除10%的分数。</p>
+ 
+            <h2 id="project-managed-resources">有用的链接</h2>
+            <p style="font-size: 20px;">相关仓库：</p>
+            <ul>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/Nethack-cn">StackC00ki3/Nethack-cn</a></li>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/ANetHack-cn">StackC00ki3/ANetHack-cn</a></li>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/nethack-3d">StackC00ki3/nethack-3d</a></li>
+            </ul>
+ 
+            <p style="font-size: 20px;">以下是一些教程，对新手非常有用（不分先后）：</p>
+            <ul>
+              <li><a href="https://lug.ustc.edu.cn/planet/2021/09/nethack-gitgud/">菜鸡写给菜鸡的 NetHack 入门教程</a></li>
+              <li><a href="http://www.melankolia.net/nethack/nethack.guide.html">Absolute Beginner's Guide for NetHack 3.4.1 v.1.81 (18.6.2002)</a>（有<a href="https://zhuanlan.zhihu.com/p/398740743">翻译</a>）</li>
+              <li><a href="https://strategywiki.org/wiki/NetHack/Beginning">StrategyWiki/NetHack/Beginning(英文)</a></li>
+              <li><a href="https://tieba.baidu.com/p/5487418622">大型nethack萌新向教程</a></li>
+              <li><a href="https://wikibooks.cn/wiki/NetHack/Beginning">NetHack/入门 - 华夏公益教科书</a></li>
+              <li><a href="https://tieba.baidu.com/p/993383330">nethack基本操作——新手必看【待完善】 </a></li>
+              <li><a href="https://nethack.neocities.org/">NetHack與SLASH'EM入門指南</a></li>
+              <li><a href="https://www.douban.com/review/5598765/">豆瓣上“翠霞清風”的NetHack攻略（一）基础篇</a>，<a href="https://www.douban.com/review/5598767/">（二）装备篇</a>，<a href="https://www.douban.com/review/5598770/">（三）魔法与卷轴篇</a>，<a href="https://www.douban.com/review/5598775/">（四）intrinsic与食物篇</a>，<a href="https://www.douban.com/review/5598776/">（五）流程篇</a></li>
+              <li><a href="https://www.bilibili.com/video/BV1ZXJg6LEar">【如果一生只做一件事，玩NetHack】NetHack六月大赛（补档）</a></li>
+              <li>（广告位招租，欢迎<a class="u-email" href="mailto:wizardofyendor@outlook.com">联系</a>）</li>
+            </ul>
+ 
+            <p style="font-size: 20px;">有用的建议，来自NetHackWiki（可能有剧透，请自行选择观看）</p>
+            <ul>
+              <li><a href="https://nethackwiki.com/wiki/Standard_strategy">基本策略</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）</li>
+              <li><a href="https://nethackwiki.com/wiki/Role_difficulty">职业难度</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）（省流：<span title="你知道的太多了" class="heimu">开局直接输入名字然后nvdy回车，通常是最简单的</span>）</li>
+              <li><a href="https://nethackwiki.com/wiki/User:Furey/Furey%27s_NetHack_Tips">Furey'的NetHack建议</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）</li>
+              <li><a href="https://nethackwiki.com/wiki/Lessons_learned_the_hard_way/zh-CN">吃一堑长一智</a></li>
+              <li><a href="https://nethackwiki.com/wiki/Yet_Another_Stupid_Death/zh-CN">又一次愚蠢的死</a></li>
+              <li><a href="https://nethackwiki.com/wiki/Bad_Idea">坏主意</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）</li>
+              <li><a href="https://nethackwiki.com/wiki/Why_do_I_keep_dying%3F">为什么我老是死？</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）</li>
+              <li>（广告位招租，欢迎<a class="u-email" href="mailto:wizardofyendor@outlook.com">联系</a>）</li>
+            </ul>
+ 
+            <p style="font-size: 20px;">有关的第三方网站，不属于本仓库：</p>
+            <ul>
+              <li><a href="https://nethackwiki.com/">NetHackWiki</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">急需中文翻译</a>）</li>
+              <li><a href="https://nethack.org">NetHack官网</a></li>
+              <li><a href="https://github.com/NetHack/NetHack">原版GitHub仓库</a></li>
+              <li><a href="https://www.alt.org/nethack/">NAO (nethack.alt.org)，全球最大的NetHack在线服务器</a></li>
+              <li><a href="https://tieba.baidu.com/nethack">百度NetHack贴吧</a></li>
+              <li>（广告位招租，欢迎<a class="u-email" href="mailto:wizardofyendor@outlook.com">联系</a>）</li>
+            </ul>
+ 
+            <h2 id="downloads">下载</h2>
+            <p style="font-size: 20px;">目前Nethack-cn可下载的二进制文件（binary）有：</p>
+            <ul>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/Nethack-cn/releases">原版</a>（目前只有Windows）</li>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/ANetHack-cn/releases">Android版</a>（原作：<a href="https://github.com/gurrhack/NetHack-Android">gurrhack/NetHack-Android</a>）</li>
+              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/nethack-3d">NetHack-3D</a>（<a href="https://stackc00ki3.github.io/nethack-3d/">点击即可开始</a>）（原作：<a href="https://github.com/JamesIV4/nethack-3d">JamesIV4/nethack-3d</a>）</li>
+            </ul>
+ 
+            <p style="font-size: 20px;">发行的zip后面的字母代表的正字法：</p>
+            <p>
+              <b>s</b> = 大陆简体（该项目的单一事实来源，开发时使用的正字法）<br>
+              <b>t</b> = <a href="https://github.com/BYVoid/OpenCC/blob/master/DESIGN_PRINCIPLES.md">OpenCC标准繁体</a><br>
+              <b>tg</b> = <a href="https://www.gov.cn/gongbao/content/2013/content_2481095.htm">通用规范繁体</a>（脚本：<a href="https://github.com/amorphobia/opencc-tonggui">amorphobia/opencc-tonggui</a>）<br>
+              <b>twg</b> = 台湾繁体（同时转换词汇）
+            </p>
+            <p>（除s外其他正字法版本都由<a href="https://github.com/BYVoid/OpenCC"><b>OpenCC</b></a>进行<b>自动转换</b>得到，脚本本身具有局限性，以及源代码里也可能存在词汇不按一般人认知的词汇边界切割，因此不保证没有错误写法。）<br>
+            *注意：<b>在哪种正字法的版本，许愿/灭绝就用哪种正字法的汉字。</b><span title="你知道的太多了" class="heimu">（应该没有人像某个老酒鬼一样<a href="https://upload.thbwiki.cc/a/a9/%E4%B8%9C%E6%96%B9%E7%81%B5%E5%BC%82%E4%BC%A0%E5%B0%81%E9%9D%A2.jpg">一个字写新字体另一个字写旧字体</a>吧，应该……）</span></p>
+ 
+            <h2 id="frequently-asked-questions">FAQ</h2>
+ 
+            <h4 id="why-cant-i-read-vanilla-save-files">为什么我读不了原版已经有的存档？</h4>
+            <p><a href="">原版</a>编译时没有使用UTF-8，汉化版编译时用了（<code>msbuild $env:SOLUTION_PATH /m /p:Configuration=$env:BUILD_CONFIGURATION /p:Platform=$env:BUILD_PLATFORM /t:Build</code>）。<a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/sys/windows/Install.windows">自行编译</a>可能有效（我也没试过）。为了保证您存档的安全，请在跨版本读档之前先把存档备份一下。</p>
+ 
+            <h4 id="grammatical-error">这句话为什么读起来一点也不通顺？</h4>
+            <p><a class="u-email" href="mailto:wizardofyendor@outlook.com">发过来</a>。然后等<a href="https://github.com/StackC00ki3/Nethack-cn/releases">下一个Release</a>。</p>
+ 
+            <h4 id="ive-found-a-bug">我发现了一个bug/我想提出一个建议。我该怎么做？</h4>
+            <p>请在<a href="https://github.com/StackC00ki3/Nethack-cn/issues/">我们的GitHub Issues页面</a>上提交您的宝贵意见。如果不行的话，请联系<a class="u-email" href="mailto:wizardofyendor@outlook.com">Francium-223</a>。无论哪种情况，请先阅读我们的<a href="pages/issues.html">投稿指南</a>。</p>
+ 
+            <h4 id="how-to-contribute">我想要为这个项目做出贡献，要怎么做？</h4>
+            <p>请查看“<a href="donations/index.html">联系我们</a>”页面.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+ 
+  <footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+    <div class="wrapper">
+      <h2 class="footer-heading">NetHack中文版 （NetHack-CN）</h2>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li class="p-name">NetHack中文版 （NetHack-CN）</li>
+            <li>网页制作者：Francium-233 &lt;<a class="u-email" href="mailto:wizardofyendor@outlook.com">wizardofyendor@outlook.com</a>&gt;</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <ul class="social-media-list"></ul>
+        </div>
+        <div class="footer-col footer-col-3">
+          <p>NetHack-cn（基于NetHack 5.0.0）的汉化（本地化）版的介绍页面。提供游戏下载，并收录了社区网站和资源的链接。</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <script>
+    var a = 0;
+    var introtext = ["最近，你开始发现自己在日常工作中感到无所适从、心不在焉。探矿，偷窃，十字军和战斗等奇怪的梦境困扰了你数月，然而你却不知这是为何。你想知道你是否其实一直都在梦境中，只是直到现在才重新浮现在脑海中。在某些夜晚，你突然醒来并大哭，回想起那些在梦境中奇异而强大的生物，你不禁感到恐惧，这些生物似乎潜伏在梦境中地牢的每个角落。这些困扰着你的梦境的细节是真实的吗？每天晚上，你都会感到对于进入废墟附近神秘洞穴的渴望愈来愈强烈。然而在每天早晨，当你回想起那些在你之前进入神秘洞穴而又没有回来的人的故事时，你立刻又打消了这个念头。最终，你抑制住了寻找那个在梦境中的神秘之地的想法。毕竟，当其他的探险者在洞里呆了一段时间，沿着这条路回来的时候，他们通常看起来比第一次时要好些。谁能说那些没有回来的人不是在继续探索着呢？<br>经过四处打听，你得知一个称之为<b>岩德护身符（Amulet of Yendor）</b>的小玩意儿。如果你能找到它，它能为你带来巨大的财富。你曾知道的一个传说也提到找到了那个护身符的人，将被诸神赋予永生。有传言说护身符位于<b>地狱（Gehennom）</b>之外，在<b>险境迷宫（Mazes of Menace）</b>内的深处。听到这些传说后，你立即意识到有一些深远而隐秘的原因，你要下到洞穴里去寻找他们所说的护身符。即使关于护身符力量的谣言是不真实的，你还是决定至少应该能够将冒险经历的故事以可观的价格卖给当地的吟游诗人，特别是在一路上遭遇到的任何恐怖或是神奇的生物。你在当地的酒馆里度过了最后一个晚上，看着酒馆墙上张贴的成功率数字越来越低，你变得越来越沮丧。<br>早晨你醒来，收拾好你的东西，动身去地牢。经过几天波澜不惊的旅行，你看到了古老的遗迹，它们标志着危险迷宫的入口。夜深了，你就在门口扎营，在空旷的天空下过夜。早上，你再次收拾好你的装备，在外面吃可能是你最后的一顿饭，然后你进入了地牢…… <a id=\"introbutton\" class=\"fake-link\" onclick=\"togglebutton();\">[太长不看]</a>", "你说得对，但是「<a href=\"https://nethack.org\"><b>NetHack</b></a>」是由<a href=\"https://nethackwiki.com/wiki/DevTeam\">DevTeam</a>自主研发的一款古董封闭世界<a href=\"https://roguebasin.com/index.php?title=Berlin_Interpretation\">Rogue-like</a>游戏。游戏发生在一个被称作「<a href=\"https://nethackwiki.com/wiki/Mazes_of_Menace/zh-CN\"><b>险境迷宫</b></a>」<b>（Mazes of Menace）</b>的幻想地牢，在这里，被神选中的人将被授予「<a href=\"https://nethackwiki.com/wiki/Artifact/zh-CN\">神器</a>」（artifact），导引<a href=\"https://nethackwiki.com/wiki/pray/zh-CN\">#pray</a>之力。你将扮演一位显示为「<a href=\"https://nethackwiki.com/wiki/Player/zh-CN\">@</a>」的神秘角色，在自由的旅行中邂逅性格各异、能力独特的<a href=\"https://nethackwiki.com/wiki/Pet/zh-CN\">宠物</a>们，和他们一起击败<a href=\"https://nethackwiki.com/wiki/Monster/zh-CN\">强敌</a>，找回<a href=\"https://nethackwiki.com/wiki/Amulet_of_Yendor/zh-CN\"><b>岩德护身符</b></a><b>（Amulet of Yendor）</b>——同时，逐步发掘「<a href=\"https://nethackwiki.com/wiki/Ascension/zh-CN\"><b>升天</b></a>」<b>（Ascension）</b>的真相。 <a id=\"introbutton\" class=\"fake-link\" onclick=\"togglebutton();\">[详细介绍]</a>"];
+    const intro = document.getElementById("intro");
+    intro.innerHTML = introtext[0];
+    function togglebutton() {
+      a++;
+      intro.innerHTML = introtext[a % 2];
+    }
+  </script>
+</body>
+</html>
