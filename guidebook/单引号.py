@@ -7,6 +7,13 @@ for i in range(len(o)):
 	if o[i - 2] == '“' and o[i] == '”':
 		d += '’'
 		continue
+	if o[i] == '“' and o[i + 1] == '^' and o[i + 3] == '”':
+		d += '‘'
+		continue
+	if o[i - 3] == '“' and o[i - 2] == '^' and o[i] == '”':
+		d += '’'
+		continue
 	d += o[i]
-with open('guidebook366-buf.html', 'w', encoding='utf-8') as f:
+print(d)
+with open('Guidebook366-zh.mn', 'w', encoding='utf-8') as f:
 	f.write(d)
