@@ -270,9 +270,9 @@ option set.
 .lp "a-zA-Z and other symbols"
 字母和其他一些符号标识险境迷宫下各种各样的居民。当心，它们可能险恶且凶残。当然，有时它们也可以提供帮助。
 .lp I
-这个字符标记了一个不可见的或者未被看见的怪物最后已知位置。需要注意的是这个怪物可能已经移动了。“F”和“m”命令可能在这里会有帮助。
+这个字符标记了一个不可见的或者未被看见的怪物最后已知位置。需要注意的是这个怪物可能已经移动了。‘F’和‘m’命令可能在这里会有帮助。
 .pg
-你不需要记下这些所有的字符；你可以使用“/”命令（来向NetHack查询任何的字符所代表的含义（更多的信息见下一节）。
+你不需要记下这些所有的字符；你可以使用‘/’命令（来向NetHack查询任何的字符所代表的含义（更多的信息见下一节）。
 .
 .hn 1
 命令
@@ -283,27 +283,27 @@ option set.
 .op menustyle
 选项。
 .pg
-举个例子，一个形式为“What do you want to use?\ [a\-zA\-Z\ ?*]”的常见问题，让你选择一个你当前携带的物品。在这里，“a\-zA\-Z”指示在你的物品清单中的你可能选择的物品的字母。键入“?”会为你展示物品清单中的这些物品，因此你可以看到每个字母所指代的物品。
-在这个例子中，这里有个“*”指示了如果你想要使用一些意料之外的物品，你可能会选择一个不在列表里面的物品。键入“*”会列出你的整个物品清单，因此你可以看到在物品清单里面你所携带的所有物品以及对应的指代字母。最后，如果你改变了你的想法决定不想继续执行这个命令，你可以按下ESC键来中止这条命令。
+举个例子，一个形式为“What do you want to use?\ [a\-zA\-Z\ ?*]”的常见问题，让你选择一个你当前携带的物品。在这里，“a\-zA\-Z”指示在你的物品清单中的你可能选择的物品的字母。键入‘?’会为你展示物品清单中的这些物品，因此你可以看到每个字母所指代的物品。
+在这个例子中，这里有个‘*’指示了如果你想要使用一些意料之外的物品，你可能会选择一个不在列表里面的物品。键入‘*’会列出你的整个物品清单，因此你可以看到在物品清单里面你所携带的所有物品以及对应的指代字母。最后，如果你改变了你的想法决定不想继续执行这个命令，你可以按下ESC键来中止这条命令。
 .pg
 你可以在一些命令前加上一个数字来重复执行它们数次；例如，“10s”将会搜索10次。如果你启用了
 .op number_pad
-选项，你必须在次数前加上“n”作为前缀，所以对于上面的例子你应该输入“n10s”来实现其效果。
-那些对于次数没有意义的命令，这些命令将会忽略这些数字。 此外，移动命令可以添加前缀来进行更好的控制（见下方）。按下ESC键以取消次数或者前缀。下方这些命令列表将会特别长，但是可以通过“?”命令在游戏中的任何时候阅读它们，“?”命令会访问一个有帮助文本信息的菜单。下面是以默认按键绑定的供你参考的命令：
+选项，你必须在次数前加上‘n’作为前缀，所以对于上面的例子你应该输入“n10s”来实现其效果。
+那些对于次数没有意义的命令，这些命令将会忽略这些数字。 此外，移动命令可以添加前缀来进行更好的控制（见下方）。按下ESC键以取消次数或者前缀。下方这些命令列表将会特别长，但是可以通过‘?’命令在游戏中的任何时候阅读它们，‘?’命令会访问一个有帮助文本信息的菜单。下面是以默认按键绑定的供你参考的命令：
 .lp ?
 帮助菜单：显示数个可用的帮助文本信息的其中一个。
 .lp /
-“whatis”命令，用来告诉你某个符号所代表的含义。你可能会选择指定一个位置或者键入一个字符（或者甚至是一整个词）以获得其解释。指定一个位置进行查询解释的命令，需要你通过移动光标到地图上的某个地点后，键入“.”、“,”、“;”或“:”来完成。“.”将会解释所选择的位置的符号的含义，接着将会取决于
+“whatis”命令，用来告诉你某个符号所代表的含义。你可能会选择指定一个位置或者键入一个字符（或者甚至是一整个词）以获得其解释。指定一个位置进行查询解释的命令，需要你通过移动光标到地图上的某个地点后，键入‘.’、‘,’、‘;’或‘:’来完成。‘.’将会解释所选择的位置的符号的含义，接着将会取决于
 .op help
 选项是否开启而有条件地向你确认“More info?”，然后让你选择下一个位置；
-“,”会解释符号但会跳过任何额外的信息，然后让你选择下一个位置；
-“;”将会跳过额外的信息并且也会跳过询问你让你选择下个地点；
-“:”将会不经过 “More Info?” 确认就显示额外的信息，如果有的话。当正在选择一个位置的时候，按下ESC键将会中止这个命令，或者按下“?”将会给出它如何工作的简明提示。
+‘,’会解释符号但会跳过任何额外的信息，然后让你选择下一个位置；
+‘;’将会跳过额外的信息并且也会跳过询问你让你选择下个地点；
+‘:’将会不经过 “More Info?” 确认就显示额外的信息，如果有的话。当正在选择一个位置的时候，按下ESC键将会中止这个命令，或者按下‘?’将会给出它如何工作的简明提示。
 .lp ""
 如果
 .op autodescribe
 选项启用，当你光标移动的时候，光标所在位置的会显示一个简短的描述。
-当选择位置的时候键入“#”将会对于autodescribe选项进行动态开启或关闭。
+当选择位置的时候键入‘#’将会对于autodescribe选项进行动态开启或关闭。
 .op whatis_coord
 选项会控制简短描述信息是否包含该位置在地图上的坐标。
 .lp ""
@@ -345,11 +345,11 @@ Figure 3
 .lp m[yuhjklbn]
 前缀：不拾取物品或者进行战斗的移动（即使你记得这里有一个怪物）。
 .lp ""
-一些非移动命令使用“m”前缀来通过菜单进行行动（可以暂时覆盖
+一些非移动命令使用‘m’前缀来通过菜单进行行动（可以暂时覆盖
 .op menustyle:Traditional
-）。在当这里显示只有一种物品时，它主要用于“,”（捡起）（这将不会出现“What kinds of objects?”的提示，因此没有机会对那个问题回答“m”。
+）。在当这里显示只有一种物品时，它主要用于‘,’（捡起）（这将不会出现“What kinds of objects?”的提示，因此没有机会对那个问题回答‘m’。
 .lp ""
-还有一些其他的命令（进食，进行献祭，使用开罐器）使用“m”前缀来跳过检查在地上的合适的物品而是直接去检查物品清单，或者（使用“#loot”，掠夺命令，卸下马鞍），将会跳过容器直接朝怪物。这个前缀将会使“#travel”命令展示一个列有当前视野中的感兴趣目标的菜单。在调试模式（巫师模式）下，“m” 前缀可用于“#teleport”（传送）和“#wizlevelport”命令。
+还有一些其他的命令（进食，进行献祭，使用开罐器）使用‘m’前缀来跳过检查在地上的合适的物品而是直接去检查物品清单，或者（使用“#loot”，掠夺命令，卸下马鞍），将会跳过容器直接朝怪物。这个前缀将会使“#travel”命令展示一个列有当前视野中的感兴趣目标的菜单。在调试模式（巫师模式）下，‘m’ 前缀可用于“#teleport”（传送）和“#wizlevelport”命令。
 .lp F[yuhjklbn]
 前缀：攻击一个怪物（即使你只是猜想这里有个怪物）。
 .lp M[yuhjklbn]
@@ -363,7 +363,7 @@ Figure 3
 .lp ""
 该最短路劲由英雄已知的地图位置计算得出（例如看到的或先前走过的）。
 如果这里无法计算出一个最短路径，那么会使用一个猜测的路径来替代。
-停下的情况绝大多数和“G”前缀命令类似，但是不会捡起物品，和“M”命令类似。
+停下的情况绝大多数和‘G’前缀命令类似，但是不会捡起物品，和‘M’命令类似。
 对于支持鼠标的移植，当在非当前位置鼠标点击发生时，同样会被调用。
 .lp .
 停下,什么都不做。
@@ -374,7 +374,7 @@ Figure 3
 .lp A
 脱下所有防具。
 .lp ""
-使用“T”（take off，卸下）来卸下一件护甲或者“R”来卸下一件饰品。
+使用‘T’（take off，卸下）来卸下一件护甲或者‘R’来卸下一件饰品。
 .lp ^A
 重复上一次的命令。
 .lp c
@@ -396,7 +396,7 @@ Figure 3
 .lp ""
 “What kinds of things do you want to drop? [!%= BUCXaium]”
 .lp ""
-你需要键入零个或者多个物品字符，紧接着按下“a”和/或“i”和/或“u”和/或“m”键。此外，可以键入一个或者多个被祝福的/被受诅咒的/被诅咒的分组。
+你需要键入零个或者多个物品字符，紧接着按下‘a’和/或‘i’和/或‘u’和/或‘m’键。此外，可以键入一个或者多个被祝福的/被受诅咒的/被诅咒的分组。
 .PS D%u
 .PL DB
 丢弃所有已知是被祝福的物品。
@@ -417,9 +417,9 @@ Figure 3
 .PL D%u
 只丢弃未付款的食物
 .PE
-最后一个例子展示了一个组合。这里有个三种类别物品过滤：类别（（“!”，用于毒药；“?”，用于卷轴，等等），商店状态（“u”用于未付款，换句话说，仅用于购物），祝福/诅咒状态（如上所示的“B”、“U”、“C”、以及“X”）。
-如果你在一项类别上，指定了不止一个值（例如“!?”对于毒药和卷轴或者是“BU”对于被祝福的和未被诅咒的），一项物品如果它匹配了指定值的任意一个将会满足条件（因此“!?”意味着“!”或者“?”）。
-如果你指定了多个类别，物品将会匹配每个类别的条件（因此“%u”意味着种类“%”和未付款“u”）。
+最后一个例子展示了一个组合。这里有个三种类别物品过滤：类别（（‘!’，用于毒药；‘?’，用于卷轴，等等），商店状态（‘u’用于未付款，换句话说，仅用于购物），祝福/诅咒状态（如上所示的‘B’、‘U’、‘C’、以及‘X’）。
+如果你在一项类别上，指定了不止一个值（例如“!?”对于毒药和卷轴或者是“BU”对于被祝福的和未被诅咒的），一项物品如果它匹配了指定值的任意一个将会满足条件（因此“!?”意味着‘!’或者‘?’）。
+如果你指定了多个类别，物品将会匹配每个类别的条件（因此“%u”意味着种类‘%’和未付款‘u’）。
 最后，你可能会在多个类别中指定多个值：“!?BU”将会选择所有被祝福或未被诅咒的毒药和卷轴。（在早于3.6的版本中，过滤组合的行为是不一样的。）
 .lp ^D
 踢某些东西（通常是门）。
@@ -427,7 +427,7 @@ Figure 3
 吃东西。
 .lp ""
 通常优先检查在地上的可食用物品，如果找不到可选择的，就检查在物品清单中的。
-在“e”之前使用“m”前缀将会直接忽视去吃地上的食物。
+在‘e’之前使用‘m’前缀将会直接忽视去吃地上的食物。
 .lp ""
 如果你试图在已经处于饱腹状态的时候进食，你可能会因为噎住窒息而死。如果你冒这个险，那么\fI如果你在第一口活了下来\fP，你将会被询问“continue eating?”。你可以设置
 .op paranoid_confirmation:eating
@@ -445,11 +445,11 @@ E\- - write in the dust with your fingers.
 .lp ""
 刻下“Elbereth”将会造成大多数的怪物在接近你的时候不会攻击你（但是一旦你进行了攻击，你将破坏你的刻字）；这个方法通常有助于给你自己争取喘息的机会。
 .lp f
-从箭袋中发射发射物。你或许可以使用“Q”命令来选择弹药，或者
+从箭袋中发射发射物。你或许可以使用‘Q’命令来选择弹药，或者
 .op autoquiver
 为true的时候，让电脑选择一个合适的。
 .lp ""
-查阅“t”（throw）以获取更多关于一般投射或者开火。
+查阅‘t’（throw）以获取更多关于一般投射或者开火。
 .lp i
 显示你的物品栏。
 .lp I
@@ -479,7 +479,7 @@ E\- - write in the dust with your fingers.
 .lp ""
 一个展示当前选项值的菜单将会被显示出来。对于大多数的值你可以通过选择所给出的项的菜单入口进行方便地修改。（通过键入对应项的字母或者点击该选项，这取决于你的界面）。
 对于非布尔值，一旦你在选择后关闭了菜单，将会进入一步出现额外的菜单或者提示。那些可用的选项将会在指南的后面列出来。
-选项通常在游戏前被设置而不是使用“O”命令；参见关于选项的部分。
+选项通常在游戏前被设置而不是使用‘O’命令；参见关于选项的部分。
 .lp ^O
 显示已探索地牢的摘要。
 .lp ""
@@ -492,7 +492,7 @@ E\- - write in the dust with your fingers.
 戴上一件配饰（戒指,护身符等）。
 .lp ""
 这个命令也可能被用于穿护甲。询问想要使用哪一件物品的提示只会列出饰品，但是选择一个未被列出的护甲物品也将会尝试穿上它。
-（查看下面的“W”命令。它会列出护甲作为物品清单选项，但是也会接受一件饰品并且尝试穿上。）
+（查看下面的‘W’命令。它会列出护甲作为物品清单选项，但是也会接受一件饰品并且尝试穿上。）
 .lp ^P
 查看最近的游戏消息。
 .lp ""
@@ -502,7 +502,7 @@ E\- - write in the dust with your fingers.
 .lp q
 喝东西。
 .lp Q
-选择准备弹药。你可以在那之后使用“f”命令进行投射。
+选择准备弹药。你可以在那之后使用‘f’命令进行投射。
 .lp ""
 （在早于3.3的版本，这个命令用于退出游戏，现在已经迁移至“#quit”命令。）
 .lp r
@@ -515,7 +515,7 @@ E\- - write in the dust with your fingers.
 选项来提示。
 .lp ""
 这个命令也可能被用于脱下护甲。
-提示希望哪一件物品被移除只会列出正戴着的饰品，但是正穿着的护甲也能选择。（见下方“T”命令。该命令列出物品清单中的护甲，但是也可选择饰品且会试图移除它。）
+提示希望哪一件物品被移除只会列出正戴着的饰品，但是正穿着的护甲也能选择。（见下方‘T’命令。该命令列出物品清单中的护甲，但是也可选择饰品且会试图移除它。）
 .lp ^R
 重绘整个界面。
 .lp s
@@ -537,7 +537,7 @@ E\- - write in the dust with your fingers.
 这里没有一个单独的叫做“shoot”的命令。
 如果你手持弓来投出一只箭时，你则是在射箭，并且任何对于武器技巧的增益或者减益都会被应用起来。如果你在抛出一只箭时并没有手持弓，那么你就是使用手来抛出它，并且这样通常比起使用弓射出有更少的效果。
 .lp ""
-查阅使用“f”来在使用“Q”之前选择一个物品，然后抛出或者射出该物品。
+查阅使用‘f’来在使用‘Q’之前选择一个物品，然后抛出或者射出该物品。
 .lp T
 脱下一件防具。
 .lp ""
@@ -546,7 +546,7 @@ E\- - write in the dust with your fingers.
 .op paranoid_confirmation
 选项来要求给出确认提示。
 .lp ""
-这个命令也可以被用于移除饰品。哪一件物品需要被移除的提示只会列出穿着的护甲，但是一件被戴着的饰品也可以被选择。（查看上面的“R”命令。它会列出物品清单中的饰品作为选项，但是也会接收一件护甲物品并试图脱下它。）
+这个命令也可以被用于移除饰品。哪一件物品需要被移除的提示只会列出穿着的护甲，但是一件被戴着的饰品也可以被选择。（查看上面的‘R’命令。它会列出物品清单中的饰品作为选项，但是也会接收一件护甲物品并试图脱下它。）
 .lp ^T
 进行传送，如果你拥有这样的能力。
 .lp v
@@ -560,12 +560,12 @@ E\- - write in the dust with your fingers.
 w\- - 什么也不拿，使用的空手。
 .ei
 .ed
-有的角色可以一次性手持两把武器；使用“X”命令（或者“#twoweapon”扩展命令）来实现。
+有的角色可以一次性手持两把武器；使用‘X’命令（或者“#twoweapon”扩展命令）来实现。
 .lp W
 穿上一件防具。
 .lp ""
 这个命令也可以被用于戴上一件饰品（戒指，护符，或者眼罩）。提示哪一件物品要被穿上的物品清单中只会列出护甲，但是选择一个未被列出的饰品也会尝试戴上它。
-（查阅上方的“P”命令。它列出所有物品中的饰品但是也会接受一件护甲并且试图穿上它。）
+（查阅上方的‘P’命令。它列出所有物品中的饰品但是也会接受一件护甲并且试图穿上它。）
 .lp x
 切换主武器和副武器。
 .lp ""
@@ -586,14 +586,14 @@ w\- - 什么也不拿，使用的空手。
 挥舞魔杖。
 .sd
 .si
-z. - 将你自己作为目标，使用“.”来选择方向。
+z. - 将你自己作为目标，使用‘.’来选择方向。
 .ei
 .ed
 .lp Z
 施放魔法。
 .sd
 .si
-Z. - 朝你自己施放咒语，使用“.”来选择方向。
+Z. - 朝你自己施放咒语，使用‘.’来选择方向。
 .ei
 .ed
 .lp ^Z
@@ -636,9 +636,9 @@ commands into one.
 列出你所知道的咒语。
 .lp ""
 使用这个命令，你也可以对所列出来的已知咒语进行重排序，既可以对整个列表进行重排序也可以选择菜单中其中的一个咒语然后选择另外的一个咒语将它们进行位置交换。
-交换一对咒语也会改变施放它们时候按下的对应的字母，因此这个改变将会在当前“+”命令完成后一直持续。
+交换一对咒语也会改变施放它们时候按下的对应的字母，因此这个改变将会在当前‘+’命令完成后一直持续。
 对整个列表进行排序只是临时的。
-为了让排序后的列表在当前的“+”命令之外永久有效，需要再次选择排序选项，然后选择“reassign casting letters（重新分配施法字母）。
+为了让排序后的列表在当前的‘+’命令之外永久有效，需要再次选择排序选项，然后选择“reassign casting letters（重新分配施法字母）。
 （任何的法术咒语在学习后将会被添加到咒语列表的最后，而不是插入到已经排序完成的列表中。）
 .lp \
 显示已发现的物品类型。
@@ -680,9 +680,9 @@ commands into one.
 选项启用的时候，也可以使用按键“^N”。
 .lp "#apply   "
 激活（使用）工具（鹤嘴锄,钥匙,提灯...）。
-默认按键为“a”。
+默认按键为‘a’。
 .lp ""
-如果这个工具作用于在地上的物品，使用“m”前缀来跳过这个物品。
+如果这个工具作用于在地上的物品，使用‘m’前缀来跳过这个物品。
 .lp ""
 如果选择一把魔杖，该魔杖将会被破坏，并在这个过程中施放它的魔法。操作前会要求确认。
 .lp #attributes
@@ -692,19 +692,19 @@ commands into one.
 
 .op autopickup
 或关闭。
-默认按键为“@”。
+默认按键为‘@’。
 .lp "#call    "
 命名一个怪物，或者一件在物品清单的，或者在地上的，或者在发现列表中的物品，或者为当前的地牢层添加一个注释（和“#annotate”一样）。
-默认按键为“C”。
+默认按键为‘C’。
 .lp "#cast    "
 施放魔法。
-默认按键为“Z”。
+默认按键为‘Z’。
 .lp "#chat    "
 谈话。
 默认按键为“M-c”。
 .lp "#close   "
 关门。
-默认按键为“c”。
+默认按键为‘c’。
 .lp "#conduct "
 列举你坚持下来的自愿挑战。
 自动完成。
@@ -716,19 +716,19 @@ commands into one.
 默认按键为“M-d”。
 .lp "#down    "
 下楼梯。
-默认按键为“>”。
+默认按键为‘>’。
 .lp "#drop    "
 丢下物品。
-默认按键为“d”。
+默认按键为‘d’。
 .lp #droptype
 丢下特定种类的物品。
-默认按键为“D”。
+默认按键为‘D’。
 .lp "#eat     "
 吃东西。
-默认按键为“e”。添加“m”前缀将会跳过地板上的物品。
+默认按键为‘e’。添加‘m’前缀将会跳过地板上的物品。
 .lp "#engrave "
 在地板上刻字。
-默认按键为“E”。
+默认按键为‘E’。
 .lp "#enhance "
 提升或检查武器和魔法技能。
 自动完成。
@@ -742,31 +742,31 @@ commands into one.
 选项来要求输入\f(CRyes\fP而不是\f(CRy\fP来回答。
 .lp "#fire    "
 从箭袋中发射发射物。
-默认按键为“f”。
+默认按键为‘f’。
 .lp "#force   "
 暴力开锁。
 自动完成。
 默认按键为“M-f”。
 .lp "#glance  "
 显示地图符号对应的事物。
-默认按键为“;”。
+默认按键为‘;’。
 .lp "#help    "
 获取帮助信息。
 默认按键为
-默认按键为“?”，如果
+默认按键为‘?’，如果
 .op number_pad
-选项启用的情况下也可以使用“h”。
+选项启用的情况下也可以使用‘h’。
 .lp #herecmdmenu
 显示此处可执行的指令菜单。
 .lp "#history "
 显示游戏开发历史的概述。
-默认按键为“V”。
+默认按键为‘V’。
 .lp #inventory
 显示你的物品栏。
-默认按键为“i”。
+默认按键为‘i’。
 .lp #inventtype
 显示物品栏中某特定类别的物品。
-默认按键为“I”。
+默认按键为‘I’。
 .lp "#invoke  "
 激活物品的特殊能力。
 自动完成。
@@ -776,18 +776,18 @@ commands into one.
 自动完成。
 默认按键为“M-j”，如果
 .op number_pad
-启用也可以使用“j”。
+启用也可以使用‘j’。
 .lp "#kick    "
 用脚踢。
 默认按键为“^D”，如果
 .op number_pad
-选项启用也可以使用“k”。
+选项启用也可以使用‘k’。
 .lp "#known   "
 显示已发现的物品类型。
-默认按键为“\”。
+默认按键为‘\’。
 .lp #knownclass
 显示某类物品的已发现类型。
-默认按键为“`”。
+默认按键为‘`’。
 .lp #levelchange
 修改经验等级。
 自动完成。调试模式专属。
@@ -796,13 +796,13 @@ commands into one.
 自动完成。调试模式专属。
 .lp "#look    "
 查看这里的物品。
-默认按键为“:”。
+默认按键为‘:’。
 .lp "#loot    "
 搜刮地上的箱子。
 自动完成。加上”m“前缀来跳过在你位置上的容器并直接移除马鞍。
 默认按键为“M-l”，如果
 .op number_pad
-选项启用也可以使用“l”。
+选项启用也可以使用‘l’。
 .lp "#monster "
 使用怪物的特殊能力。
 自动完成。
@@ -810,7 +810,7 @@ commands into one.
 .lp "#name    "
 同\#call;命名一个怪物,特定物品,或者一类物品。和“#call”一样。
 自动完成。
-默认按键为“N”、“M-n”和“M-N”。
+默认按键为‘N’、“M-n”和“M-N”。
 .lp "#offer   "
 向神提供一个祭品。
 自动完成。
@@ -818,13 +818,13 @@ commands into one.
 .lp ""
 你需要找到一个祭坛才能够有机会进入下一步。你最近杀死的怪物的尸体是这个祭坛的敲门砖。
 .lp ""
-“m”作为命令的前缀将会跳过提供任何在祭坛上的物品。
+‘m’作为命令的前缀将会跳过提供任何在祭坛上的物品。
 .lp "#open    "
 开门。
-默认按键为“o”。
+默认按键为‘o’。
 .lp "#options "
 显示和修改选项设置。
-默认按键为“O”。
+默认按键为‘O’。
 .lp #overview
 显示你发现的关于地牢的信息。任何到过的有注释的层（除非因为遗忘而忘记）也会被包括在内，以及许多的事物（祭坛，王座，喷泉等等；额外的通向另一个地牢分支的楼梯）。
 如果地牢概观在游戏结束展示期间被选择，一切到过的层不管是否有注释都将被包括在内进行显示。
@@ -840,10 +840,10 @@ commands into one.
 来要求用\f(CRyes\fP替代y进行回答。
 .lp "#pay     "
 付款。
-默认按键为“p”。
+默认按键为‘p’。
 .lp "#pickup  "
 捡起在当前位置的物品。
-默认按键为“,”。加上“m”前缀将强制使用一个菜单。
+默认按键为‘,’。加上‘m’前缀将强制使用一个菜单。
 .lp #polyself
 变形自己。
 自动完成。调试模式专属。
@@ -863,10 +863,10 @@ commands into one.
 默认按键为“^P”。
 .lp "#puton   "
 戴上一件配饰（戒指,护身符等）。
-默认按键为“P”。
+默认按键为‘P’。
 .lp "#quaff   "
 喝东西。
-默认按键为“q”。
+默认按键为‘q’。
 .lp "#quit    "
 不保存直接退出。
 自动完成。
@@ -879,10 +879,10 @@ commands into one.
 选项来要求回答\f(CRyes\fP。
 .lp "#quiver  "
 选择准备弹药。
-默认按键为“Q”。
+默认按键为‘Q’。
 .lp "#read    "
 读卷轴或者书。
-默认按键为“r”。
+默认按键为‘r’。
 .lp "#redraw  "
 刷新屏幕。
 默认按键为“^R”，如果
@@ -890,7 +890,7 @@ commands into one.
 选项启用也可以使用“^L”。
 .lp "#remove  "
 摘下配饰（戒指，护身符等）。
-默认按键为“R”。
+默认按键为‘R’。
 .lp "#ride    "
 上坐骑或下坐骑。
 自动完成。
@@ -901,43 +901,43 @@ commands into one.
 默认按键为“M-r”。
 .lp "#save    "
 保存并退出。
-默认按键为“S”。
+默认按键为‘S’。
 .lp "#search  "
 搜索陷阱和暗门。
-默认按键为“s”。
+默认按键为‘s’。
 .lp "#seeall  "
 显示所有正在使用的装备。
-默认按键为“*”。
+默认按键为‘*’。
 .lp #seeamulet
 显示正在戴着的护身符。
-默认按键为“"”。
+默认按键为‘"’。
 .lp #seearmor
 显示正在穿着的防具。
-默认按键为“[”。
+默认按键为‘[’。
 .lp "#seegold "
 计算你当前的金币。
-默认按键为“$”。
+默认按键为‘$’。
 .lp "#seenv   "
 显示地图位置的“已查看”向量。
 自动完成。Debug mode only.
 .lp #seerings
 显示正在戴着的戒指。
-默认按键为“=”。
+默认按键为‘=’。
 .lp #seespells
 列举并重新排序已知法术。
-默认按键为“+”。
+默认按键为‘+’。
 .lp #seetools
 显示正在使用的工具。
-默认按键为“（”。
+默认按键为‘（’。
 .lp "#seetrap "
 显示附近一个陷阱的类型。
-默认按键为“^”。
+默认按键为‘^’。
 .lp #seeweapon
 显示正在装备的武器。
-默认按键为“）”。
+默认按键为‘）’。
 .lp "#shell   "
 退出游戏以进入子终端（输入'exit'即可返回）。
-默认按键为“!”。
+默认按键为‘!’。
 .lp "#sit     "
 坐下。
 自动完成。
@@ -950,13 +950,13 @@ commands into one.
 默认按键为“^Z”。
 .lp "#swap    "
 切换主武器和副武器。
-默认按键为“x”。
+默认按键为‘x’。
 .lp "#takeoff "
 脱下一件防具。
-默认按键为“T”。
+默认按键为‘T’。
 .lp #takeoffall
 脱下所有防具。
-默认按键为“A”。
+默认按键为‘A’。
 .lp #teleport
 层间传送。
 默认按键为“^T”。
@@ -967,16 +967,16 @@ commands into one.
 在此处对相邻位置可执行的指令菜单。
 .lp "#throw   "
 扔东西。
-默认按键为“t”。
+默认按键为‘t’。
 .lp "#timeout "
 查看倒计时和英雄的定时内置函数。调试模式专属。
 .lp "#tip     "
 倒空容器。
 自动完成。
-默认按键为“M-T”。使用“m”前缀让这个命令使用一个菜单。
+默认按键为“M-T”。使用‘m’前缀让这个命令使用一个菜单。
 .lp "#travel  "
 自动旅行到地图上的特定位置。
-默认按键为“_”。使用“request menu”前缀来显示一个在视野中感兴趣的不要求移动光标到指定位置的目标的菜单。
+默认按键为‘_’。使用“request menu”前缀来显示一个在视野中感兴趣的不要求移动光标到指定位置的目标的菜单。
 当用光标选择一个目标并且
 .op autodescribe
 选项启用的时候，屏幕顶部文本行将会显示“（no travel path，没有行进路线）”如果你的角色不知道如何到达那个位置。
@@ -987,7 +987,7 @@ commands into one.
 .lp #twoweapon
 开关双持战斗。
 自动完成。
-默认按键为“X”。如果
+默认按键为‘X’。如果
 .op number_pad
 选项关闭也可以使用“M-2”。
 .lp ""
@@ -996,12 +996,12 @@ commands into one.
 解除陷阱。
 默认按键为“M-u”，如果
 .op number_pad
-选项启用也可以使用“u”。
+选项启用也可以使用‘u’。
 .lp ""
 在某些情形下（circumstance）该命令也可以用于解救被陷阱困住的怪物。
 .lp "#up      "
 上楼梯。
-默认按键为“<”。
+默认按键为‘<’。
 .lp #vanquished
 列举击败的怪物。
 自动完成。调试模式专属。
@@ -1011,27 +1011,27 @@ commands into one.
 默认按键为“M-v”。
 .lp #versionshort
 显示程序版本和编译时间。
-默认按键为“v”。
+默认按键为‘v’。
 .lp "#vision  "
 显示视觉阵列。
 自动完成。调试模式专属。
 .lp "#wait    "
 停下，什么都不做。
-默认按键为“.”，如果
+默认按键为‘.’，如果
 .op rest_on_space
-选项开启也可以使用“ ”（空格）。
+选项开启也可以使用‘ ’（空格）。
 .lp "#wear    "
 穿上一件防具。
-默认按键为“W”。
+默认按键为‘W’。
 .lp #whatdoes
 说明指令的作用。
-默认按键为“&”。
+默认按键为‘&’。
 .lp "#whatis  "
 说明符号对应的事物。
-默认按键为“/”。
+默认按键为‘/’。
 .lp "#wield   "
 装备（使用）武器。
-默认按键为“w”。
+默认按键为‘w’。
 .lp "#wipe    "
 擦脸。
 自动完成。
@@ -1080,7 +1080,7 @@ commands into one.
 自动完成。调试模式专属。
 .lp "#zap     "
 挥舞魔杖。
-默认按键为“z”。
+默认按键为‘z’。
 .lp "#?       "
 列举所有扩展指令。
 .lp ""
@@ -1170,30 +1170,30 @@ option is on, some additional letter commands are available:
 .pg
 房间和走廊在地牢里面都是有明有暗的。任何在你的视线所照亮的区域都将显示出来；黑暗的区域只会在距离你一格的地方被显示。当你探索到墙和走廊，它们会一直保持在地图上。
 .pg
-暗道走廊正常情况下是看不见的。你可以通过使用“s”命令找出来。
+暗道走廊正常情况下是看不见的。你可以通过使用‘s’命令找出来。
 .hn 2
 门口
 .pg
-门口连接了房间和走廊。有一些门口是没有门的；你可以直接走过起。另外一些门口会有门存在，门可以打开，关上，或者锁上。使用“o”命令开门；使用“c”命令关门。
+门口连接了房间和走廊。有一些门口是没有门的；你可以直接走过起。另外一些门口会有门存在，门可以打开，关上，或者锁上。使用‘o’命令开门；使用‘c’命令关门。
 .pg
-你可以使用一些工具然后使用“a”命令来打开锁上的门，或者使用“^D”命令来直接踢开它。
+你可以使用一些工具然后使用‘a’命令来打开锁上的门，或者使用“^D”命令来直接踢开它。
 .pg
 在打开门后无法斜着进入门；你必须要有接近它们然后垂直或水平地直着走进去。没有门的门口不受这个限制。
 .pg
 门可以有效地将怪物关在门外。大多数的怪物无法打开门，即使尽管少数的不需要这样做（例如，幽灵可以直接穿过门）。
 .pg
-密门是隐藏着的。你可以使用“s”命令来找到它们。一旦找到后，它们就等同于普通的门。
+密门是隐藏着的。你可以使用‘s’命令来找到它们。一旦找到后，它们就等同于普通的门。
 .hn 2
-陷阱（“^”）
+陷阱（‘^’）
 .pg
-在地牢中自始至终都存在惩罚粗心的的探索者的陷阱。例如你可能会突然掉进一个坑里被陷住然后耗费数回合后才能爬上来。陷阱不会显示在你的地图上，直到你移动到该陷阱上面触发后，或看到一些东西是掉入到里面，或者你使用“s”命令发现它。怪物也可以因为陷阱被捕获，这是一种很有用的防御策略。
+在地牢中自始至终都存在惩罚粗心的的探索者的陷阱。例如你可能会突然掉进一个坑里被陷住然后耗费数回合后才能爬上来。陷阱不会显示在你的地图上，直到你移动到该陷阱上面触发后，或看到一些东西是掉入到里面，或者你使用‘s’命令发现它。怪物也可以因为陷阱被捕获，这是一种很有用的防御策略。
 .pg
 有一个预先绘制好地图的特殊分支，基于经典电子游戏“Sokoban”（推箱子/仓库番）。
 它的目标是将巨石推入坑洞中。经过思考后，你能够通过传统的推箱子方式来完成所有的地牢层。如果玩家被困住，也有一些补救的措施；不过那样做会降低你的幸运值。
 .hn 2
-楼梯和梯子（“<”，“>”）
+楼梯和梯子（‘<’，‘>’）
 .pg
-通常，地牢每一层都会有一个往上（“<”）通往上一层和一个往下（“<”）通往下一层的楼梯。
+通常，地牢每一层都会有一个往上（‘<’）通往上一层和一个往下（‘<’）通往下一层的楼梯。
 这里也有一些例外。
 例如，在地牢探索的早期，你将会发现一层会有两个往下的楼梯，其中一个依然是直接通往下一层，另一个则是进入一个被称为“侏儒矿坑”的区域。
 这些矿区最终会导致死亡结局，所以在完成对这些矿区的探索后（如果你选择这样做），你需要爬回到主地牢层。
@@ -1209,7 +1209,7 @@ option is on, some additional letter commands are available:
 商店与购物
 .pg
 有时你将会进入一个房间，房间里面会有一位商店主以及很多摆放在地上的物品。
-你可以通过捡起它们然后使用“p”命令来购买。你可以在捡起它们之前使用“#chat”命令打听物品的价格。
+你可以通过捡起它们然后使用‘p’命令来购买。你可以在捡起它们之前使用“#chat”命令打听物品的价格。
 在付款前就使用该物品会招来商店主的指责，并且商店主在你付款之前是不会让你离开商店的。
 .pg
 你可以丢掉一些东西在商店的地上来向商店主出售它们。商店主会给出一个价格并且询问你是否愿意以该价格卖掉它们，或者是告诉你他对这件东西不感兴趣（通常，你的东西需要和商店售卖的东西的类型相符）。
@@ -1218,7 +1218,7 @@ option is on, some additional letter commands are available:
 .pg
 商店主有时候会花光他的钱。当这种情况出现时，当你想要试图售卖一些东西你会得到一定信用而不是金币。信用可以用于付款，但是信用只能在获得信用的那个的商店用；其他的商店主不会承认。（如果你在地牢里面偶然发现了一张信用卡，不要试图用它来进行付款；店主不会承认它。）
 .pg
-“$”命令会显示你当前携带的黄金的数量（在物品清单中的，不包括包里或盒子里面），该命令也会显示在商店里的欠款或者信用值。
+‘$’命令会显示你当前携带的黄金的数量（在物品清单中的，不包括包里或盒子里面），该命令也会显示在商店里的欠款或者信用值。
 “Iu”命令会列出所有未付款的物品（这些物品还属于商店）当你拿着它们。
 “Ix”命令会以清单风格显示未付款但是用掉的物品，以及其他商店的费用，如果有的话。
 .hn 3
@@ -1242,8 +1242,8 @@ option is on, some additional letter commands are available:
 .pg
 怪物不会在屏幕上显示因此你无法看到它们。当心！你可能忽然进入到一个黑暗的地方。某些魔法物品可以帮助你在你被它们定位到你之前定位到它们（某些怪物定位能力很强）。
 .pg
-命令“/”和“;”能够帮助你的获取关于显示在屏幕上的怪物的信息。命令“#name”（
-默认按键为“C”）允许你给一个怪物命名，这个命令或许可以帮你在很多怪物同时出现时区分你指定的其中一个怪物。命名一个空白的名称会移除先前的名字。
+命令‘/’和‘;’能够帮助你的获取关于显示在屏幕上的怪物的信息。命令“#name”（
+默认按键为‘C’）允许你给一个怪物命名，这个命令或许可以帮你在很多怪物同时出现时区分你指定的其中一个怪物。命名一个空白的名称会移除先前的名字。
 
 .pg
 扩展命令“#chat”能够用于和你临近的怪物进行交互。这将不会有实际的对话框（换句话说，你无法获得你要对话的选项），但是和某些怪物（？）例如商店主，或神谕者会得到有用的结果。
@@ -1252,18 +1252,18 @@ option is on, some additional letter commands are available:
 .pg
 若你看见一个怪物并希望和它进行战斗，你可以直接试着走向它。大多数你发现的怪物只会自顾自除非你发攻击它。其中的一些怪物在生气的时候会非常危险。记住：退让是勇气的体现。
 .pg
-在大多数的情况下，若你试图通过移动到一个和平的怪物的位置来攻击它，你会被询问以确认你的意图。通过默认的回答“y”来确认，然而“y”可能会因为移动命令而误用。你可以设置
+在大多数的情况下，若你试图通过移动到一个和平的怪物的位置来攻击它，你会被询问以确认你的意图。通过默认的回答‘y’来确认，然而‘y’可能会因为移动命令而误用。你可以设置
 .op paranoid_confirmation
 选项来要求回答“yes”来确认。
 .pg
-如果你无法看见一个怪物（若该怪物是不可见的，或者你是眼盲的），符号“I”将会在当你感知到它的存在时显示。
+如果你无法看见一个怪物（若该怪物是不可见的，或者你是眼盲的），符号‘I’将会在当你感知到它的存在时显示。
 若你试图走入它，你就会试着把它视为一个可以看见的怪物一样攻击它；
-当然，如果怪物离开了，你就会试着攻击空气。若你猜到怪物已经离开了并且你不希望进行攻击，你可以使用“m”命令来移动而不是攻击；
-同样的，你若忘记了怪物位置仅仅是想进行攻击，你可以使用“F”命令。
+当然，如果怪物离开了，你就会试着攻击空气。若你猜到怪物已经离开了并且你不希望进行攻击，你可以使用‘m’命令来移动而不是攻击；
+同样的，你若忘记了怪物位置仅仅是想进行攻击，你可以使用‘F’命令。
 .hn 2
 你的宠物（Your pet）
 .pg
-你开始游戏的时候会带着一只小狗（“d”），一只小猫（“f”），或者一匹小马（“u”）。
+你开始游戏的时候会带着一只小狗（‘d’），一只小猫（‘f’），或者一匹小马（‘u’）。
 你的宠物会在地牢里一直跟着你并且和你一起与怪物战斗。
 和你一样，你的宠物也需要食物以存活。
 小狗或者小猫通常喂给它们新鲜的腐肉或者一些其他的肉；小马需要的则是难以得到的素食。如果你担心你的宠物（饥饿）或者想要训练它，你可以给它喂食，也可以直接把食物扔给它。
@@ -1282,7 +1282,7 @@ option is on, some additional letter commands are available:
 乘骑的技能可以通过“#enhance”命令来进行管理。
 请查看“武器熟练度”部分来获取更多的信息。
 .pg
-使用“a”命令并选择你物品清单中的一个鞍来尝试将一个鞍放到临近的一个生物上。如果成功了，这个生物将会放到你的物品清单中。
+使用‘a’命令并选择你物品清单中的一个鞍来尝试将一个鞍放到临近的一个生物上。如果成功了，这个生物将会放到你的物品清单中。
 .pg
 当对一个临近的上了鞍的怪物使用“#loot”命令会试着移除该生物的鞍。如果成功了，这个鞍会放入你的物品清单中。
 .hn 2
@@ -1304,7 +1304,7 @@ option is on, some additional letter commands are available:
 .pg
 当你在地牢里面发现了一些东西，通常都会捡起它们。在NetHack中，这样通常在经过这些物品时自动完成（除非你关闭了
 .op autopickup
-选项（见下方），或者使用“m”前缀进行移动（见之前）），或者通过“,”命令手动捡起。
+选项（见下方），或者使用‘m’前缀进行移动（见之前）），或者通过‘,’命令手动捡起。
 .pg
 如果你携带了太多的东西，NetHack将会告诉你并且你无法在携带更多的东西。否则，这个东西将会被添加到你的背包并且告诉你你刚刚捡起了什么东西。
 .pg
@@ -1335,7 +1335,7 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 .op implicit_uncursed
 选项可以用于控制这个情况；关闭这个选项使得即使该属性能被其他属性推断出也依然显示该描述。
 .hn 2
-武器（“)”）
+武器（‘)’）
 .pg
 假如有机会，在险境迷宫中大多数的怪物都无条件想要杀死你。
 你需要一件武器自保（首先是要杀死他们）。
@@ -1350,28 +1350,28 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 .pg
 攻击一个怪物命中的成功率，和命中后造成的伤害值，取决于很多因素：武器的类型，武器的质量（附魔和/或腐蚀程度），经验等级，力量，敏捷，负重，以及熟练度（见下文）。怪物的护甲等级——通常的防御等级，并不一定真的穿了护甲——也是一个因素；此外，一些怪物也会因为某些特定类型的武器而受影响。
 .pg
-许多的武器都能够被单手持有；有一些需要双手。当手持一把双手武器的时候，你无法装备一个盾牌，反之亦然。当手持一把单手武器的时候，你可以使用“x”命令来让另一把武器待命，该命令可以交换你的主武器和准备好的武器。如果你熟练掌握“双持战斗”（two weapon combat）技巧，你可以同时装备主手和副手武器；使用“X”命令来使用或解除。只有某些角色（例如barbarians野蛮人）拥有这个必备的技能。即使拥有这个技能，双持武器战斗比起单持会在攻击你的目标的时候收到一定的惩罚（削弱）。
+许多的武器都能够被单手持有；有一些需要双手。当手持一把双手武器的时候，你无法装备一个盾牌，反之亦然。当手持一把单手武器的时候，你可以使用‘x’命令来让另一把武器待命，该命令可以交换你的主武器和准备好的武器。如果你熟练掌握“双持战斗”（two weapon combat）技巧，你可以同时装备主手和副手武器；使用‘X’命令来使用或解除。只有某些角色（例如barbarians野蛮人）拥有这个必备的技能。即使拥有这个技能，双持武器战斗比起单持会在攻击你的目标的时候收到一定的惩罚（削弱）。
 .pg
-会存在某些情况下你不想要手持任何的武器。想要实现那样的效果，使用“-”，也可以使用“A”命令来让你卸下当前的武器，此外也可以卸下其他穿着的装备。
+会存在某些情况下你不想要手持任何的武器。想要实现那样的效果，使用‘-’，也可以使用‘A’命令来让你卸下当前的武器，此外也可以卸下其他穿着的装备。
 .pg
 那些AD\&D（专家级龙与地下城）的读者玩家，请注意每一件存在于AD\&D的武器在NetHack中都会造成相似的伤害。
 一些更加费解的武器（例如\fI链棒\fP（aklys），\fI苜蓿锤\fP（lucern hammer），以及\fI鸦啄战锤\fP（bec-de-corbin））被定义在AD\&D的附录《Unearthed Arcana》（被发掘的奥秘）中。
 .pg
-使用武器的命令有“w”（手持），“t”（投掷），“f”（发射，投掷的替代），“Q”（装配箭袋），“x”（交换武器），“X”（双持），以及“#enhance”（增强）（见下方）。
+使用武器的命令有‘w’（手持），‘t’（投掷），‘f’（发射，投掷的替代），‘Q’（装配箭袋），‘x’（交换武器），‘X’（双持），以及“#enhance”（增强）（见下方）。
 .hn 3
 7.2.1 投掷与射击
 .pg
-你可以通过“t”命令来投掷任何的东西。该动作将会给出提示要投掷的物品；按下“？”将会列出在你物品清单中被认为可以投掷的物品，或者按下“*”来显示你整个物品清单。在你选择好想要投掷的物品后，你将会被提示选择一个方向而不是一个目标。物品能够被人出去的距离主要取决于物品的种类和你的力量。箭可以直接用手投掷，但是通过手持一把弓来射出能够让它射的更远也更有可能集中目标。
+你可以通过‘t’命令来投掷任何的东西。该动作将会给出提示要投掷的物品；按下‘？’将会列出在你物品清单中被认为可以投掷的物品，或者按下‘*’来显示你整个物品清单。在你选择好想要投掷的物品后，你将会被提示选择一个方向而不是一个目标。物品能够被人出去的距离主要取决于物品的种类和你的力量。箭可以直接用手投掷，但是通过手持一把弓来射出能够让它射的更远也更有可能集中目标。
 .pg
-你可以通过“Q”命令选择你想要抛出的投掷物，然后使用“f”命令投掷它来简化投掷操作。你会像上面一样被提示选择一个方向，但是在使用“f”时候你无需指定一个物品来抛出。
+你可以通过‘Q’命令选择你想要抛出的投掷物，然后使用‘f’命令投掷它来简化投掷操作。你会像上面一样被提示选择一个方向，但是在使用‘f’时候你无需指定一个物品来抛出。
 这里也同样有一个选项，
 .op autoquiver,
-（自动装填），该选项会让NetHack游戏在你使用“Q”然后抛出物品后自动的装填你的箭袋。
+（自动装填），该选项会让NetHack游戏在你使用‘Q’然后抛出物品后自动的装填你的箭袋。
 .pg
 某些角色拥有能够一回合同时发射很多物品的能力。
 了解如何一次性装填一些火药——或者拿住一堆的火药在手里——并且依然能够目标并不是一件容易的事情。
 游侠则对于这些非常擅长，同样对于相关的武器熟练度有着高的技能等级（如果你手持弓去射箭那么你会用到弓的技巧，如果你手持十字弩去射出弩箭那么你会用到十字弩的技巧，或者如果你在使用投石器投射石块那么你会用到投石器的使用技巧）。
-角色有机会发射的物品的数量取决于不同的回合。你可以通过使用一个数字作为“t”或者“f”命令的前缀来显示地限制投射的数量。例如，“2f”（如果使用了
+角色有机会发射的物品的数量取决于不同的回合。你可以通过使用一个数字作为‘t’或者‘f’命令的前缀来显示地限制投射的数量。例如，“2f”（如果使用了
 .op number_pad
 模式则是“n2f”）将会确保你只会最多射出2只箭即使你能够发射3只。
 如果你的指定了一个更大的数字来射击（例如“4f”），你将只会最终射出和未限制时射出的数量（这里就是3只）。如果第一个已经发射，所有发射物都会朝同一方向发射；如果第一只箭射死了怪物，那么其他剩余的箭将会继续飞出超过那个目标点。
@@ -1382,7 +1382,7 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 .pg
 为了熟练度，武器被分为了不同的分组例如匕首（dagger），阔剑（broadsword），以及长柄武器（polearm）。每个角色对于每个武器组能达到的熟练度都有限制。例如，巫师在匕首或者魔杖方面的熟练度能够达到很高的技能等级但是在剑或者弓方面却达不到很高。
 .pg
-“#enhance”（增强）扩展命令用来查看当前武器熟练度以及去选择一项或多项当你使用的足够多后能够进行提升的技能。技能等级有“无”（none）（有时候也叫做“受限”（restricted），因为你无法进行提升），“无技能”（unskilled），基本”（basic），“熟练”（skilled），和“专家”（expert）。受限的技能不会显示在通过“#enhance”打开的菜单。
+“#enhance”（增强）扩展命令用来查看当前武器熟练度以及去选择一项或多项当你使用的足够多后能够进行提升的技能。技能等级有‘无’（none）（有时候也叫做“受限”（restricted），因为你无法进行提升），“无技能”（unskilled），基本”（basic），“熟练”（skilled），和“专家”（expert）。受限的技能不会显示在通过“#enhance”打开的菜单。
 （在神的干预下某些特殊的技能能够取消受限，在这种情况下该技能起始于无技能但上限于基本。）某些角色能够增强他们的无武器战斗或者武艺技能突破专家级达到“master（大师）”或者“grand master（宗师）”。
 .pg
 使用一些你受限的或者无技能的武器将会导致一定的惩罚，该惩罚主要影响击中怪物的几率和集中怪物的伤害；在“基本”等级下，不会有惩罚和加成；在“熟练”等级下，你将在命中率和攻击伤害中得到少许的提升；在“专家”等级会得到更多的提升。一次成功的命中将有机会促进你的技能等级进入下一等级（除非该技能已经达到了上限）。一旦这样的训练让技能达到进入下一等级，你将会被告诉你对于你的技能更加有信心。在那个时刻你可以使用“#enhance”来提升你的一个或多个技能。技能不会自动地提升因为对于你所有的技能会有一个总共的上限，因此你需要主动的选择提升某些技能以及忽略另外的技能。
@@ -1392,17 +1392,17 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 某些角色能够一次使用两把武器。这样做似乎很麻烦但是一旦使用起来就会成为你的第二天性。为了手持两把，你需要使用“#twoweapon”命令。但是首先你需要在双手都持有武器。
 （需要注意你的两把武器并不一样；在你常用的手中持有的一把被认为是主武器而另一把则认为是副武器。最值得注意的不同点是当你停下来时——或者在你开始之前——会立刻进行武器双持。主武器是你手持的武器，副武器仅仅是一件在你物品清单的被指定的替代武器。
 .pg
-如果你手持了主武器但是你的副手是空的或者拿的是错误的武器，使用“x”，“w”，“x”的按键顺序来首先交换你的主武器到你的副手上，手持一个你想使用的武器作为副武器，然后交换他们到期望的手上。
-如果你的副武器或者替代位置的武器是正确的但是你的主武器不是，只需要简单地使用“w”来手持主武器。最后，如果两只手都不是正确的武器，使用“w”，“x”，“w”来首先手持一个武器作为副武器，然后交换它到副手，最后手持一把武器作为主武器。
+如果你手持了主武器但是你的副手是空的或者拿的是错误的武器，使用‘x’，‘w’，‘x’的按键顺序来首先交换你的主武器到你的副手上，手持一个你想使用的武器作为副武器，然后交换他们到期望的手上。
+如果你的副武器或者替代位置的武器是正确的但是你的主武器不是，只需要简单地使用‘w’来手持主武器。最后，如果两只手都不是正确的武器，使用‘w’，‘x’，‘w’来首先手持一个武器作为副武器，然后交换它到副手，最后手持一把武器作为主武器。
 .pg
 上述整个过程可以通过使用
 .op pushweapon
 option.
-选项来简化。当它启用时，使用“w”来手持武器可以让当前手持的武器变为你的副武器。因此序列“w”，“w”能够用首先手持你打算作为次要的武器，然后使用你想要作为主武器的武器，这将会让第一个武器推到次要位置。
+选项来简化。当它启用时，使用‘w’来手持武器可以让当前手持的武器变为你的副武器。因此序列‘w’，‘w’能够用首先手持你打算作为次要的武器，然后使用你想要作为主武器的武器，这将会让第一个武器推到次要位置。
 .pg
-当处于双武器战斗（two-weapon）模式的时候，使用“X”命令切换回单武器（single-weapon）模式。扔出或者丢掉任意一把武器或者其中一把武器被偷走或者毁掉都将使你切回单武器模式。
+当处于双武器战斗（two-weapon）模式的时候，使用‘X’命令切换回单武器（single-weapon）模式。扔出或者丢掉任意一把武器或者其中一把武器被偷走或者毁掉都将使你切回单武器模式。
 .hn 2
-护甲（Armor（“[”））
+护甲（Armor（‘[’））
 .pg
 有很多不友善的生物潜伏着；你需要护甲来保护你自己免受它们的攻击。有些类型的护甲比起其他的更加具有保护作用。你的护甲等级用于计量这种保护能力。护甲等级（AC）和专家级龙与地下城（AD&D）一样用于计量防御力，值为10等同于没有护甲，越低的数值意味着越强的护甲。每一件存在于AD&D中的护甲都在NetHack中有，并且有同样的防御力。这里是一份（不完整）列表显示不同护甲套装以及它们提供的护甲等级：
 .
@@ -1431,13 +1431,13 @@ a n.
 .pg
 你也可以穿其他的护甲套件（例如头盔，靴子，盾，斗篷）来降低你的护甲等级，但是对于每一类你一次只能穿一件（一套护甲：一件斗篷，一个头盔，一个盾牌，等等）。
 .pg
-如果一件护甲被附魔，那么这个护甲的防御力比起普通的护甲更加强（或弱），同时它们的“加”（或“减”）的值会从你的护甲等级中减去。例如，一件+1的锁子甲比起一般的锁子甲会提供更强的防御力，是你的AC进一步减少一个单位达到4。当你穿上一件护甲的时候，你会立刻了解你的护甲等级和护甲提供的加成。被诅咒的护甲通常带有负的减少值并且通常无法移除。
+如果一件护甲被附魔，那么这个护甲的防御力比起普通的护甲更加强（或弱），同时它们的‘加’（或‘减’）的值会从你的护甲等级中减去。例如，一件+1的锁子甲比起一般的锁子甲会提供更强的防御力，是你的AC进一步减少一个单位达到4。当你穿上一件护甲的时候，你会立刻了解你的护甲等级和护甲提供的加成。被诅咒的护甲通常带有负的减少值并且通常无法移除。
 .pg
 许多类型的护甲都会受限于某种损坏比如生锈。这样的损坏可以被修复。某些类型的护甲会限制咒语的施放。
 .pg
-使用护甲的命令有“W”（穿上）和“T”（脱下）。“A”命令也可以用于像其他穿着的物品一样对护甲进行脱下。
+使用护甲的命令有‘W’（穿上）和‘T’（脱下）。‘A’命令也可以用于像其他穿着的物品一样对护甲进行脱下。
 .hn 2
-食物（“%”）
+食物（‘%’）
 .pg
 食物对于生存来说是十分重要的。
 如果你长时间行动而没有进食你将会变得头晕目眩，最终因为饥饿而死亡。
@@ -1453,9 +1453,9 @@ a n.
 .op fruit
 选项来命名。
 .pg
-进食的命令是“e”。
+进食的命令是‘e’。
 .hn 2
-卷轴（“?”）
+卷轴（‘?’）
 .pg
 卷轴上标有各种标题，这些标题很可能是古代巫师们为了好玩而选的（例如“READ ME”，或者反过来的“THANX MAUD”）。卷轴将会在你阅读完后消失（除非是一个没有魔法在上面的空白卷轴）。
 .pg
@@ -1467,19 +1467,19 @@ a n.
 .op mail
 选项来禁用邮件精灵。
 .pg
-阅读卷轴的命令是“r”。
+阅读卷轴的命令是‘r’。
 .hn 2
-药水（“!”）
+药水（‘!’）
 .pg
 药水通过在药水瓶中的液体颜色来进行区分。在你喝掉它们后，它们就会消失。
 .pg
 透明的药水（clear potion）就是水（potions of water）。有时候药水会被祝福或者被诅咒，这样的药水会成为圣水（holy water）或者邪水（unholy water）。圣水是不死族（undead）的灾难，因此圣水是扔向不死族的不错的投掷物。有时候将一个物品浸入（“#dip”）药水中也是有用的。
 .pg
-喝药水的命令是“q”。
+喝药水的命令是‘q’。
 .hn 2
-魔杖（Wands（“/”））
+魔杖（Wands（‘/’））
 .pg
-魔杖通常有许多次魔法能量。某些类型的魔杖需要提供一个攻击方向来挥舞它。你也可以朝着你自己挥舞魔杖（只需要提供“.”或者是“s”作为方向）。需要注意的是这样做是不明智的。还有一些其他类型的魔杖不需要提供方向来使用。一根魔杖的能量值是随机的并且随着你使用它，它的能量值会慢慢减少。
+魔杖通常有许多次魔法能量。某些类型的魔杖需要提供一个攻击方向来挥舞它。你也可以朝着你自己挥舞魔杖（只需要提供‘.’或者是‘s’作为方向）。需要注意的是这样做是不明智的。还有一些其他类型的魔杖不需要提供方向来使用。一根魔杖的能量值是随机的并且随着你使用它，它的能量值会慢慢减少。
 .pg
 当魔杖里的能量值为零的时候，尝试使用该魔杖通常不会产生任何的效果。有时，或许可以使用这个魔杖时挤出这个魔杖中仅剩的最后一点魔力值，然后这个魔杖就会被毁坏。一根魔杖或许可以通过使用一个适当的魔法来重新充能，但是这样做可能会有爆炸的风险。爆炸的风险几率一开始会很低，但是随着每一次的重新充能几率会逐渐增加。
 .pg
@@ -1487,9 +1487,9 @@ a n.
 .pg
 当你完全鉴定了一个魔杖的时候，你的物品清单中该魔杖的显示将会在一个括号中包括额外的信息：该魔杖被充能的次数，随后是一个冒号，最后是当前的能量。当前能量值为-1是一个特殊的情况，它表明该魔杖已经被取消了。
 .pg
-使用一根魔杖的命令是“z”。想要折断一根魔杖，可以使用命令“z”。
+使用一根魔杖的命令是‘z’。想要折断一根魔杖，可以使用命令‘z’。
 .hn 2
-戒指（Rings（“=”））
+戒指（Rings（‘=’））
 .pg
 戒指是一个非常有用的物品，因为它们相对拥有永久的魔力，不像药水，卷轴或者魔杖等只拥有短暂的效果。
 wands.
@@ -1498,12 +1498,12 @@ wands.
 .pg
 大多数的戒指也会加快你变饥饿的速度。不同类型的戒指有不同的速率。
 .pg
-使用戒指的命令是“P”（戴上）和“R”（移除）。
+使用戒指的命令是‘P’（戴上）和‘R’（移除）。
 .hn 2
-魔法书（“+”）
+魔法书（‘+’）
 .pg
 魔法书是一本厚重的有魔法的书。
-当使用命令“r”来学习的时候，它们会给读者传输咒语知识（然后最终变为不可读状态）——除非这一操作没有成功。阅读一本被诅咒的魔法书或者一本有着超出你阅读能力的神秘铭文的魔法书将会对你的健康有害！
+当使用命令‘r’来学习的时候，它们会给读者传输咒语知识（然后最终变为不可读状态）——除非这一操作没有成功。阅读一本被诅咒的魔法书或者一本有着超出你阅读能力的神秘铭文的魔法书将会对你的健康有害！
 .pg
 施放法术时，即使你已经学会了也可能适得其反。
 如果你尝试施放一个在你经验等级之上的咒语，或者如果你相应类型的咒语只有少量的技巧，又或者当你施放一个咒语的时候你的幸运值相当的差，你可能会浪费掉施放时需要的能量和时间。
@@ -1512,7 +1512,7 @@ wands.
 某些魔法能量的施放来源于你的内在。施放咒语会暂时用掉你的魔法值（你的魔法值会慢慢回答），让你需要额外的食物。施放咒语也需要练习。
 通过不断地练习，你的每一类施放咒语的技巧将会提升。随着时间的流逝，你的关于每一个咒语的记忆会变得模糊，因此你需要重新学习它们。
 .pg
-某些咒语需要你提供一个方向以便施放它们，和使用魔杖类似。想要朝你自己施放，只需要在方向上使用“.”或者“s”。
+某些咒语需要你提供一个方向以便施放它们，和使用魔杖类似。想要朝你自己施放，只需要在方向上使用‘.’或者‘s’。
 少部分的咒语需要你选取一个目标点而不仅仅是指定一个方向。
 还有一些咒语则既不需要方向也不需要目标。
 .pg
@@ -1520,45 +1520,45 @@ wands.
 .pg
 施放咒语也需要灵活的移动，穿着各种各样的护甲将会影响到移动。
 .pg
-阅读魔法书的命令和阅读卷轴的一样，“r”。“+”命令会列出每一个你已知的咒语和它的等级，技能分类，施放时的失败率，以及对它的记忆程度。使用“Z”命令来施放咒语。
+阅读魔法书的命令和阅读卷轴的一样，‘r’。‘+’命令会列出每一个你已知的咒语和它的等级，技能分类，施放时的失败率，以及对它的记忆程度。使用‘Z’命令来施放咒语。
 .hn 2
-工具（“（”）
+工具（‘（’）
 .pg
 工具就是有着各种各样功能目标的的东西。某些工具类似于魔杖能量有着使用的次数。例如，灯燃烧一会儿就会灭掉。另外还有一类工具是容器，可以用来装东西或者从里面拿取东西。
 .pg
-使用工具的命令是“a”。
+使用工具的命令是‘a’。
 .hn 3
 容器
 .pg
-你或许会在旅程中遇到包（bag），盒子（box），以及箱子（chest）。像是这一系列的工具你可以站在它们上面（在同一个位置点）使用扩展命令“#loot”来打开，或者当你携带它们的时候使用“a”命令来打开。
-然而，宝箱通常被锁着的，且它无论如何都是笨重的不可手持的物品。你必须首先将它放在地上，然后使用钥匙或者是开锁工具结合命令“a”来打开，或者使用“^D”命令来踢开它，或者使用武器结合“#force”命令来强行打开它。
+你或许会在旅程中遇到包（bag），盒子（box），以及箱子（chest）。像是这一系列的工具你可以站在它们上面（在同一个位置点）使用扩展命令“#loot”来打开，或者当你携带它们的时候使用‘a’命令来打开。
+然而，宝箱通常被锁着的，且它无论如何都是笨重的不可手持的物品。你必须首先将它放在地上，然后使用钥匙或者是开锁工具结合命令‘a’来打开，或者使用“^D”命令来踢开它，或者使用武器结合“#force”命令来强行打开它。
 .pg
 某些箱子其实是陷阱，在你打开它们的时候会造成不好的事情发生。
 你可以检查并试着用“#untrap”扩展命令解除它们。
 .hn 2
-护身符（“"”）
+护身符（‘"’）
 .pg
 护符和戒指（ring）非常类似，且经常更加强大。和戒指一样，护符有着各种各样的魔法属性，有些戒指有增益效果，有些戒指则有减益效果。当戴上它们的时候，它们的属性效果就会立刻激活。
 .pg
 你的脖子上只能戴一个护符。
 .pg
-使用护符的命令和使用戒指一样，“P”（戴上）和“R”（移除）。
+使用护符的命令和使用戒指一样，‘P’（戴上）和‘R’（移除）。
 .hn 2
-宝石（“*”）
+宝石（‘*’）
 .pg
 某些宝石是有价值的，能够买很多的金子。它们也是你携带大量财富的有效（efficient）方式。当你在携带有价值的宝石结束游戏的时候，会增加你的分数。
 .pg
 还有一些其他的小石头也宝石一样进行分类，但是它们就没有那么有价值了。然而，所有的石头都能够被作为投掷武器（当你有投石器的时候）。在一些紧急的情况下，你可以用手来投掷它们。
 .hn 2
-巨石（“`”）
+巨石（‘`’）
 .pg
 雕像和巨石不是特别有用，并且通常很重。有传言一些雕像并非它们看上去的那样。
 .pg
 非常巨大的类人生物（巨人和他们的亲属）使用巨石作为武器。
 .pg
-对于一些这个程序的配置，雕像不是用”“ ” “”显示而是显示某些怪物的符号。
+对于一些这个程序的配置，雕像不是用”‘ ’ “”显示而是显示某些怪物的符号。
 .hn 2
-金币（“$”）
+金币（‘$’）
 .pg
 金币会添加到你的分数中，同时你可以在商店里面用它们来买东西。在地牢里面有许多的怪物都受到你携带的金币数的影响（商店主除外）。
 .
@@ -1583,13 +1583,13 @@ wands.
 .pg
 有一系列的挑战是和进食行为相关的。其中最难的挑战就是无食物挑战。尽管生物能够在在不进食的情况下存活相当长的一段时间，但是仍然在生理上有对水的需要；因此对于引用是没有限制的，即使水能够提供很少量的食物方面给的好处。在你饥饿的时候召唤你的神来获得帮助同样不会违反任何的挑战。
 .pg
-一个严格的素食主义者（vegan）总是会避免食用任何由动物产生的食物。主要的营养来源于水果和蔬菜。液滴（blob，“b”）、凝胶（jellies，“j”）和真菌（funji，“F”）的尸体和罐头同样算作素食。
+一个严格的素食主义者（vegan）总是会避免食用任何由动物产生的食物。主要的营养来源于水果和蔬菜。液滴（blob，‘b’）、凝胶（jellies，‘j’）和真菌（funji，‘F’）的尸体和罐头同样算作素食。
 某些人类食物是未使用动物产品而制成的；即兰巴斯片（lembas wafers）、压缩口粮（cram ration）、口粮/兵粮丸（food ration/gunyoki）、K-口粮（K-ration）和C-口粮（C-ration）。
 金属或者其他通常不能吃的材料在使用变形药水变为一种可以消化它的生物的时候仍然是为素食。
 不过需要注意的是，吃这类的东西仍被视为违反无食物（foodless）挑战。
 .pg
 素食主义者（vegetarian）不会吃动物；
-然而，他们对于动物的副产品的选择比起素食更少。除上面列出的素食之外，他们可能会吃除了黑色布丁团（black pudding）之外的其他布丁团（“P”），蛋（egg）和用蛋制成的食物（幸运饼干（fortune cookie）和煎饼（pancake）），用牛奶制作的食物（奶油派（cream pie）和糖果（candy bar）），皇家果冻（royal jelly）。武僧和素食者的饮食习惯一样。
+然而，他们对于动物的副产品的选择比起素食更少。除上面列出的素食之外，他们可能会吃除了黑色布丁团（black pudding）之外的其他布丁团（‘P’），蛋（egg）和用蛋制成的食物（幸运饼干（fortune cookie）和煎饼（pancake）），用牛奶制作的食物（奶油派（cream pie）和糖果（candy bar）），皇家果冻（royal jelly）。武僧和素食者的饮食习惯一样。
 .pg
 吃任何的肉类将会违反素食主义（vegetarian），严格素食主义（vegan）以及无食物（foodless）挑战。这些肉类包括牛肚（tripe ration），任何怪物的尸体或者做成的罐头等上面没有提到的在地牢的东西。当处于变身的时候吞下然后消化一个怪物会算作是你吃掉了生物的尸体。当变身为一个可以消化皮革，龙皮，或者骨头时的怪物吃掉它们，或变身为夺心魔（mind flayer）时吃掉一个怪物的大脑，都被算作吃掉一个动物，尽管蜡油被认为是动物的副产品。
 .pg
@@ -1605,7 +1605,7 @@ wands.
 .pg
 在NetHack中，和平主义者（pacifist）拒绝造成任何其他怪物的死亡（换言之，你会从该死亡中获取经验）。这是一个相当困难的挑战，尽管你依然有可能从其他的方式中获取经验。
 .pg
-文盲（illiterate）角色无法阅读或者书写。这包括了阅读卷轴，魔法书，幸运饼干的消息和T恤（t-short）；写卷轴；或者标记一个除了一个简单的“X”（文盲角色进行标记的传统符号）以外的铭文。阅读一个铭文，或者一个对于这个游戏至关重要的东西，不算在违反这一行为。卷轴的标识和魔法书的标识（和咒语知识）在你初始的物品清单中被假定为是在游戏开始前从你老师那里学习而来的。
+文盲（illiterate）角色无法阅读或者书写。这包括了阅读卷轴，魔法书，幸运饼干的消息和T恤（t-short）；写卷轴；或者标记一个除了一个简单的‘X’（文盲角色进行标记的传统符号）以外的铭文。阅读一个铭文，或者一个对于这个游戏至关重要的东西，不算在违反这一行为。卷轴的标识和魔法书的标识（和咒语知识）在你初始的物品清单中被假定为是在游戏开始前从你老师那里学习而来的。
 .pg
 这里还有一些其他的挑战被游戏所追踪。有可能通过灭绝（genocide）的方式来消除一个或多个怪物；不使用这样的特性（genocideless）来游玩游戏被视为一项挑战。
 当游戏给你提供一个机会来灭绝怪物的时候，如果你想要拒绝，你可以使用“none”。
@@ -1642,9 +1642,9 @@ Linux,
 .pg
 在MS-DOS上，它是“defaults.nh”并位于nethack.exe同目录下。
 .pg
-在配置文件中所有以“#”开头的行将被视为注释。空行将会被忽略。
+在配置文件中所有以‘#’开头的行将被视为注释。空行将会被忽略。
 .pg
-任何以“[”开头，“]”结尾的行将被视为一个章节标识。
+任何以‘[’开头，‘]’结尾的行将被视为一个章节标识。
 处于方括号之间的文本是这节的名称。在这节之后的所有行都被认为是属于这一节的。除非是一个CHOOSE声明用于选择某个章节（其他的会被忽略）。章节名称大小写敏感。
 .pg
 你可以使用不同的配置声明在配置文件中，其中某些声明可以多次使用。
@@ -1654,7 +1654,7 @@ Linux,
 .lp OPTIONS
 options的类型有两种，布尔类型和多值类型。
 布尔选项会让设置开启或关闭，而多值类型选项则有多个选项值。
-对于布尔选项，在其前缀加上“no”或者“!”来关闭它。对于混合值选项，选项名称和选项值用冒号来分割。某些选项是持久的，只会在新游戏一开始就应用。
+对于布尔选项，在其前缀加上“no”或者‘!’来关闭它。对于混合值选项，选项名称和选项值用冒号来分割。某些选项是持久的，只会在新游戏一开始就应用。
 你可以指定多个OPTIONS声明，多个选项可以在一个OPTIONS中用逗号来分隔。
 （逗号分隔的选项将会从右到左来处理）
 .lp ""
@@ -1694,7 +1694,7 @@ Enable or disable an extended command autocompletion.
 Autocompletion has no effect for the X11 windowport.
 You can specify multiple autocompletions.
 To enable autocompletion, list the extended command.
-Prefix the command with “!” to disable the autocompletion
+Prefix the command with ‘!’ to disable the autocompletion
 for that command.
 .lp ""
 Example:
@@ -1832,7 +1832,7 @@ you would enter the command
 .SD \*(sD
 \f(CR% setenv NETHACKOPTIONS "color,\\!leg,name:Blue Meanie,fruit:lime"\fP
 .ED
-in \fIcsh\fP (note the need to escape the “!” since it's special
+in \fIcsh\fP (note the need to escape the ‘!’ since it's special
 to that shell), or the pair of commands
 .SD \*(sD
 \f(CR$ NETHACKOPTIONS="color,!leg,name:Blue Meanie,fruit:lime"\fP
@@ -1871,9 +1871,9 @@ Note that this has nothing to do with your computer's audio capabilities.
 Your starting alignment (align:lawful, align:neutral, or align:chaotic).
 You may specify just the first letter.
 The default is to randomly pick an appropriate alignment.
-If you prefix the value with “!” or “no”, you will
+If you prefix the value with ‘!’ or “no”, you will
 exclude that alignment from being picked randomly.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 永久生效。
 .lp autodescribe
 Automatically describe the terrain under cursor when asked to get a location
@@ -1892,7 +1892,7 @@ See
 .op pickup_types
 to refine the behavior.
 .lp "autoquiver  "
-This option controls what happens when you attempt the “f” (fire)
+This option controls what happens when you attempt the ‘f’ (fire)
 command when nothing is quivered or readied (default false).
 When true, the computer will fill
 your quiver or quiver sack or make ready some suitable weapon.
@@ -1900,9 +1900,9 @@ Note that it will not take
 into account the blessed/cursed status, enchantment, damage, or
 quality of the weapon; you are free to manually fill your quiver
 or quiver sack or make ready
-with the “Q” command instead.
+with the ‘Q’ command instead.
 If no weapon is found or the option is
-false, the “t” (throw) command is executed instead.
+false, the ‘t’ (throw) command is executed instead.
 永久生效。
 .lp blind
 Start the character permanently blind (default false).
@@ -1915,7 +1915,7 @@ Set the character used to display boulders (default is the “large rock”
 class symbol, “\`”).
 .lp catname
 Name your starting cat (for example “catname:Morris”).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp character
 Synonym for “role” to pick the type of your character
 (for example “character:Monk”).
@@ -1971,7 +1971,7 @@ lets you refine how it behaves.  Here are the valid prefixes:
 .ei
 .ed
 The listing of vanquished monsters can be sorted,
-so there are two additional choices for “v”:
+so there are two additional choices for ‘v’:
 .sd
 .si
 .CC ? "prompt you and default to ask on the prompt;"
@@ -1979,13 +1979,13 @@ so there are two additional choices for “v”:
 .ei
 .ed
 Asking refers to picking one of the orderings from a menu.
-The “+” disclose without prompting choice,
-or being prompted and answering “y” rather than “a”,
+The ‘+’ disclose without prompting choice,
+or being prompted and answering ‘y’ rather than ‘a’,
 will default to showing monsters in the traditional order,
 from high level to low level.
 .lp ""
-Omitted categories are implicitly added with “n” prefix.
-Specified categories with omitted prefix implicitly use “+” prefix.
+Omitted categories are implicitly added with ‘n’ prefix.
+Specified categories with omitted prefix implicitly use ‘+’ prefix.
 Order of the disclosure categories does not matter, program display for
 end-of-game disclosure follows a set sequence.
 .lp ""
@@ -2004,7 +2004,7 @@ And the dungeon overview shows all levels you had visited but does not
 reveal things about them that you hadn't discovered.
 .lp dogname
 Name your starting dog (for example “dogname:Fang”).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp extmenu
 Changes the extended commands interface to pop-up a menu of available
 commands.
@@ -2018,7 +2018,7 @@ or just the subset of commands which have traditionally been considered
 extended ones (off).
 .lp female
 An obsolete synonym for “gender:female”.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp fixinv
 An object's inventory letter sticks to it when it's dropped (default on).
 If this is off, dropping an object shifts all the remaining inventory letters.
@@ -2040,9 +2040,9 @@ Although you can
 still denote your gender using the “male” and “female”
 options, the “gender” option will take precedence.
 The default is to randomly pick an appropriate gender.
-If you prefix the value with “!” or “no”, you will
+If you prefix the value with ‘!’ or “no”, you will
 exclude that gender from being picked randomly.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 永久生效。
 .lp "goldX   "
 When filtering objects based on bless/curse state (BUCX), whether to
@@ -2054,7 +2054,7 @@ even when the
 option is “off”.
 .lp "help    "
 If more information is available for an object looked at
-with the “/” command, ask if you want to see it (default on).
+with the ‘/’ command, ask if you want to see it (default on).
 Turning help off makes just looking at things faster, since you aren't
 interrupted with the “More info?” prompt, but it also means that
 you might miss some interesting and/or important information.
@@ -2085,7 +2085,7 @@ Show a hit point bar graph behind your name and title.
 Only available for TTY and Windows GUI, and only when statushilites is on.
 .lp horsename
 Name your starting horse (for example “horsename:Trigger”).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp ignintr
 Ignore interrupt signals, including breaks (default off).  永久生效。
 .lp implicit_uncursed
@@ -2098,15 +2098,15 @@ Show corridor squares seen by night vision or a light source held by your
 character as lit (default off).  永久生效。
 .lp lootabc
 When using a menu to interact with a container,
-use the old “a”, “b”, and “c” keyboard shortcuts
-rather than the mnemonics “o”, “i”, and “b”
+use the old ‘a’, ‘b’, and ‘c’ keyboard shortcuts
+rather than the mnemonics ‘o’, ‘i’, and ‘b’
 (default off).
 永久生效。
 .lp "mail    "
 Enable mail delivery during the game (default on).  永久生效。
 .lp "male    "
 An obsolete synonym for “gender:male”.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp mention_walls
 Give feedback when walking against a wall (default off).
 .lp menucolors
@@ -2141,7 +2141,7 @@ Default “\\”。
 .lp menu_first_page
 Menu character accelerator to jump to the first page in a menu.
 Implemented by the Amiga, Gem and tty ports.
-Default “^”。
+Default ‘^’。
 .lp menu_headings
 Controls how the headings in a menu are highlighted.
 Values are “none”, “bold”, “dim”, “underline”,
@@ -2150,7 +2150,7 @@ Not all ports can actually display all types.
 .lp menu_invert_all
 Menu character accelerator to invert all items in a menu.
 Implemented by the Amiga, Gem, X11 and tty ports.
-Default “@”。
+Default ‘@’。
 .lp menu_invert_page
 Menu character accelerator to invert all items on this page of a menu.
 Implemented by the Amiga, Gem and tty ports.
@@ -2158,11 +2158,11 @@ Default “\(ti”。 \" ~
 .lp menu_last_page
 Menu character accelerator to jump to the last page in a menu.
 Implemented by the Amiga, Gem and tty ports.
-Default “|”。
+Default ‘|’。
 .lp menu_next_page
 Menu character accelerator to goto the next menu page.
 Implemented by the Amiga, Gem and tty ports.
-Default “>”。
+Default ‘>’。
 .lp menu_objsyms
 Show object symbols in menu headings in menus where
 the object symbols act as menu accelerators (default off).
@@ -2173,19 +2173,19 @@ menus to the right edge of the screen. Only for the tty port.
 .lp menu_previous_page
 Menu character accelerator to goto the previous menu page.
 Implemented by the Amiga, Gem and tty ports.
-Default “<”。
+Default ‘<’。
 .lp menu_search
 Menu character accelerator to search for a menu item.
 Implemented by the Amiga, Gem, X11 and tty ports.
-Default “:”。
+Default ‘:’。
 .lp menu_select_all
 Menu character accelerator to select all items in a menu.
 Implemented by the Amiga, Gem, X11 and tty ports.
-Default “.”。
+Default ‘.’。
 .lp menu_select_page
 Menu character accelerator to select all items on this page of a menu.
 Implemented by the Amiga, Gem and tty ports.
-Default “,”。
+Default ‘,’。
 ." .lp menu_tab_sep
 ." Format menu entries using TAB to separate columns (default off).
 ." Only applicable to some menus, and only useful to some interfaces.
@@ -2210,7 +2210,7 @@ is the same as specifying 0.
 .lp msghistory
 The number of top line messages to keep (and be able to recall
 with “^P”) (default 20).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp msg_window
 Allows you to change the way recalled messages are displayed.
 Currently it is only supported for tty (all four choices) and for curses
@@ -2234,11 +2234,11 @@ the role (that is, by suffixing one of
 If
 .op "\-@"
 is used for the role, then a random one will be automatically chosen.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp "news    "
 Read the NetHack news file, if present (default on).
 Since the news is shown at the beginning of the game, there's no point
-in setting this with the “O” command.
+in setting this with the ‘O’ command.
 .lp nudist
 Start the character with no armor (default false).  永久生效。
 .lp "null    "
@@ -2250,28 +2250,28 @@ Valid settings are:
 .PL "\ 0"
 move by letters; “\f(CRyuhjklbn\fP” \" \f(CR = constant-width Roman font
 .PL "\ 1"
-move by numbers; digit “5” acts as “G” movement prefix
+move by numbers; digit ‘5’ acts as ‘G’ movement prefix
 .PL "\ 2"
-like 1 but “5” works as “g” prefix instead of as “G”
+like 1 but ‘5’ works as ‘g’ prefix instead of as ‘G’
 .PL "\ 3"
 by numbers using phone key layout; 123 above, 789 below
 .PL "\ 4"
 combines 3 with 2; phone layout plus MS-DOS compatibility
 .PL "-1"
-by letters but use “z” to go northwest, “y” to zap wands
+by letters but use ‘z’ to go northwest, ‘y’ to zap wands
 .PE
 For backward compatibility, omitting a value is the same as specifying 1
 and negating
 .op number_pad
 is the same as specifying 0.
 (Settings 2 and 4 are for compatibility with MS-DOS or old PC Hack;
-in addition to the different behavior for “5”, “Alt-5” acts
-as “G” and “Alt-0” acts as “I”。
+in addition to the different behavior for ‘5’, “Alt-5” acts
+as ‘G’ and “Alt-0” acts as ‘I’。
 Setting -1 is to accommodate some QWERTZ keyboards which have the
-location of the “y” and “z” keys swapped.)
+location of the ‘y’ and ‘z’ keys swapped.)
 When moving by numbers, to enter a count prefix for those commands
 which accept one (such as “12s” to search twelve times), precede it
-with the letter “n” (“n12s”).
+with the letter ‘n’ (“n12s”).
 .lp packorder
 .\" \(dq == double quote; literal '"' formats ok but confuses Emacs' nroff-mode
 Specify the order to list object types in (default “\(dq)[%?+!=/(*\`0_”).
@@ -2283,32 +2283,32 @@ A space separated list of specific situations where alternate
 prompting is desired.  The default is paranoid_confirmation:pray.
 .PS Were-change
 .PL Confirm
-for any prompts which are set to require “yes” rather than “y”,
+for any prompts which are set to require “yes” rather than ‘y’,
 also require “no” to reject instead of accepting any non-yes response
 as no
 .PL quit
-require “yes” rather than “y” to confirm quitting
+require “yes” rather than ‘y’ to confirm quitting
 the game or switching into non-scoring explore mode;
 .PL die
-require “yes” rather than “y” to confirm dying (not
+require “yes” rather than ‘y’ to confirm dying (not
 useful in normal play; applies to explore mode);
 .PL bones
-require “yes” rather than “y” to confirm saving
+require “yes” rather than ‘y’ to confirm saving
 bones data when dying in debug mode;
 .PL attack
-require “yes” rather than “y” to confirm attacking a peaceful monster;
+require “yes” rather than ‘y’ to confirm attacking a peaceful monster;
 .PL wand-break
-require “yes” rather than “y” to confirm breaking a wand;
+require “yes” rather than ‘y’ to confirm breaking a wand;
 .PL eating
-require “yes” rather than “y” to confirm whether to continue eating;
+require “yes” rather than ‘y’ to confirm whether to continue eating;
 .PL Were-change
-require “yes” rather than “y” to confirm changing form due to lycanthropy
+require “yes” rather than ‘y’ to confirm changing form due to lycanthropy
 when hero has polymorph control;
 .PL pray
-require “y” to confirm an attempt to pray rather
+require ‘y’ to confirm an attempt to pray rather
 than immediately praying; on by default;
 .PL Remove
-require selection from inventory for “R” and “T”
+require selection from inventory for ‘R’ and ‘T’
 commands even when wearing just one applicable item.
 .PL all
 turn on all of the above.
@@ -2350,7 +2350,7 @@ Currently multiple highlight-style letters can be combined by simply
 stringing them together (for example, “bk”), but in the future
 they might require being separated by plus signs (such as “b+k”,
 which works already).
-When using the “n” choice, it should be specified on its own,
+When using the ‘n’ choice, it should be specified on its own,
 not in combination with any of the other letters.
 .lp pettype
 Specify the type of your initial pet, if you are playing a character class
@@ -2359,12 +2359,12 @@ Possible values are “cat”, “dog”, “horse”, and “none”.
 If the choice is not allowed for the role you are currently playing,
 it will be silently ignored.
 For example, “horse” will only be honored when playing a knight.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp pickup_burden
 When you pick up an item that would exceed this encumbrance
 level (Unencumbered, Burdened, streSsed, straiNed, overTaxed,
 or overLoaded), you will be asked if you want to continue.
-(Default “S”).
+(Default ‘S’).
 永久生效。
 .lp pickup_thrown
 If this option is on and
@@ -2399,30 +2399,30 @@ name (on single-user systems) or it might be disabled entirely.  Requesting
 it when not allowed or not possible results in explore mode instead.
 Default is normal play.
 .lp pushweapon
-Using the “w” (wield) command when already wielding
+Using the ‘w’ (wield) command when already wielding
 something pushes the old item into your alternate weapon slot (default off).
-Likewise for the “a” (apply) command if it causes the applied item to
+Likewise for the ‘a’ (apply) command if it causes the applied item to
 become wielded.
 永久生效。
 .lp "race    "
 Selects your race (for example, “race:human”).
 Default is random.
-If you prefix the value with “!” or “no”, you will
+If you prefix the value with ‘!’ or “no”, you will
 exclude that race from being picked randomly.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 永久生效。
 .lp rest_on_space
-Make the space bar a synonym for the “.” (#wait) command (default off).
+Make the space bar a synonym for the ‘.’ (#wait) command (default off).
 永久生效。
 .lp "role    "
 Pick your type of character (for example “role:Samurai”);
 synonym for “character”.
 See “name” for an alternate method of specifying your role.
-Normally only the first letter of the value is examined; “r” is an
+Normally only the first letter of the value is examined; ‘r’ is an
 exception with “Rogue”, “Ranger”, and “random” values.
-If you prefix the value with “!” or “no”, you will
+If you prefix the value with ‘!’ or “no”, you will
 exclude that role from being picked randomly.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 永久生效。
 .lp roguesymset
 This option may be used to select one of the named symbol sets found
@@ -2462,7 +2462,7 @@ Debug mode only.
 .lp scores
 Control what parts of the score list you are shown at the end (for example
 “scores:5 top scores/4 around my score/own scores”).
-Only the first letter of each category (“t”, “a”, or “o”)
+Only the first letter of each category (‘t’, ‘a’, or ‘o’)
 is necessary.
 永久生效。
 .lp showexp
@@ -2544,7 +2544,7 @@ mouse clicks on the map window.  永久生效。
 .lp verbose
 Provide more commentary during the game (default on).  永久生效。
 .lp whatis_coord
-When using the “/” or “;” commands to look around on the map with
+When using the ‘/’ or ‘;’ commands to look around on the map with
 .op autodescribe
 on, display coordinates after the description.
 Also works in other situations where you are asked to pick a location.
@@ -2562,7 +2562,7 @@ The possible settings are:
 The
 .op whatis_coord
 option is also used with the “/m”, “/M”, “/o”,
-and “/O” sub-commands of “/”,
+and “/O” sub-commands of ‘/’,
 where the “none” setting is overridden with “map”.
 .lp whatis_filter
 When getting a location on the map, and using the keys to cycle through
@@ -2593,7 +2593,7 @@ move by skipping the same glyphs.
 When the program has been built to support multiple interfaces,
 select which one to use, such as “tty” or “X11”
 (default depends on build-time settings; use “#version” to check).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp ""
 When used, it should be the first option set since its value might
 enable or disable the availability of various other options.
@@ -2625,7 +2625,7 @@ can't it will silently ignore it.  You can find out if an
 option is supported by the window port that you are currently
 using by checking to see if it shows up in the Options list.
 Some options are dynamic and can be specified during the game
-with the “O” command.
+with the ‘O’ command.
 .lp align_message
 Where to align or place the message window (top, bottom, left, or right)
 .lp align_status
@@ -2681,7 +2681,7 @@ If NetHack can, it should preload tiles into memory.
 For example, in the protected mode MS-DOS version, control whether tiles
 get pre-loaded into RAM at the start of the game.  Doing so
 enhances performance of the tile graphics, but uses more memory. (default on).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp scroll_amount
 If NetHack can, it should scroll the display by this number of cells
 when the hero reaches the scroll_margin.
@@ -2737,7 +2737,7 @@ Acceptable values are
 .ei
 .ed
 .lp ""
-(The 26x82 size threshold for “2” refers to number of rows and
+(The 26x82 size threshold for ‘2’ refers to number of rows and
 columns of the display.
 A width of at least 110 columns (80+2+26+2) is needed for
 .op align_status
@@ -2773,7 +2773,7 @@ to customize and change the port behavior.
 Select an alternate keystroke handler dll to load (Win32 tty NetHack only).
 The name of the handler is specified without the .dll extension and without
 any path information.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp altmeta
 On Amiga, this option controls whether typing “Alt” plus another key
 functions as a meta-shift for that key (default on).
@@ -2807,10 +2807,10 @@ Force raw (non-cbreak) mode for faster output and more
 bulletproof input (MS-DOS sometimes treats “^P” as a printer toggle
 without it) (default off, OS/2, PC, and ST NetHack only).
 Note:  DEC Rainbows hang if this is turned on.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp soundcard
 (default on, PC NetHack only).
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp subkeyvalue
 (Win32 tty NetHack only).
 May be used to alter the value of keystrokes that the operating system
@@ -2819,26 +2819,26 @@ OPTIONS=subkeyvalue:171/92
 will return 92 to NetHack, if 171 was originally going to be returned.
 You can use multiple subkeyvalue statements in the configuration file
 if needed.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp video
 Set the video mode used (PC NetHack only).
 Values are “autodetect”, “default”, or “vga”.
 Setting “vga” (or “autodetect” with vga hardware present)
 will cause the game to display tiles.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp videocolors
 Set the color palette for PC systems using NO_TERMS
 (default 4-2-6-1-5-3-15-12-10-14-9-13-11, (PC NetHack only).
 The order of colors is red, green, brown, blue, magenta, cyan,
 bright.white, bright.red, bright.green, yellow, bright.blue,
 bright.magenta, and bright.cyan.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .lp videoshades
 Set the intensity level of the three gray scales available
 (default dark normal light, PC NetHack only).
 If the game display is difficult to read, try adjusting these scales;
 if this does not correct the problem, try !color.
-Cannot be set with the “O” command.
+Cannot be set with the ‘O’ command.
 .hn 2
 Regular Expressions
 .pg
@@ -2885,7 +2885,7 @@ The
 rules are processed in the order in which they appear in your configuration
 file, thus allowing a later rule to override an earlier rule.
 .lp ""
-Exceptions can be set with the “O” command, but because they are not
+Exceptions can be set with the ‘O’ command, but because they are not
 included in your configuration file, they won't be in effect if you save
 and then restore your game.
 .op autopickup_exception
@@ -2913,7 +2913,7 @@ It is possible to change the default key bindings of some special commands,
 menu accelerator keys, and extended commands, by using BIND stanzas in the
 configuration file.
 Format is key, followed by the command to bind to, separated by a colon.
-The key can be a single character (“x”), a control key (“^X”,
+The key can be a single character (‘x’), a control key (“^X”,
 “C-x”), a meta key (“M-x”), or a three-digit decimal ASCII code.
 .pg
 For example:
@@ -2945,16 +2945,16 @@ Prefix key to start a count, to repeat a command this many times.
 With
 .op number_pad
 only.
-Default is “n”。
+Default is ‘n’。
 .lp doinv
 Show inventory.
 With
 .op number_pad
 only.
-Default is “0”。
+Default is ‘0’。
 .lp fight
 Prefix key to force fight a direction.
-Default is “F”。
+Default is ‘F’。
 .lp fight.numpad
 Prefix key to force fight a direction.
 With
@@ -2963,53 +2963,53 @@ only.
 Default is “\-”。
 .lp getdir.help
 When asked for a direction, the key to show the help.
-Default is “?”。
+Default is ‘?’。
 .lp getdir.self
 When asked for a direction, the key to target yourself.
-Default is “.”。
+Default is ‘.’。
 .lp getdir.self2
 When asked for a direction, the key to target yourself.
-Default is “s”。
+Default is ‘s’。
 .lp getpos.autodescribe
 When asked for a location, the key to toggle autodescribe.
-Default is “#”。
+Default is ‘#’。
 .lp getpos.all.next
 When asked for a location, the key to go to next closest interesting thing.
-Default is “a”。
+Default is ‘a’。
 .lp getpos.all.prev
 When asked for a location, the key to go to previous closest interesting
 thing.
-Default is “A”。
+Default is ‘A’。
 .lp getpos.door.next
 When asked for a location, the key to go to next closest door or doorway.
-Default is “d”。
+Default is ‘d’。
 .lp getpos.door.prev
 When asked for a location, the key to go to previous closest door or doorway.
-Default is “D”。
+Default is ‘D’。
 .lp getpos.help
 When asked for a location, the key to show help.
-Default is “?”。
+Default is ‘?’。
 .lp getpos.mon.next
 When asked for a location, the key to go to next closest monster.
-Default is “m”。
+Default is ‘m’。
 .lp getpos.mon.prev
 When asked for a location, the key to go to previous closest monster.
-Default is “M”。
+Default is ‘M’。
 .lp getpos.obj.next
 When asked for a location, the key to go to next closest object.
-Default is “o”。
+Default is ‘o’。
 .lp getpos.obj.prev
 When asked for a location, the key to go to previous closest object.
-Default is “O”。
+Default is ‘O’。
 .lp getpos.menu
 When asked for a location, and using one of the next or previous keys to
 cycle through targets, toggle showing a menu instead.
-Default is “!”。
+Default is ‘!’。
 .lp getpos.moveskip
 When asked for a location, and using the shifted movement keys or meta-digit
 keys to fast-move around, move by skipping the same glyphs instead of
 by 8 units.
-Default is “*”。
+Default is ‘*’。
 .lp getpos.filter
 When asked for a location, change the filtering mode when using one of
 the next or previous keys to cycle through targets.
@@ -3019,41 +3019,41 @@ Default is “\(dq”。 \" double quote
 .lp getpos.pick
 When asked for a location, the key to choose the location, and possibly
 ask for more info.
-Default is “.”。
+Default is ‘.’。
 .lp getpos.pick.once
 When asked for a location, the key to choose the location, and skip asking
 for more info.
-Default is “,”。
+Default is ‘,’。
 .lp getpos.pick.quick
 When asked for a location, the key to choose the location, skip asking for
 more info, and exit the location asking loop.
-Default is “;”。
+Default is ‘;’。
 .lp getpos.pick.verbose
 When asked for a location, the key to choose the location, and show more
 info without asking.
-Default is “:”。
+Default is ‘:’。
 .lp getpos.self
 When asked for a location, the key to go to your location.
-Default is “@”。
+Default is ‘@’。
 .lp getpos.unexplored.next
 When asked for a location, the key to go to next closest unexplored location.
-Default is “x”。
+Default is ‘x’。
 .lp getpos.unexplored.prev
 When asked for a location, the key to go to previous closest unexplored
 location.
-Default is “X”。
+Default is ‘X’。
 .lp getpos.valid
 When asked for a location, the key to go to show valid target locations.
-Default is “$”。
+Default is ‘$’。
 .lp getpos.valid.next
 When asked for a location, the key to go to next closest valid location.
-Default is “z”。
+Default is ‘z’。
 .lp getpos.valid.prev
 When asked for a location, the key to go to previous closest valid location.
-Default is “Z”。
+Default is ‘Z’。
 .lp nopickup
 Prefix key to move without picking up items.
-Default is “m”。
+Default is ‘m’。
 .lp redraw
 Key to redraw the screen.
 Default is “^R”。
@@ -3068,22 +3068,22 @@ Key to repeat previous command.
 Default is “^A”。
 .lp reqmenu
 Prefix key to request menu from some commands.
-Default is “m”。
+Default is ‘m’。
 .lp run
 Prefix key to run towards a direction.
-Default is “G”。
+Default is ‘G’。
 .lp run.nopickup
 Prefix key to run towards a direction without picking up items on the way.
-Default is “M”。
+Default is ‘M’。
 .lp run.numpad
 Prefix key to run towards a direction.
 With
 .op number_pad
 only.
-Default is “5”。
+Default is ‘5’。
 .lp rush
 Prefix key to rush towards a direction.
-Default is “g”。
+Default is ‘g’。
 .hn 2
 Configuring Message Types
 .pg
@@ -3257,8 +3257,8 @@ Allowed attributes are none, bold, dim, underline, blink, and inverse.
 “Normal” is a synonym for “none”; they should not be used in
 combination with any of the other attributes.
 .pg
-To specify both a color and an attribute, use “&” to combine them.
-To specify multiple attributes, use “+” to combine those.
+To specify both a color and an attribute, use ‘&’ to combine them.
+To specify multiple attributes, use ‘+’ to combine those.
 For example: “magenta&inverse+dim”.
 .pg
 Note that the display may substitute or ignore particular attributes
@@ -3324,11 +3324,11 @@ the “up” or “down” one takes precedence.)
 .lp "*"
 percentage sets the field attribute when the field value
 matches the percentage.
-It is specified as a number between 0 and 100, followed by “%”
+It is specified as a number between 0 and 100, followed by ‘%’
 (percent sign).
 If the percentage is prefixed with “<=” or “>=”,
 it also matches when value is below or above the percentage.
-Use prefix “<” or “>” to match when strictly below or above.
+Use prefix ‘<’ or ‘>’ to match when strictly below or above.
 (The numeric limit is relaxed slightly for those: \f(CR>-1%\fP
 and \f(CR<101%\fP are allowed.)
 Only four fields support percentage rules.
@@ -3353,10 +3353,10 @@ exactly 1 experience point short of the next level.
 absolute value sets the attribute when the field value matches
 that number.
 The number must be 0 or higher, except for “armor-class” which
-allows negative values, and may optionally be preceded by “=”。
+allows negative values, and may optionally be preceded by ‘=’。
 If the number is preceded by “<=” or “>=” instead,
 it also matches when value is below or above.
-If the prefix is “<” or “>”, only match when strictly
+If the prefix is ‘<’ or ‘>’, only match when strictly
 above or below.
 .lp "*"
 text match sets the attribute when the field value
