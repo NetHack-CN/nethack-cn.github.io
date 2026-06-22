@@ -242,13 +242,20 @@ header.nhtheme-bw.nhlayout-simple {
     position: absolute;
     top: 0%;
 }
+#englinkwrapper {
+    float: right;
+    width: 30%;
+    text-align: right;
+    position: relative;
+    top: 0%;
+}
 .navrowctr {
     float: left;
     width: 40%;
     text-align: center;
 }
 .navrowrit {
-    float: left;
+    float: right;
     width: 30%;
     text-align: right;
 }
@@ -774,7 +781,7 @@ class GuidebookRoffToHTML:
                 if len(parts) > 1 and parts[1].strip().isdigit():
                     level = int(parts[1].strip())
                     i += 1
-                    self.out.append('<div><table width="100%%"><tbody><tr><td width="33%" style="text-align:left">NetHack 3.6.7 （将来会改成5.0.0）</td><td width="33%" style="text-align:center">May 6, 2026</td><td width="33%" style="text-align:right">[<a href="#_TOC">目录</a>]</td></tr></tbody></table></div><hr><br>')
+                    self.out.append('<div><table width="100%%"><tbody><tr><td width="33%" style="text-align:left">NetHack 3.6.7 （将来会改成5.0.0）</td><td width="33%" style="text-align:center">2026.06.21</td><td width="33%" style="text-align:right">[<a href="#_TOC">目录</a>]</td></tr></tbody></table></div><hr><br>')
                     while i < len(self.lines) and not self.lines[i].strip():
                         i += 1
                     if i < len(self.lines) and not self.lines[i].lstrip().startswith('.'):
@@ -1082,6 +1089,8 @@ em{{font-style:italic}}
 <a href="..contact/index.html">联系我们</a>
 &nbsp;]
  </div>
+<div class="navrowrit">
+&nbsp;<div id="englinkwrapper"><span id="englinkwrap"><a class="accshape acclink" href="#mainskip">Skip to main</a></span> <a class="accshape" href="https://www.nethack.org/v500/Guidebook.html">English</a></div>
 </div>
 </header>
 <div role="main" id="mainskip">
