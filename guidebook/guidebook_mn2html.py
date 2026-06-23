@@ -549,6 +549,7 @@ class GuidebookRoffToHTML:
         self.title_lines: List[str] = []
         self.author_lines: List[str] = []
         self.center_pending: int = 0
+        self.op = False
 
     def define_string(self, name: str, value: str) -> None:
         self.strings[name] = value
@@ -609,9 +610,11 @@ class GuidebookRoffToHTML:
                     out.append('-')
                     i += 2
                     continue
+                '''
                 if nxt == '&':
                     i += 2
                     continue
+                '''
                 if nxt == ' ':
                     out.append(' ')
                     i += 2
@@ -641,7 +644,8 @@ class GuidebookRoffToHTML:
     def emit_para(self) -> None:
         if not self.par:
             return
-        text = " ".join(p.strip() for p in self.par if p.strip())
+        text = "".join(p.strip() for p in self.par if p.strip())
+        #print(text)
         self.par = []
         if text:
             self.out.append(f'<p>{self.inline_html(text)}</p>')
@@ -717,6 +721,20 @@ class GuidebookRoffToHTML:
         while i < len(self.lines):
             raw = self.lines[i]
             line = raw.lstrip()
+
+            if self.op:
+                self.emit_para()
+                #print('line:', line)
+                #print('self.out[-1]:', self.out[-1])
+                t = self.out[-1].rfind('</')
+                if t + 1:
+                    self.out[-1] = self.out[-1][:t] + line + self.out[-1][t:]
+                else:
+                	self.out.append(line)
+                i += 1
+                self.op = False
+                continue
+            self.op = False
             # 直接输出由 center_to_table 生成的表格 HTML（整行，已包含外层的 <div>）
             if line.startswith('<div><table'):
                 self.emit_para()          # 先输出之前缓存的段落
@@ -803,10 +821,18 @@ class GuidebookRoffToHTML:
                 continue
 
             if line.startswith('.op '):
+                self.emit_para()
                 opt = line[4:].strip()
                 if opt.startswith('"') and opt.endswith('"') and len(opt) >= 2:
                     opt = opt[1:-1]
-                self.par.append(opt)
+                t = self.out[-1].rfind('</')
+                if t + 1:
+                    self.out[-1] = self.out[-1][:t] + opt + self.out[-1][t:]
+                #if self.out[-1].endswith('</[a-z]*>'):
+                #	self.out[-1] = self.out[-1][:-6] + opt + self.out[-1][-6:]
+                #else:
+                #	self.par.append(opt)
+                self.op = True
                 i += 1
                 continue
 
@@ -817,7 +843,10 @@ class GuidebookRoffToHTML:
                 continue
 
             if line.startswith('.UX'):
-                self.par.append('UNIX')
+                self.emit_para()
+                t = self.out[-1].rfind('</')
+                if t + 1:
+                    self.out[-1] += 'UNIX'
                 i += 1
                 continue
 

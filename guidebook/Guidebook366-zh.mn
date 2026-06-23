@@ -29,8 +29,8 @@
 .\" A note on some special characters:
 .\" \(lq = left double quote
 .\" \(rq = right double quote            \(dq = double quote character
-.\" \(oq = left (open) single quote
-.\" \(cq = right (close) single quote    \(aq = apostrophe / single quote
+.\" ‘ = left (open) single quote
+.\" ’ = right (close) single quote    \(aq = apostrophe / single quote
 .\"    - = hyphen                        \-   = minus sign
 .\"                                      \(em = M-sized dash
 .\"    ^ = small circumflex punctuation  ^ = larger circumflex character
@@ -100,7 +100,7 @@
 .pg
 \fI侏儒（Gnome）\fP比起矮人要矮小一点不过除此之外通常和矮人很接近。侏儒以采矿专家著称，据传在险境迷宫中存在一座由该种族建造的秘密矿井，那里既充满财富，也暗藏危险。
 .pg
-\fI人类（Human）\fP是目前为止地表世界上最常见的种族。因而经常作为基准（norm）与其他的种族进行比较。尽管他们没有什么特别的能力，但是他们可以胜任任何的角色。
+\fI人类（Human）\fP是目前为止地表世界上最常见的种族。因而经常作为基准与其他的种族进行比较。尽管他们没有什么特别的能力，但是他们可以胜任任何的角色。
 .pg
 \fI兽人（Orc）\fP是残忍和野蛮的种族，他们憎恨所有的生物（包括其他的兽人）。兽人对于精灵族的憎恨尤为深重，他们会不惜一切代价，抓住任何机会杀死精灵。兽人打造的盔甲和武器通常质量低劣。
 .hn 1
@@ -184,7 +184,7 @@ Figure 2
 .lp "体质（Co，Constitution）"
 体质影响你从受伤中恢复或者其他对体力损害中恢复的能力。
 .lp "智力（In，Intelligence）"
-智力影响你关于施放（cast）咒语和阅读魔法书的能力。
+智力影响你关于施放咒语和阅读魔法书的能力。
 .lp "智慧（Wi，Wisdom）"
 只会来源于你的时间经验（特别是处理魔法时）。它影响你的魔法能量。
 .lp "魅力（Ch，Charisma）"
@@ -208,13 +208,13 @@ Figure 2
 在冒险过程中，你会获得经验值。
 当经验值累积到一定数值时，你就会提升一个经验等级。
 经验越丰富，你的战斗能力就越强，抵御魔法攻击的能力也越强。
-（当你的等级达到两位数时，显示等级所对应的经验值的意义会大幅降低。你可以使用\(oq\f(CRO\fP\(cq命令关闭
+（当你的等级达到两位数时，显示等级所对应的经验值的意义会大幅降低。你可以使用‘\f(CRO\fP’命令关闭
 .op showexp
 ，以避免占用有限的状态栏空间。）
 .lp "时间（Time）"
-到目前为止已经流逝的回合数，当你设置了时间选项显示。
+到目前为止已经流逝的回合数，如果你设置了
 .op time
-option set.
+选项就会显示。
 .lp "状态"
 饥饿程度（Hunger）：
 你当前的饥饿程度。对应值有\fB饱腹\fP（\fBSatiated\fP）、\fB正常\fP、\fB饥饿\fP（\fBHungry\fP）、\fB虚弱\fP（\fBWeak\fP）以及\fB晕厥\fP（\fBFainting\fP）。
@@ -225,16 +225,11 @@ option set.
 显示你当前所携带的物品会如何影响你的行动能力。对应值有\fB无负重\fP（\fBUnencumbered\fP）、\fB负重\fP（\fBBurdened\fP）、\fB吃力\fP（\fBStressed\fP）、\fB受压\fP（\fBStrained\fP）、\fB高压\fP（\fBOvertaxed\fP）和\fB超载\fP（\fBOverloaded\fP）。
 如果你当前\fB无负重\fP（\fBUnencumbered\fP），这里将不会有任何显示。
 .lp ""
-致命情形:
-\fB石化\fP（\fBStone，又叫\fBPetrifying\fP\fP）、
-\fB黏液化\fP（\fBSlime\fP）、
-\fB窒息\fP（\fBStrngl，即strangulation\fP）、
-\fB食物中毒\fP（\fBFoodPois，即food poisoning\fP）、
-\fB绝症\fP（\fBTermIll，即terminal illness\fP）。
+致命情形：
+\fB石化\fP（\fBStone，又叫\fBPetrifying\fP\fP）、\fB黏液化\fP（\fBSlime\fP）、\fB窒息\fP（\fBStrngl，即strangulation\fP）、\fB食物中毒\fP（\fBFoodPois，即food poisoning\fP）、\fB绝症\fP（\fBTermIll，即terminal illness\fP）。
 .lp ""
 非致命情形：
-\fB失明\fP（\fBBlind\fP）、\fB失聪\fP（\fBDeaf\fP)，
-\fB眩晕\fP（\fBStun\fP）、\fB混乱\fP（\fBConf\fP）、\fB幻觉\fP（\fBHallu\fP）。
+\fB失明\fP（\fBBlind\fP）、\fB失聪\fP（\fBDeaf\fP)、\fB眩晕\fP（\fBStun\fP）、\fB混乱\fP（\fBConf\fP）、\fB幻觉\fP（\fBHallu\fP）。
 .lp ""
 特殊移动方式：
 \fB飘浮\fP（\fBLev\fP）、\fB飞行\fP（\fBFly\fP）、\fB骑乘\fP（\fBRide\fP）。
@@ -251,7 +246,7 @@ option set.
 .pg
 在屏幕顶部一行是预留用来展示那些无法使用图像来描述的信息的。如果你在顶部看到一行“\fB\-\-More\-\-\fP”（更多），这意味着NetHack还有另外的消息需要在屏幕上显示，不过NetHack想要确认你已经阅读了第一条信息。想要阅读下一条消息，你只需要按下空格键。
 .pg
-要改变消息行的显示方式以及显示内容，请查看“配置消息类型（Configuring Message Types）”以及
+要改变消息行的显示方式以及显示内容，请查看“配置消息类型”以及
 .op verbose
 选项。
 .hn 2
@@ -371,7 +366,7 @@ option set.
 .lp [yuhjklbn]
 朝指示的方向前进一步（见图3）。
 如果你感觉到或记得那里有怪物，你将转而与该怪物战斗。
-只有这些一步移动指令会让你与怪物战斗；其余的（如下）都是\(lq安全的\(rq。
+只有这些一步移动命令会让你与怪物战斗；其余的（如下）都是\(lq安全的\(rq。
 .ft CR
 .tr -\-@\(rs
 .TS
@@ -411,12 +406,9 @@ Figure 3
 .lp ""
 注意：<Control>+<key>指的是打字时按下<Shift>一样按下<Control>或者<Ctrl>，然后再按下<key>，松开<key>，再松开<Control>。说明手册里的^<key>意思是一样的。Control加的字母是大小写无关的，所以^x和^X一样的。
 .lp "M[yuhjklbn]"
-Old versions supported \(oq\f(CRM\fP\(cq as a movement prefix which
-combined the effect of \(oq\f(CRm\fP\(cq with \f(CR<Control>\fP+<direction>.
-That is no longer supported as a prefix but similar effect can be achieved
-by using \(oq\f(CRm\fP\(cq and \f(CRG\fP<direction> in combination.
-\f(CRm\fP can also be used in combination with \f(CRg\fP<direction>,
-\f(CR<Control>\fP+<direction>, or \f(CR<Shift>\fP+<direction>.
+旧版本支持‘\f(CRM\fP’作为一个移动前缀，结合了‘\f(CRm\fP’和\f(CR<Control>\fP+<direction>。
+这个前缀已经不再支持，但是可以用‘\f(CRm\fP’和\f(CRG\fP<direction>组合实现类似的效果。
+\f(CRm\fP也和一盒\f(CRg\fP<direction>、\f(CR<Control>\fP+<direction>或者\f(CR<Shift>\fP+<direction>组合起来。
 .lp _
 使用最短路径算法移动到地图上的某个位置。
 .lp ""
@@ -436,7 +428,7 @@ by using \(oq\f(CRm\fP\(cq and \f(CRG\fP<direction> in combination.
 .lp A
 脱下所有防具。
 .lp ""
-使用‘T’（take off，卸下）来卸下一件护甲或者‘R’来卸下一件配饰。
+使用‘T’来卸下一件护甲或者‘R’来卸下一件配饰。
 .lp ^A
 重复上一次的命令。
 .lp c
@@ -658,7 +650,7 @@ w\- - 什么也不拿，使用的空手。
 .lp x
 切换主武器和副武器。
 .lp ""
-当你正在进行（engaging）双持武器进行战斗的时候，后者将会成为你的副武器。需要注意的是如果主要或者副武器槽是空的，交换依然会进行。
+当你正在进行双持武器进行战斗的时候，后者将会成为你的副武器。需要注意的是如果主要或者副武器槽是空的，交换依然会进行。
 .lp X
 开关双持战斗。这个命令也可以通过“#twoweapon”扩展命令来实现。
 .lp ""
@@ -666,11 +658,11 @@ w\- - 什么也不拿，使用的空手。
 .lp ^X
 显示你的属性。
 .lp ""
-展示名称，角色，种族，性别（除非角色名称已经能够指明，例如穴居人（Caveman）或者女牧师（Preiestess），和阵营，连同（along with）你的神和他或她的敌人。
+展示名称，角色，种族，性别（除非角色名称已经能够指明，例如穴居人（Caveman）或者牧师（Preiestess），和阵营，连同你的神和他或她的敌人。
 该命令也显示来自于状态行的各种各样的信息在一个简洁的表格里，包括一系列额外的因为显示空间有限而没有出现在正常状态显示栏的东西。
 .lp ""
 在正常的游戏中，‘^X’会显示所有的东西。
-在探索模式中，角色与状态的反馈信息通过被开明（enlightenment）魔法提供的信息而被增强显示。
+在探索模式中，角色与状态的反馈信息通过被启蒙魔法提供的信息而被增强显示。
 .lp z
 挥舞魔杖。
 .sd
@@ -700,9 +692,9 @@ Z. - 朝你自己施放咒语，使用‘.’来选择方向。
 .lp ""
 可以在命令前加一个`m`来强制出现一个选择菜单。
 .lp @
-开启/关闭“
+开启/关闭
 .op autopickup
-”。
+选项。
 .lp ^
 显示附近一个陷阱的类型。
 .lp )
@@ -782,7 +774,7 @@ menu_next_page和menu_last_page
 命令为“on”）的时候有用）
 自动完成。默认按键为“M-a”。
 .lp ""
-这个命令允许你将一个物品项从一个指定的槽（slot）移动到另一个槽以至于让该物品对应的字母对于你来说更有意义或事在物品清单展示的时候让该物品出现在指定的位置。
+这个命令允许你将一个物品项从一个指定的槽移动到另一个槽以至于让该物品对应的字母对于你来说更有意义或事在物品清单展示的时候让该物品出现在指定的位置。
 你可以将物品移动到当前一个空白的槽，或者目标位置已经被占用了（不会被合并），对应位置的物品将和当前物品进行交换。
 “#adjust”也可被用于分离一堆的物品；当选择要被调整的一堆物品时，需要在对应字母前输入一个数量来进行分离。
 .lp ""
@@ -833,7 +825,7 @@ menu_next_page和menu_last_page
 默认按键为“M-C”。
 .lp "#chronicle"
 Show a list of important game events.
-Default key is \(oqv\(cq.
+Default key is ‘v’.
 .lp ""
 查看下文标题为“Conduct”的部分获取详细信息。
 .lp #debugfuzzer
@@ -843,7 +835,7 @@ Debug mode only.
 将某物浸入某物中。
 默认按键为“M-d”。
 .lp ""
-The \(oqm\(cq prefix skips dipping into a fountain or pool if there
+The ‘m’ prefix skips dipping into a fountain or pool if there
 is one at your location.
 .lp "#down    "
 下楼梯。
@@ -866,7 +858,7 @@ is one at your location.
 默认按键为“M-e”。
 .lp #exploremode
 Switch from normal play to non-scoring explore mode.
-Default key is \(oqM-X\(cq.
+Default key is ‘M-X’.
 .lp ""
 会进行确认；默认的回应是\f(CRn\fP（no）。
 想要真正的切换到探索模式，需要回答y。你可以通过设置
@@ -875,7 +867,7 @@ Default key is \(oqM-X\(cq.
 .lp "#fight   "
 Prefix key to force fight a direction, even if you see nothing
 to fight there.
-Default key is \(oqF\(cq, or \(oq\-\(cq with
+Default key is ‘F’, or ‘\-’ with
 .op number_pad
 .lp "#fire    "
 从箭袋中发射发射物。Fire ammunition from quiver, possibly autowielding a launcher,
@@ -886,21 +878,17 @@ or hit with a wielded polearm.
 自动完成。
 默认按键为“M-f”。
 .lp #genocided
-List any monster types which have been genocided.
-In explore mode and debug mode it also shows types which have become
-extinct.
+列举已灭绝的生物。
+在探索模式和调试模式中也会显示已绝迹的生物。
 .lp ""
-The display order is the same as is used by #vanquished.
-The \(oqm\(cq prefix brings up a menu of available sorting orders, and
-doing that for either #genocided or #vanquished changes the order for both.
+显示顺序同#vanquished.
+‘m’前缀会弹出一个包含可用排序方式的菜单，而无论对#genocided还是#vanquished执行此操作，都会同时更改两者的排列顺序。
 .lp ""
-If the sorting order is \(lqcount high to low\(rq or \(lqcount low to high\(rq
-(which are applicable for #vanquished), that will be ignored
-for #genocided and alphabetical will be used instead.
-The menu omits those two choices when used for #genocide.
+如果排序顺序是\(lq从高到低\(rq或者\(lq从低到高\(rq（适用于#vanquished），#genocided会忽略它们，转而使用字母排序。
+当用于#genocided时，菜单中会省略这两个选项。
 .lp ""
-Autocompletes.
-Default key is \(oqM-g\(cq.
+自动完成。
+默认按键‘M-g’.
 .lp "#glance  "
 显示地图符号对应的事物。
 默认按键为‘;’。
@@ -911,17 +899,15 @@ Default key is \(oqM-g\(cq.
 .op number_pad
 选项启用的情况下也可以使用‘h’。
 .lp #herecmdmenu
-显示此处可执行的指令菜单。Show a menu of possible actions directed at your current location.
-The menu is limited to a subset of the likeliest actions, not an
-exhaustive set of all possibilities.
-Autocompletes.
+显示此处可执行的命令菜单。
+该菜单仅包含最可能的操作子集，而非所有可能操作的穷举。
+自动完成。
 .lp ""
-If mouse support is enabled and the
+如果允许了鼠标，而且
 .op herecmd_menu
-option is On, clicking on the hero (or steed when mounted) will
-execute this command.
+选项为On，点击英雄（或者你骑上的坐骑）会执行这个命令。
 .lp "#history "
-显示游戏开发历史的概述。Show a summary of the game's development.
+显示游戏开发历史的概述。
 .lp #inventory
 显示你的物品栏。
 默认按键为‘i’。
@@ -945,17 +931,17 @@ execute this command.
 选项启用也可以使用‘k’。
 .lp "#known   "
 显示已发现的物品类型。
-默认按键为‘\’。Default key is \(oq\f(CR\\\fP\(cq.
+默认按键为‘\’。
 .lp ""
-The \(oq\f(CRm\fP\(cq prefix allows assigning a new value to the
+‘\f(CRm\fP’前缀可用于为
 .op sortdiscoveries
-option to control the order in which the discoveries are displayed..lp ""
-The \(oq\f(CRm\fP\(cq prefix operates the same as for \(lq#known\(rq.
+选项赋予新值，以控制发现结果的显示顺序。
+.lp ""
 .lp #knownclass
 显示某类物品的已发现类型。
-默认按键为‘`’。Default key is \(oq\f(CR\`\fP\(cq.
+默认按键为‘`’。
 .lp ""
-The \(oq\f(CRm\fP\(cq prefix operates the same as for \(lq#known\(rq.
+‘\f(CRm\fP’前缀和“#known”效果相同.
 .lp #levelchange
 修改经验等级。
 自动完成。调试模式专属。
@@ -966,7 +952,7 @@ The \(oq\f(CRm\fP\(cq prefix operates the same as for \(lq#known\(rq.
 查看这里的物品。
 默认按键为‘:’。
 .lp #lookaround
-Describe what you can see, or remember, of your surroundings.
+描述你能看见的，或者记住的，或者你身边的东西。
 .lp "#loot    "
 搜刮地上的箱子。
 自动完成。加上”m“前缀来跳过在你位置上的容器并直接移除马鞍。
@@ -995,22 +981,19 @@ Describe what you can see, or remember, of your surroundings.
 .lp "#options "
 显示和修改选项设置。
 默认按键为‘O’。
-Precede with the \(oqm\(cq prefix to show advanced options.
+加上‘m’前缀可以显示高级设置。
 .lp #optionsfull
-Show advanced game option settings.
-No default key.
-Precede with the \(oqm\(cq prefix to execute the simpler options command.
-(Mainly useful if you use \f(CRBINDING=O:optionsfull\fP to switch
-\(oq\f(CRO\fP\(cq from simple options back to traditional advanced options.)
+显示所有设置选项。
+没有默认按键。
+加上‘m’前缀执行更简单的设置命令。
+（主要适用于使用\f(CRBINDING=O:optionsfull\fP导致‘\f(CRO\fP’从简单选项切换回传统高级选项的情况。）
 .lp #overview
 显示你发现的关于地牢的信息。任何到过的有注释的层也会被包括在内，以及许多的事物（祭坛，王座，喷泉等等；额外的通向另一个地牢分支的楼梯）。
 如果地牢概观在游戏结束展示期间被选择，一切到过的层不管是否有注释都将被包括在内进行显示。
 .lp ""
-Precede #overview with the \(oqm\(cq prefix to display the dungeon
-overview as a menu where you can select any visited level to add or
-remove an annotation without needing to return to that level.
-This will also force all visited levels to be displayed rather than just
-the \(lqinteresting\(rq subset.
+
+在#overview前面添加‘m’前缀，即可将地下城概览以菜单形式显示，您可以在其中选择任何已访问的层，从而添加或删除注释，而无需返回该层。
+此操作还将强制显示所有已访问的层，而不仅仅是“interesting”子集。
 .lp ""
 自动完成。
 默认按键为‘^O’，and “M-O”。
@@ -1026,13 +1009,12 @@ the \(lqinteresting\(rq subset.
 付款。
 默认按键为‘p’。
 .lp "#perminv "
-If persistent inventory display is supported and enabled (with the
+如果有永久物品栏支持而且通过
 .op perm_invent
-option), interact with it instead of with the map.
-You'll be prompted for menu scrolling keystrokes such
-as \(oq\f(CR>\fP\(cq and \(oq\f(CR<\fP\(cq.
-Press \f(CRReturn\fP or \f(CREscape\fP to resume normal play.
-Default key is \(oq|\(cq.
+选项启用，与它而非地图互动。
+系统会提示您输入菜单滚动快捷键，例如‘\f(CR>\fP’和‘\f(CR<\fP’。
+按下\f(CRReturn\fP或\f(CREscape\fP回到正常游戏。
+默认按键为‘|’.
 .lp "#pickup  "
 捡起在当前位置的物品。
 默认按键为‘,’。加上‘m’前缀将强制使用一个菜单。
@@ -1060,8 +1042,7 @@ Default key is \(oq|\(cq.
 喝东西。
 默认按键为‘q’。
 .lp ""
-The \(oqm\(cq prefix skips drinking from a fountain or sink if there
-is one at your location.
+‘m’前缀会跳过喝你的位置的喷泉或者水槽里的水。
 .lp "#quit    "
 不保存直接退出。
 自动完成。
@@ -1087,16 +1068,16 @@ is one at your location.
 摘下配饰（戒指，护身符等）。
 默认按键为‘R’。
 .lp "#repeat  "
-Repeat the previous command.
-Default key is \(oq\(haA\(cq.
+重复上一个动作。
+默认按键为‘\(haA’。
 .lp "#reqmenu "
-Prefix key to modify the behavior or request menu from some commands.
-Prevents autopickup when used with movement commands.
-Default key is \(oqm\(cq.
+在某些命令前添加该键，可修改其行为或调出菜单。
+与移动命令配合使用时，可防止自动拾取。
+默认按键为‘m’。
 .lp "#retravel"
-Travel to a previously selected travel destination.
-Default key is \(oqC-_\(cq.
-See also #travel.
+旅行到上一个选择的旅行目的地。
+默认键位为‘C-_’.
+另见#travel。
 .lp "#ride    "
 上坐骑或下坐骑。
 自动完成。
@@ -1106,30 +1087,25 @@ See also #travel.
 自动完成。
 默认按键为“M-r”。
 .lp "#run     "
-Prefix key to run towards a direction.
-Default key is \(oqG\(cq when
+按键前缀，用于朝某个方向奔跑。
+如果
 .op number_pad
-is off,
-\(oq5\(cq when
+关闭，按键是‘G’；如果
 .op number_pad
-is set to 1 or 3,
-otherwise \(oqM-5\(cq when it is set to 2 or 4.
+是1或3，‘5’；如果是2或4则是‘M-5’。
 .lp "#rush    "
-Prefix key to rush towards a direction.
-Default is \(oqg\(cq when
+按键前缀，用于朝某个方向冲刺。
+如果
 .op number_pad
-is off,
-\(oqM-5\(cq when
+关闭，默认按键为‘g’，
 .op number_pad
-is set to 1 or 3,
-otherwise \(oq5\(cq when it is set to 2 or 4.
+是1或3，‘M-5’；如果是2或4则是‘5’。
 .lp "#save    "
 保存并退出。
 默认按键为‘S’。
 .lp "#saveoptions"
-Save configuration options to the config file.
-This will overwrite the file, removing all comments, so if you have
-manually edited the config file, don't use this.
+将配置选项保存到配置文件中。
+这将覆盖该文件并删除所有注释，因此，如果您曾手动编辑过配置文件，请勿使用此操作。
 .lp "#search  "
 搜索陷阱和暗门。
 默认按键为‘s’。
@@ -1137,64 +1113,51 @@ manually edited the config file, don't use this.
 显示所有正在使用的装备。
 默认按键为‘*’。
 .lp ""
-Will display in-use items in a menu even when there is only one.
+即使菜单中只有一个正在使用的物品，也会将其显示出来。
 .lp #seeamulet
 显示正在戴着的护身符。
 默认按键为‘"’。
 .lp ""
-Using the \(oq\f(CRm\fP\(cq prefix will force the display of a worn
-amulet in a menu rather than with just a message.
+使用前缀‘\f(CRm\fP’\)将强制在菜单中显示已佩戴的护身符，而不是仅显示一条消息。
 .lp #seearmor
 显示正在穿着的防具。
 默认按键为‘[’。
 .lp ""
-Will display worn armor in a menu even when there is only thing worn.
+即使菜单中只有一个正在穿着的防具，也会将其显示出来。
 .lp #seerings
 显示正在戴着的戒指。
 默认按键为‘=’。
 .lp ""
-Will display worn rings in a menu if there are two (or there is
-just one and is a meat ring rather than a \(lqreal\(rq ring).
-Use the \(oq\f(CRm\fP\(cq prefix to force a menu for one ring.
+如果佩戴了两个戒指（或者只有一个，且是肉戒指而非\(lq真正的\(rq 戒指），则会在菜单中显示这些戒指。
+使用‘\f(CRm\fP’前缀可强制为单个戒指显示菜单。
 .lp #seetools
 显示正在使用的工具。
 默认按键为‘（’。
 .lp ""
-Will display the result in a message if there is one tool in use (worn
-blindfold or towel or lenses, lit lamp(s) and/or candle(s), leashes
-attached to pets).
-Will display a menu if there are more than one or if the command is
-preceded by the \(oq\f(CRm\fP\(cq prefix.
+如果正在使用一个工具（佩戴眼罩、毛巾或隐形眼镜，点燃的灯和/或蜡烛，以及/或系在宠物身上的牵引绳），则会在消息中显示结果。
+如果正在使用多个工具，或者该命令前带有 ‘\f(CRm\fP’ 前缀，则会显示一个菜单。
 .lp #seeweapon
 显示正在装备的武器。
 默认按键为‘）’。
 .lp ""
-If dual-wielding, a separate message about the secondary weapon will be
-given.
-Using the \(oq\f(CRm\fP\(cq prefix will force a menu and it will include
-primary weapon, alternate weapon even when not dual-wielding, and also
-whatever is currently assigned to the quiver slot.
+如果进行双持，系统会显示一条关于副武器的单独提示。
+使用‘\f(CRm\fP’前缀将强制弹出菜单，该菜单将包含主武器、备用武器（即使未进行双持时也是如此），以及当前分配给箭袋槽位的任何物品。
 .lp "#shell   "
-Do a shell escape, switching from NetHack to a subprocess.
-Can be disabled at the time the program is built.
-When enabled, access for specific users can be controlled by the system
-configuration file.
-Use the shell command \(oq\f(CRexit\fP\(cq to return to the game.默认按键为‘!’。
-.lp "#showgold"
-Report the gold in your inventory, including gold you know about in
-containers you're carrying.  If you are inside a shop, report any credit
-or debt you have in that shop.
-Default key is \(oq$\(cq.
+执行终端逃逸，从NetHack切换到子进程。
+可在程序编译时禁用此功能。
+启用后，可通过系统配置文件控制特定用户的访问权限。
+使用终端命令‘\f(CRexit\fP’返回游戏。默认按键为‘!’。
+.lp “#showgold”
+显示背包中的金币数量，包括你已知的、存放在你所携带的容器中的金币。如果你身处商店内，还会显示你在该商店的信用或欠款。
+默认按键为‘$’。
 .lp #showspells
-List and reorder known spells.
-Default key is \(oq+\(cq.
+列举并重新排序已知法术。
+默认按键为‘+’。
 .lp "#showtrap"
-Describe an adjacent trap, possibly covered by objects or a monster.
-To be eligible, the trap must already be discovered.
-(The \(lq#terrain\(rq command can display your map with all objects and
-monsters temporarily removed, making it possible to see all discovered
-traps.)
-Default key is \(oq\(ha\(cq. \" 'hat' (circumflex character)
+描述一个相邻的陷阱，该陷阱可能被物品或怪物遮挡。
+要符合条件，该陷阱必须已被发现。
+（使用 \(lq#terrain\(rq 命令可暂时移除地图上的所有物品和怪物，从而能够看到所有已被发现的陷阱。）
+默认按键为‘\(ha’。
 .lp "#sit     "
 坐下。
 自动完成。
@@ -1203,12 +1166,10 @@ Default key is \(oq\(ha\(cq. \" 'hat' (circumflex character)
 显示记忆统计数据。
 自动完成。调试模式专属。
 .lp "#suspend "
-Suspend the game, switching from NetHack to the terminal it was started
-from without performing save-and-exit.
-Can be disabled at the time the program is built.
-When enabled, mainly useful for \fItty\fP and \fIcurses\fP interfaces on
-.UX \. \" yields "UNIX."
-Use the shell command \(oq\f(CRfg\fP\(cq to return to the game.
+暂停游戏，从NetHack切换回最初启动游戏的终端，且不执行“保存并退出”操作。
+可在程序编译时禁用此功能。
+启用后，主要适用于UNIX系统上的\fItty\fP和\fIcurses\fP界面。
+使用终端命令‘\f(CRfg\fP’返回游戏。
 默认按键为‘^Z’。
 .lp "#swap    "
 切换主武器和副武器。
@@ -1223,22 +1184,18 @@ Use the shell command \(oq\f(CRfg\fP\(cq to return to the game.
 层间传送。
 默认按键为‘^T’。
 .lp "#terrain "
-Show map without obstructions.
-In normal play you can view the explored portion of the current level's
-map without monsters; without monsters and objects; or without monsters,
-objects, and traps.
+显示没有挡住的地图。
+在正常游戏中，您可以查看当前关卡中已探索部分的地图，其中可选择显示：仅显示怪物；仅显示怪物和物体；或仅显示怪物、物体和陷阱。
 .lp ""
-If there are visible clouds of gas in view, they are treated like traps
-when deciding whether to show them or the floor underneath them.
+如果视野中可见气体云，在决定是显示气体云还是其下方的地面时，会将其视为陷阱。
 .lp ""
-In explore mode, you can choose to view the full map rather than just
-its explored portion.
-In debug mode there are additional choices.
+在探索模式下，你可以选择查看完整地图，而不仅仅是其已探索的部分。
+在调试模式下，还有其他选项。
 .lp ""
 自动完成。
-Default key is \(oq<del>\(cq or \(oq<delete>\(cq (see \fIDel\fP above).
+默认按键是‘<del>’或者‘<delete>’（见上方的\fIDel\fP）。
 .lp #therecmdmenu
-在此处对相邻位置可执行的指令菜单。
+在此处对相邻位置可执行的命令菜单。
 Show a menu of possible actions directed at a location next to you.
 The menu is limited to a subset of the likeliest actions, not an
 exhaustive set of all possibilities.
@@ -1250,25 +1207,21 @@ Autocompletes.
 查看倒计时和英雄的定时内置函数。调试模式专属。
 .lp "#tip     "
 倒空容器。
-When there are containers on the floor, the game will prompt to pick one
-of them or \(lqtip something being carried\(rq.
-If the latter is chosen, there will be another prompt for which item
-from inventory to tip.
+当地面上有容器时，游戏会提示选择其中一个或“倒空其中的物品”。
+如果选择后者，系统会再次提示从背包中选择倒出来哪个物品。
 .lp ""
-The \(oq\f(CRm\fP\(cq prefix makes the command skip containers on the
-floor and pick one from inventory, except for the special case of
+前缀‘\f(CRm\fP’会使该命令跳过地面上的容器，并从库存中选择一个，但
 .op menustyle \f(CR:traditional\fP
-with two or more containers present; that situation will start with the
-floor container menu.
+这种特殊情况除外；当存在两个或更多容器时，该情况将从地面容器菜单开始。
 .lp ""
 自动完成。
 默认按键为“M-T”。
 .lp "#toggle  "
-Toggle a boolean option on or off.
-Requires a parameter in parenthesis, the name of the option to toggle.
-The option must be settable in-game.
+开关布尔选项.
+需要在括号中指定一个参数，即要切换的选项名称。
+该选项必须可在游戏中设置。
 .lp ""
-For example:
+例如:
 .sd
 .ft CR
 BIND=':toggle(price_quotes)
@@ -1305,40 +1258,33 @@ See also #retravel.
 上楼梯。
 默认按键为‘<’。
 .lp #vanquished
-List vanquished monsters by type and count.
+列举击败的怪物的种类和数量.
 .lp ""
-Note that the vanquished monsters list includes all monsters killed by
-traps and each other as well as by you, and omits any which got removed
-from the game without being killed (perhaps by genocide, or by a mollified
-shopkeeper dismissing summoned Kops) or were already corpses when placed
-on the map.
+请注意，被击败的怪物列表中包含所有被陷阱、其他怪物以及你本人击杀的怪物，但排除了那些在未被击杀的情况下被移出游戏（例如因种族灭绝，或因被安抚后的商人驱散了召唤出的警卫）的怪物，以及在放置到地图上时已是尸体的怪物。
 .lp ""
-Using the \(lqrequest menu\(rq prefix prior to #vanquished brings up
-a menu of sorting orders available (provided that the vanquished monsters
-list contains at least two types of monsters).
-Whichever ordering is picked gets assigned to the
+在#vanquished命令前使用\(lqrequest menu\(rq前缀，将弹出一个可用的排序顺序菜单（前提是被击败的怪物列表中至少包含两种类型的怪物）。
+无论选择哪种排序顺序，都会被分配给
 .op sortvanquished
-option so is remembered for subsequent #vanquished requests.
-The \(lq#genocided\(rq command shares this sorting order.
+选项，因此会在后续的#vanquished请求中被记住。
+\(lq#genocided\(rq命令也使用相同的排序顺序。
 .lp ""
-During end-of-game disclosure, when asked whether to show vanquished
-monsters answering \(oq\f(CRa\fP\(cq will let you choose from the sort menu.
+在游戏结束信息显示阶段，当被问及是否显示已击败的
+怪物时，输入‘\f(CRa\fP’将允许你从排序菜单中进行选择。
 .lp ""
 自动完成。调试模式专属。
-Default key is \(oqM-V\(cq.
+默认按键为‘M-V’.
 .lp "#version "
 显示此版本NetHack的编译时选项。
 自动完成。
 .lp ""
-The second paragraph lists the user interface(s) that are included.
-If there are more than one, you can use the
+第二段列出了包含的用户界面。
+如果有多个用户界面，您可以在运行时配置文件中使用
 .op windowtype
-option in your run-time configuration file to select the one you want.
+选项来选择所需的用户界面。
 .lp ""
 默认按键为“M-v”。
 .lp #versionshort
-Show the program's version number, plus the date and time that the
-running copy was built from sources (not the version's release date).
+显示程序的版本号，以及当前运行的副本从源代码编译而成的日期和时间（而非该版本的发布日期）。
 默认按键为‘V’。
 .lp "#vision  "
 显示视觉阵列。
@@ -1352,7 +1298,7 @@ running copy was built from sources (not the version's release date).
 穿上一件防具。
 默认按键为‘W’。
 .lp #whatdoes
-说明指令的作用。
+说明命令的作用。
 默认按键为‘&’。
 .lp "#whatis  "
 说明符号对应的事物。
@@ -1365,8 +1311,8 @@ running copy was built from sources (not the version's release date).
 自动完成。
 默认按键为“M-w”。
 .lp "#wizborn "
-Show monster birth, death, genocide, and extinct statistics.
-Debug mode only.
+显示怪物的出生、死亡、灭绝和绝迹统计数据。
+调试模式专属。
 .lp "#wizbury "
 将物品埋在你身下和周围。
 自动完成。调试模式专属。
@@ -1390,11 +1336,10 @@ No time elapses.
 设定内在属性。
 自动完成。调试模式专属。
 .lp "#wizkill "
-Remove monsters from play by just pointing at them.
-By default the hero gets credit or blame for killing the targets.
-Precede this command with the \(oq\f(CRm\fP\(cq prefix to override that.
-Autocompletes.
-Debug mode only.
+只需指向怪物，即可将其从游戏中移除。
+默认情况下，击杀目标将会算作英雄本人。
+在前面加上‘\f(CRm\fP’前缀以覆盖。
+自动完成。调试模式专属。
 .lp #wizlevelport
 传送到另一层。
 自动完成。调试模式专属。
@@ -1404,16 +1349,13 @@ Debug mode only.
 自动完成。调试模式专属。
 默认按键为‘^F’。
 .lp #wizrumorcheck
-验证传言的真实性。Verify rumor boundaries by displaying first and last true rumors and
-first and last false rumors.
+通过显示第一个和最后一个真实的谣言以及第一个和最后一个虚假的谣言，来验证谣言的边界。
 .lp ""
-Also displays first, second, and last random engravings, epitaphs,
-and hallucinatory monsters.
+此外还展示了第一、第二和最后的随机的刻字、墓志铭，以及令人恍惚的怪兽。
 .lp ""
-Autocompletes.
-Debug mode only.
+自动完成。调试模式专属。
 .lp #wizseenv
-Show map locations' seen vectors.
+显示地图位置的“已查看”向量。
 自动完成。调试模式专属。
 .lp #wizsmell
 嗅探怪物。
@@ -1425,7 +1367,7 @@ Show map locations' seen vectors.
 许愿。
 自动完成。调试模式专属。
 默认按键为‘^W’。
-Precede this command with the \(oq\f(CRm\fP\(cq prefix to show a wish history menu.
+在命令前加上‘\f(CRm\fP’前缀以显示愿望历史记录菜单。
 .lp "#wmode   "
 显示墙模式。
 自动完成。调试模式专属。
@@ -1433,7 +1375,7 @@ Precede this command with the \(oq\f(CRm\fP\(cq prefix to show a wish history me
 挥舞魔杖。
 默认按键为‘z’。
 .lp "#?       "
-列举所有扩展指令。
+列举所有扩展命令。
 .lp ""
 .pg
 如果你的键盘拥有一个meta键（当与其他的键一同作为组合键按下的时候，会设置另一个键的“meta”【第8，或“更高位”】比特），你可以通过给字母前加上meta键来调用任何的扩展命令。
@@ -1446,19 +1388,16 @@ Precede this command with the \(oq\f(CRm\fP\(cq prefix to show a wish history me
 command to execute, not when accepting input to name something or to
 make a wish.)
 .pg
-Unlike control characters, where \(hax and \(haX denote the same thing,
-meta characters are case-sensitive:  M-x and M-X represent different things.
-Some commands which can be run via a meta character require that the
-letter be capitalized because the lower-case equivalent is used for
-another command, so the three key combination meta+Shift+<letter> is needed.
+与控制字符不同，控制字符中\(hax\)和\(haX\)表示相同的内容，而meta字符则区分大小写：M-x和M-X表示不同的内容。
+某些可通过元字符执行的命令要求该字母必须大写，因为小写形式已被用于另一个命令，因此需要使用meta+Shift+<letter>这三个键的组合。
 .BR 1
 .
 .lp M-?
-#? (not supported by all platforms)
+#? （并非所有平台都支持）
 .lp M-2
-#twoweapon (unless the
+#twoweapon （如果
 .op number_pad
-option is enabled)
+禁用）
 .lp M-a
 #adjust
 .lp M-A
@@ -1535,22 +1474,19 @@ option is on, some additional letter commands are available:
 .pg
 房间和走廊在地牢里面都是有明有暗的。任何在你的视线所照亮的区域都将显示出来；黑暗的区域只会在距离你一格的地方被显示。当你探索到墙和走廊，它们会一直保持在地图上。
 .pg
-暗道走廊正常情况下是看不见的，显示和坚硬的岩石一样。
-You can find them with the \(oqs\(cq (search) command when adjacentto them.
-Multiple search attempts may be needed.
-When searching is successful, secret corridors become ordinary opencorridor locations.
-Mapping magic reveals secret corridors, so converts them into ordinary
-corridors and shows them as such.
+暗道正常情况下是看不见的，显示和坚硬的岩石一样。
+当你位于它们附近时，可以使用 ‘s’（搜索）命令找到它们。
+可能需要多次尝试搜索。
+搜索成功后，暗道会变成普通的开放走廊。
+魔法地图会揭示暗道，因此会将其转换为普通走廊，并以普通走廊的形式显示出来。
 .hn 2
 门口
-By default the
+默认情况下，
 .op autoopen
-option is enabled, so simply attempting to walk onto a closed door's
-location will attempt to open it without needing \(oqo\(cq.
-Opening via
+选项处于启用状态，因此只需尝试走到关闭的门所在的位置，系统就会尝试将其打开，无需输入‘o’。
+如果你处于\fI混乱\fP（\fIConf\fP）或\fI眩晕\fP（\fIStun\fP）状态，或者具有\fI笨拙\fP（\fIfumbling\fP）属性，则通过
 .op autoopen
-will not work if you are \fIconfused\fP or \fIstunned\fP or suffer from
-the \fIfumbling\fP attribute.
+打开门的功能将无法生效。
 .pg
 门口连接了房间和走廊。
 当然有一些门口是没有门的；你可以直接走过去。
@@ -1562,95 +1498,64 @@ the \fIfumbling\fP attribute.
 在打开门后无法斜着进入门；你必须要有接近它们然后垂直或水平地直着走进去。
 没有门的门口不受这个限制，除了一个特殊关卡。
 .pg
-Unlocking magic exists but usually won't be available early on.
-You can get through a locked door without magic by first using an
-unlocking tool with the \(oqa\(cq (apply) command, and then opening it.
-By default the
+解锁魔法确实存在，但通常在游戏初期无法使用。
+你无需魔法也能打开上锁的门：先使用‘a’（应用）命令使用解锁工具，然后打开门。
+默认情况下，
 .op autounlock
-option is also enabled, so if you attempt to open (via \(oqo\(cq or
-.op autoopen)
-a locked door while carrying an unlocking tool, you'll be asked whether
-to use it on the door's lock.
-Alternatively, you can break a closed door (whether locked or not) down
-by kicking it via the \(oq\(haD\(cq (kick) command.
-Kicking down a door destroys it and makes a lot of noise which might
-wake sleeping monsters.
+选项也处于启用状态，因此如果你在携带开锁工具时尝试通过‘o’或
+.op autoopen
+打开一扇上锁的门，系统会询问你是否要将开锁工具用于该门的锁上。
+此外，你还可以通过执行 ‘\(haD’（踢）命令，用脚踢开一扇关闭的门（无论是否上锁）。
+踢开一扇门会将其破坏，并产生巨大噪音，这可能会惊醒正在睡觉的怪物。
 .pg
-Some closed doors are booby-trapped and will explode if an attempt is made
-to open (when unlocked) or unlock (when locked) or kick down.
-Like kicking, an explosion destroys the door and makes a lot of noise.
-The \(lq#untrap\(rq command can be used to search a door for traps but
-might take multiple attempts to find one.
-When one is found, you'll be asked whether to try to disarm it.
-If you accede, success will eliminate the trap but
-failure will set off the trap's explosion.
-(If you decline, you effectively forget that a trap was found there.)
+某些关闭的门设有机关陷阱，若尝试打开（当门未上锁时）、解锁（当门已上锁时）或踹开，门将会爆炸。
+与踹门一样，爆炸会摧毁门并产生巨大噪音。
+可使用 \(lq#untrap\(rq 命令检查门上是否设有陷阱，但可能需要多次尝试才能发现。
+一旦发现陷阱，系统会询问你是否尝试拆除。
+若你同意，成功将消除该陷阱，但失败则会触发陷阱爆炸。
+（若你拒绝，你实际上会忘记该处曾发现过陷阱。）
 .pg
-Closed doors can be useful for shutting out monsters.
-Most monsters cannot open closed doors, although a few don't need to
-(for example, ghosts can walk through doors and fog clouds can flow
-under them).
-Some monsters who can open doors can also use unlocking tools.
-And some (giants) can smash doors.
+关闭的门有助于阻挡怪物。
+大多数怪物无法打开关闭的门，尽管少数怪物无需如此，（例如，幽灵可以穿过门，雾云可以从门下流过）。
+一些能打开门的怪物还可以使用开锁工具。
+还有一些（如巨人）可以砸开门。
 .pg
-Secret doors are hidden and appear to be ordinary wall (from inside a
-room) or solid rock (from outside).
-You can find them with the \(oqs\(cq (search) command but it might
-take multiple tries (possibly many tries if your luck is poor).
-Once found they are in all ways equivalent to normal doors.
-Mapping magic does not reveal secret doors.
+密门是隐藏的，从房间内部看，它看起来像是一面普通墙壁，从外部看则像是一块坚实的岩石。
+你可以使用 ‘s’（搜索）命令来找到它们，但可能需要多次尝试（如果运气不佳，可能需要多次尝试）。
+一旦找到，它们在各方面都与普通门完全相同。
+绘图魔法无法揭示密门。
 .hn 2
 陷阱（‘^’）
 .pg
 在地牢中自始至终都存在陷阱，惩罚粗心的闯入者。
 例如你可能会突然掉进一个坑里被陷住然后耗费数回合后才能爬上来（见下方）。
-if your luck is poor, many attempts might be needed).
-\fIWands of secret door detection\fP and \fIspell of detect unseen\fP
-also reveal traps within a modest radius but only if the trap is also
-within line-of-sight (whether you can see at the time or not).
-There is also other magic which can reveal traps.
+（如果运气不佳，可能需要多次尝试）。\fI暗门探测魔杖\fP（\fIwand of secret door detection\fP）和\fI“探测隐形”\fP（\fIdetect unseen\fP）咒语\f也能在一定半径范围内揭示陷阱，但前提是该陷阱也必须位于视线范围内（无论当时你是否能看到）。\f
+此外还有其他魔法可以揭示陷阱。
 .pg
-怪物也可以因为陷阱被捕获，这是一种很有用的防御策略。Unfortunately traps can be harmful to your pet(s) as well.
-Monsters, including pets, usually will avoid moving onto a trap which is shown on your map if they have encountered that type of trap before.
+怪物也可以因为陷阱被捕获，这是一种很有用的防御策略。不幸的是，陷阱也可能对你的宠物造成伤害。
+怪物（包括宠物）如果之前曾遇到过地图上显示的某种陷阱，通常会避免踏入该陷阱。
 .pg
 
 陷阱不会显示在你的地图上，直到你移动到该陷阱上面触发后，或看到一些东西是掉入到里面，或者你使用‘s’命令发现它。
 .pg
-Some traps such as pits, bear traps, and webs hold you in one place.
-You can escape by simply trying to move to an adjacent spot and repeat
-as needed; eventually you will get free.
+有些陷阱，比如坑洞、熊陷阱和蜘蛛网，会将你困在原地。
+只需尝试移动到相邻的位置，并根据需要重复此操作，最终你就能脱身。
 .pg
-Other traps can send you to different locations.
-Teleporters send you elsewhere on the same dungeon level.
-Level teleporters send you to a random dungeon level, the destination
-chosen from a few levels lower all the way to the top.
-These traps choose a new destination each time they're activated.
-Trap doors and holes also send you to another level, but one which is
-always below the current level.
-Usually that will be the next level down but it can be farther.
-Unlike (level) teleporters, the destination level of a particular trap door
-or hole is persistent, so falling into one will bring you to the same level
-each time\(emthough not necessarily the same spot on the level.
-Magic portals behave similarly, but with some additional variation.
-Some portals are two-way and their remote destination is always the same:
-another portal which can take you back.
-Others are one-way and send you to a specific destination level but not
-necessarily to a specific location there.
+其他陷阱可能会将你传送到不同的位置。
+传送门会将你传送到同一地牢层内的其他位置。
+层间传送装置会将你传送到一个随机的地牢层，目的地从比当前层低几个层一直到顶层中随机选择。
+这些陷阱每次触发时都会选择一个新的目的地。
+陷阱门和洞穴也会将你传送到另一个层，但该层总是位于当前层下方。
+通常是下一层，但也可能更深。与传送门不同，特定陷阱门或洞的目的地层是固定的，因此每次掉入其中都会将你传送到同一层，尽管未必是该层上的同一位置。
+魔法传送门的行为类似，但存在一些额外变化。
+有些传送门是双向的，其远端目的地始终相同：另一个能将你送回的传送门。
+另一些则是单向的，会将你传送到特定的目标层，但未必会将你传送到该层上的特定位置。
 .pg
-有一个预先绘制好地图的特殊分支，基于经典电子游戏“Sokoban”（推箱子/仓库番）。There is a special multi-level branch of the dungeon with pre-mapped levels
-based on the classic computer game \(lq\fISokoban\fP.\(rq
-它的目标是将巨石推入坑洞中。经过思考后，你能够通过传统的推箱子方式来完成所有的地牢层。如果玩家被困住，也有一些补救的措施；不过那样做会降低你的幸运值。In that game, you operate as a warehouse worker who pushes crates around
-obstacles to position them at designated locations.
-In NetHack, the goal is to push boulders into pits or holes until those
-traps have all been nullified, giving access to whatever is beyond them.
-In the Sokoban game, you can only move in the four cardinal compass
-directions, and a crate in its final destination blocks further access
-to that spot.
-In the Sokoban levels of NetHack, you can move diagonally (unless that
-would let you pass between two neighboring boulders) but you can only
-push boulders in the four cardinal directions, and a boulder which fills
-a pit or hole removes both the boulder and the trap so opens up normal
-access to that spot.
+地牢中有一个特殊的多层分支，其各层布局已预先绘制好，其设计灵感源自经典电脑游戏\(lq\fI推箱子\fP\(rq（Sokoban）。
+它的目标是将巨石推入坑洞中。经过思考后，你能够通过传统的推箱子方式来完成所有的地牢层。如果玩家被困住，也有一些补救的措施；不过那样做会降低你的幸运值。在这款游戏中，你将扮演一名仓库工人（日语：倉庫番（そうこばん）），负责推动货箱绕过障碍物，并将它们放置在指定位置。
+在NetHack中，目标是将巨石推入坑洞或深坑，直到这些陷阱全部被消除，从而通往陷阱后方的区域。
+在推箱子游戏中，你只能沿四个基本方向移动，而到达最终位置的箱子会阻挡你进一步进入该位置。
+在NetHack的推箱子关卡中，你可以进行对角线移动（除非这会让你穿过两块相邻的巨石之间），但你只能将巨石推向四个正方向；当一块巨石填满坑洞时，巨石和陷阱都会被移除，从而打开通往该位置的正常通道。
 .hn 2
 楼梯和梯子（‘<’，‘>’）
 .pg
@@ -1701,108 +1606,69 @@ access to that spot.
 .lp * 2
 商店无论如何也不会因为物品耗尽而补货。
 .hn 2
-Movement feedback
+移动反馈
 .pg
-Moving around the map usually provides no
-feedback\(emother than drawing the hero at the new location\(emunless
-you step on an object or pile of objects,
-or on a trap, or attempt to move onto a spot where a monster is located.
-There are several options which can be used to augment the normal feedback.
+在地图上移动时，通常不会收到任何反馈，—除了将英雄绘制到新位置之外，或者你踩到一个或多个物体，或者踩到陷阱，或者试图移动到有怪物驻守的位置。
+有几种选项可以用来增强常规反馈。
 .pg
-The
+选项
 .op pile_limit
-option controls how many objects can be in a
-pile\(emsharing the same map location\(emfor
-the game to state \(lqthere are objects here\(rq instead of listing them.
-The default is \f(CR5\fP.
-Setting it to \f(CR1\fP would always give that message instead of listing
-any objects.
-Setting it to \f(CR0\fP is a special case which will always list all
-objects no matter how big a pile is.
-Note that the number refers to the count of separate stacks of objects
-present rather than the sum of the quantities of those stacks (so
-\f(CR7 arrows\fP or \f(CR25 gold pieces\fP will each count as 1 rather
-than as 7 and 25, respectively, and total to 2 when both are at the
-same location).
+控制一个堆中可以包含多少个对象，这些对象位于同一地图位置，以便游戏显示“此处有对象”而非列出具体对象。
+默认值为\f(CR5\fP。
+将其设置为\f(CR1\fP时，系统将始终显示该提示，而非列出任何物品。
+将其设置为\f(CR0\fP属于特殊情况，无论堆栈规模多大，系统都会始终列出所有物品。
+请注意，该数字指的是当前存在的独立物品堆栈的数量，而非这些堆栈中物品数量的总和（因此，\f(CR7支箭\fP或\f(CR25金币\fP各自都将计为1，而非分别计为7和25，当两者位于同一位置时，总计为2）。
 .pg
-The \(lqnopickup\(rq command prefix (default \(oq\f(CRm\fP\(cq) can be
-used before a movement direction to step on objects without attempting
-auto-pickup and without giving feedback about them.
+命令前缀\(lqnopickup\(rq（默认‘\f(CRm\fP’）可置于移动方向之前，用于踩过物体，同时不尝试自动拾取，也不显示相关反馈。
 .pg
-The
+选项
 .op mention_walls
-option controls whether you get feedback if you try to walk into a wall
-or solid stone or off the edge of the map.
-Normally nothing happens (unless the hero is blind and no wall is shown,
-then the wall that is being bumped into will be drawn on the map).
-This option also gives feedback when rushing or running stops for
-some non-obvious reason.
+控制当你试图撞向墙壁、实心石块或地图边缘时，是否会收到反馈。
+通常情况下不会发生任何反应（除非英雄处于失明状态且墙壁未显示，此时被撞到的墙壁会在地图上显示出来）。
+当冲刺或奔跑因某些不明显的原因停止时，该选项也会提供反馈。
 .pg
-The
+选项
 .op mention_decor
-option controls whether you get feedback when walking on \(lqfurniture.\(rq
-Normally stepping onto stairs or a fountain or an altar or various other
-things doesn't elicit anything unless it is covered by one or more objects
-so is obscured on the map.
-Setting this option to true will describe such things even when they
-aren't obscured.
-Doorless doorways and open doors aren't considered worthy of mention;
-closed doors (if you can move onto their spots) and broken doors are.
-Assuming that you're able to do so, moving onto water or lava or ice
-will give feedback if not yet on that type of terrain but not repeat it
-(unless there has been some intervening message) when moving from water
-to another water spot, or lava to lava, or ice to ice.
-Moving off of any of those back onto \(lqnormal\(rq terrain will give one
-message too, unless there is feedback about one or more objects, in which
-case the back on land circumstance is implied.
+选项控制在踏上\(lq家具\(rq时是否会收到反馈。
+通常情况下，踏上楼梯、喷泉、祭坛或其他各种物体时，除非这些物体被一个或多个其他物体覆盖——即在地图上被遮挡——否则不会触发任何反馈。
+将此选项设为true后，即使这些物体未被遮挡，系统也会进行描述。
+没有门的门洞和敞开的门不被视为值得提及；
+而关闭的门（如果你能移动到其位置上）和破损的门则会被提及。
+假设你能够做到这一点，移动到水、熔岩或冰上时，如果当前尚未处于该类型地形，系统会给出提示；但当你从水域移动到另一个水域、从熔岩移动到熔岩，或从冰面移动到冰面时，系统不会重复提示，
+（除非期间有其他消息插入）。
+从上述任何地形移回\(lq正常\(rq地形时也会显示一条提示信息，除非此时正有关于一个或多个物体的反馈，在这种情况下，“回到陆地”的情况将被默认。
 .pg
-The
+选项
 .op confirm
-and
+和
 .op safe_pet
-options control what happens when you try to move onto a peaceful monster's
-spot or a tame one's spot.
+这些控制当你试图移动到和平怪物或驯服怪物的位置时会发生什么。
 .\" getting away from "Movement feedback" here; oh well...
 .pg
-The \(lqnopickup\(rq command prefix (default \(oq\f(CRm\fP\(cq) is
-also the move-without-attacking prefix and can be used to try to step
-onto a visible monster's spot without the move being considered an attack
-(see the \fIFighting\fP subsection of \fIMonsters\fP below).
-The \(lqfight\(rq command prefix (default \(oq\f(CRF\fP\(cq;
-also \(oq\f(CR\-\fP\(cq if
+\(lqnopickup\(rq 命令前缀（默认 ‘\f(CRm\fP’）也是“移动而不攻击”的前缀，可用于尝试踏入可见怪物的位置，而该移动不会被视为攻击（参见下文\fI怪物\fP中的\fI战斗\fP 小节）。
+\(lqfight\(rq 命令前缀（默认 ‘\f(CRF\fP’；若
 .op number_pad
-is on) can be used to force an attack, when guessing where an unseen
-monster is or when deliberately attacking a peaceful or tame creature.
+已启用，则为‘\f(CR\-\fP’）可用于强制发动攻击，例如在猜测未被发现的怪物位置时，或故意攻击和平或驯服的生物时。
 .pg
-The
-.op run_mode
-option controls how frequently the map gets redrawn when moving more
-than one step in a single command (so when rushing, running, or traveling).
+.op run_mode 
+选项控制在单条命令中移动超过一步时（例如冲刺、奔跑或旅行）地图重绘的频率。
 .hn 2
-Rogue level
+Rogue层
 .pg
-One dungeon level (occurring in mid to late teens of the main dungeon)
-is a tribute to the ancestor game \fIhack\fP's inspiration \fIrogue\fP.
+主地牢的中后期，大约第15至19层有一个向其前身游戏\fIhack\fP的灵感来源\fIrogue\fP致敬的地牢层。
 .pg
-It is usually displayed differently from other levels: possibly in
-characters instead of tiles, or without line-drawing symbols if already
-in characters; also, gold is shown as \f(CR*\fP rather than \f(CR$\fP
-and stairs are shown as \f(CR%\fP rather than \f(CR<\fP and \f(CR>\fP.
-There are some minor differences in actual game play: doorways lack
-doors; a scroll, wand, or spell of light used in a room lights up the
-whole room rather than within a radius around your character.
-And monsters represented by lower-case letters aren't randomly
-generated on the rogue level.
+该层通常与其他层显示方式不同：可能以文字形式显示而非图块，或者如果已以文字形式显示则不带线条符号；此外，金币显示为\f(CR*\fP而不是\f(CR$\fP，楼梯显示为\f(CR%\fP而不是\f(CR<\fP 和\f(CR>\fP。
+实际游戏玩法上也存在一些细微差异：门洞没有门；在房间内使用卷轴、魔杖或照明法术时，会照亮整个房间，而非仅照亮角色周围的半径范围。
+此外，在Rogue层中，由小写字母表示的怪物不会随机生成。
 .pg
-The slight strangeness of this level is a feature, not a bug....
+这一关卡中那种微妙的怪异感是一种特色，而非缺陷....
 .
 .hn 1
 怪物
 .pg
 怪物不会在屏幕上显示因此你无法看到它们。当心！你可能忽然进入到一个黑暗的地方。某些魔法物品可以帮助你在你被它们定位到你之前定位到它们（某些怪物定位能力很强）。
 .pg
-命令‘/’和‘;’能够帮助你的获取关于显示在屏幕上的怪物的信息。命令“#name”（
-默认按键为‘C’）允许你给一个怪物命名，这个命令或许可以帮你在很多怪物同时出现时区分你指定的其中一个怪物。命名一个空白的名称会移除先前的名字。
+命令‘/’和‘;’能够帮助你的获取关于显示在屏幕上的怪物的信息。命令“#name”（默认按键为‘C’）允许你给一个怪物命名，这个命令或许可以帮你在很多怪物同时出现时区分你指定的其中一个怪物。命名一个空白的名称会移除先前的名字。
 .pg
 扩展命令“#chat”能够用于和你临近的怪物进行交互。这将不会有实际的对话框（换句话说，你无法获得你要对话的选项），但是和某些怪物（？）例如商店主，或神谕者会得到有用的结果。
 .hn 2
@@ -1903,55 +1769,37 @@ Sometimes the bless or curse state of objects is referred to as their
 or \(lq\f(CRBUCX\fP\(rq for Blessed, Uncursed, Cursed, or unknown.
 (The term \fIbeatitude\fP is occasionally used as well.)
 .hn 2
-Artifacts
+神器
 .pg
-Some objects have been imbued with special powers and are known as
-\fBArtifacts\fP.
-They have specific types (such as long sword or orcish dagger) and distinct
-names such as \fIGiantslayer\fP or \fIGrimtooth\fP.
-Artifact weapons typically do more damage than their ordinary counterparts.
-Some do extra damage against all monsters, others only against specific
-types of monsters so aren't better than regular weapons against other types.
-Some confer defensive capabilities when wielded or have other powers that
-aren't listed here.
+有些物品被赋予了特殊力量，被称为\fB神器\fP（Artifact）。
+它们有特定的类型（例如长剑（long sword）或兽人匕首（orcish dagger）），并拥有独特的名称，比如\fIGiantslayer\fP、\fIGrimtooth\fP。
+神器武器通常比普通武器造成的伤害更高。
+有些对所有怪物都能造成额外伤害，有些则仅对特定类型的怪物有效，因此面对其他类型的怪物时，其效果并不优于普通武器。
+有些在挥舞时能提供防御能力，或具备其他未在此列出的能力。
 .pg
-You might find them simply lying on the floor, including but not limited
-to inside shops, or be granted as a reward for \(lq#offer\(rq on an
-altar to your patron deity.
-A few might be dropped by monsters, or might be converted from an ordinary
-object of the same type via assigning the right name.
+你可能会发现它们就这么散落在地上，包括但不限于商店内部，或者作为向你的守护神在祭坛上通过\(lq#offer\(rq献祭的奖励获得。
+少数武器可能由怪物掉落，也可能通过为同类普通物品赋予正确名称而转化而来。
 .\" should we mention dipping for Excalibur here?
-Or you might wish for them, if you happen to be granted a wish, but such
-wishes can fail.
+或者，如果你恰好获得了一个许愿机会，也可以许愿获得这些武器，但此类愿望可能会失败。
 .pg
-Some artifacts have a specific alignment, others don't.
-You won't obtain aligned ones that have a different alignment from yours
-via offering and might get a shock if you attempt to wish for any of those
-or find one and attempt to use it.
+有些神器具有特定的阵营属性，有些则没有。
+你无法通过献祭获得与自身阵营不同的神器，若试图对这类神器许愿，或发现后尝试使用，可能会受到电击。
 .pg
-Each role has a distinct artifact that is contained in the \fIQuest\fP
-dungeon branch.
-These are commonly known as quest artifacts.
-All are aligned and most are non-weapons.
-They won't be found randomly.
+每个职业都有一件独特的神器，位于\fI任务\fP分支中。
+这些通常被称为任务神器。
+它们均具有明确的阵营属性，且大多数为非武器类物品。
+这些神器不会随机出现。
 .pg
-The \(oq\f(CR\\\fP\(cq and \(oq\f(CR\`a\fP\(cq commands will
-list artifacts that you have fully identified (knowing the name and item
-type isn't sufficient).
+‘\f(CR\\\fP’和‘\f(CR\`a\fP’命令将列出你已完全鉴定过的神器（仅知晓名称和物品类型是不够的）。
 .hn 2
-Relics
+圣物
 .pg
-There are three unique items that are named and have limited special
-powers but aren't classified as artifacts.
-Each is guarded by a particular monster and you'll need to collect all
-three for use late in the game.
-.\" The relics are listed in the same order as the Oracle's message about
-.\" them rather than in the order they need to be used for the invocation.
-They are \fIthe Bell of Opening\fP,
-\fIthe Book of the Dead\fP, and
-\fIthe Candelabrum of Invocation\fP.
-Their corresponding descriptions when not yet identified are
-silver bell, papyrus spellbook, and candelabrum.
+有三件独特的物品，它们各有名称且拥有有限的特殊能力，但并不被归类为神器。
+每件物品都由特定的怪物守护，你需要收集全部三件，才能在游戏后期使用。
+.“这些遗物的排列顺序与神谕中关于它们的描述顺序一致，
+.“而非进行召唤时所需使用的顺序。
+它们分别是\fI开启之铃\fP（\fIBell of Opening\fP）、\fI死亡之书\fP（\fIBook of the Dead\fP），以及\fI呼唤烛台\fP（\fICandelabrum of Invocation\fP）。
+在尚未被鉴定时，它们的描述分别为：“银铃”、“纸莎草魔法书”和“烛台”。
 .hn 2
 武器（‘)’）
 .pg
@@ -1969,18 +1817,17 @@ silver bell, papyrus spellbook, and candelabrum.
 攻击一个怪物命中的成功率，和命中后造成的伤害值，取决于很多因素：
 武器的类型，武器的质量（附魔和/或腐蚀程度），经验等级，力量，敏捷，负重，以及熟练度（见下文）。怪物的护甲等级——通常的防御等级，并不一定真的穿了护甲——也是一个因素；此外，一些怪物也会因为某些特定类型的武器而受影响。
 .pg
-许多的武器都能够被单手持有；有一些需要双手。当手持一把双手武器的时候，你无法装备一个盾牌，反之亦然。当手持一把单手武器的时候，你可以使用‘x’命令来让另一把武器待命，该命令可以交换你的主武器和准备好的武器。如果你熟练掌握“双持战斗”（two weapon combat）技巧，你可以同时装备主手和副手武器；使用‘X’命令来使用或解除。只有某些角色（例如野蛮人）拥有这个必备的技能。即使拥有这个技能，双持武器战斗比起单持会在攻击你的目标的时候收到一定的惩罚（削弱）。
+许多的武器都能够被单手持有；有一些需要双手。当手持一把双手武器的时候，你无法装备一个盾牌，反之亦然。当手持一把单手武器的时候，你可以使用‘x’命令来让另一把武器待命，该命令可以交换你的主武器和准备好的武器。如果你熟练掌握“双持战斗”（two-weapon combat）技巧，你可以同时装备主手和副手武器；使用‘X’命令来使用或解除。只有某些角色（例如野蛮人）拥有这个必备的技能。即使拥有这个技能，双持武器战斗比起单持会在攻击你的目标的时候收到一定的惩罚（削弱）。
 .pg
 会存在某些情况下你不想要手持任何的武器。想要实现那样的效果，使用‘-’，也可以使用‘A’命令来让你卸下当前的武器，此外也可以卸下其他穿着的装备。
 .pg
 那些AD\&D（专家级龙与地下城）的读者玩家，请注意每一件存在于AD\&D的武器在NetHack中都会造成相似的伤害。
 一些更加费解的武器（例如\fI链棒\fP（aklys），\fI苜蓿锤\fP（lucern hammer），以及\fI鸦啄战锤\fP（bec-de-corbin））被定义在AD\&D的附录《Unearthed Arcana》（被发掘的奥秘）中。
 .pg
-Some interfaces support the
+有的界面支持
 .op weaponstatus
-option.
-When it is enabled, an extra status condition is displayed, describing
-the currently wielded weapon.
+选项。
+该选项启用后，将显示一个额外的状态提示，描述当前装备的武器。
 .pg
 使用武器的命令有‘w’（手持），‘t’（投掷），‘f’（发射），‘Q’（装配箭袋），‘x’（交换武器），‘X’（双持），以及“#enhance”（增强）（见下方）。
 .hn 3
@@ -1988,27 +1835,24 @@ the currently wielded weapon.
 .pg
 你可以通过‘t’命令来投掷任何的东西。该动作将会给出提示要投掷的物品；按下‘？’将会列出在你物品清单中被认为可以投掷的物品，或者按下‘*’来显示你整个物品清单。在你选择好想要投掷的物品后，你将会被提示选择一个方向而不是一个目标。物品能够被人出去的距离主要取决于物品的种类和你的力量。箭可以直接用手投掷，但是通过手持一把弓来射出能够让它射的更远也更有可能集中目标。
 .pg
-Some weapons will return when thrown.
-A boomerang\(emprovided it fails to hit anything\(emis an obvious example.
-If an aklys (thonged club) is thrown while it is wielded, it will return
-even when it hits something.
-A sufficiently strong hero can throw the warhammer \fIMjollnir\fP;
-when thrown by a \fIValkyrie\fP it will return too.
-However, aklyses and \fIMjollnir\fP occasionally fail to return.
-Returning thrown objects occasionally fail to be caught, sometimes even
-hitting the thrower, but when caught they become re-wielded.
+某些武器在投掷后会飞回。
+回力镖（boomerang）（前提是它未击中任何目标）便是显而易见的例子。
+如果在挥舞链棒时将其投掷，它仍会飞回，即使击中了目标也是如此。
+力量足够强大的英雄可以投掷战锤\fIMjollnir\fP；
+当由\fI女武神\fP 投掷时，它也会返回。
+然而，链棒和\fIMjollnir\fP偶尔会无法返回。
+返回的投掷物有时无法被接住，有时甚至会击中投掷者，但一旦接住，它们就会被重新握在手中。
 .pg
 你可以通过‘Q’命令选择你想要抛出的投掷物，然后使用‘f’命令投掷它来简化投掷操作。你会像上面一样被提示选择一个方向，但是在使用‘f’时候你无需指定一个物品来抛出。
-这里也同样有一个选项，
+这里也同样有一个
 .op autoquiver,
-（自动装填），该选项会让NetHack游戏在你使用‘Q’然后抛出物品后自动的装填你的箭袋。
-If your quiver is empty,
+选项该选项会让NetHack游戏在你使用‘Q’然后抛出物品后自动的装填你的箭袋。
+如果你的箭袋是空的，
 .op autoquiver
-is false, and you are wielding a weapon which returns when thrown,
-you will throw that weapon instead of filling the quiver.
-The fire command also has extra assistance, if
+为false，且你正在持有一把投掷后会返回的武器，你将投掷该武器，而不是填充箭袋。
+“fire”命令还提供额外辅助：如果
 .op fireassist
-is on it will try to wield a launcher matching the ammo in the quiver.
+处于开启状态，它会尝试持有一把与箭袋中弹药匹配的发射器。
 .pg
 某些角色能够一次同时发射/投掷多个物品。
 掌握如何一次性装填一些火药——或者一手持有多枚子弹——并且依然能够击中目标绝非易事。
@@ -2042,7 +1886,6 @@ is on it will try to wield a launcher matching the ammo in the quiver.
 .pg
 上述整个过程可以通过使用
 .op pushweapon
-option.
 选项来简化。当它启用时，使用‘w’来手持武器可以让当前手持的武器变为你的副武器。因此序列‘w’，‘w’能够用首先手持你打算作为次要的武器，然后使用你想要作为主武器的武器，这将会让第一个武器推到次要位置。
 .pg
 当处于双武器战斗（two-weapon）模式的时候，使用‘X’命令切换回单武器（single-weapon）模式。扔出或者丢掉任意一把武器或者其中一把武器被偷走或者毁掉都将使你切回单武器模式。
@@ -2069,32 +1912,27 @@ a n.
 无护甲（No Armor）	10
 .TE
 .pg
-You can also wear other pieces of armor (cloak over suit, shirt under suit, helmet, gloves, boots, shield) to lower your armor class even further.
-Most of these provide a one or two point improvement to AC (making the overall value smaller and eventually negative) but can also be enchanted.
-Shirts are an exception; they don't provide any protection unless enchanted.
-Some cloaks also don't improve AC when unenchanted but all cloaks offer some protection against rust or corrosion to suits worn under them and against some monster \fItouch\fP attacks.
+你还可以穿戴其他护甲部件（如披风盖在盔甲外、衬衫穿在盔甲内、头盔、手套、靴子、盾牌），从而进一步降低你的护甲值。
+其中大多数装备能使AC提高1或2点（从而使总值变小，最终甚至变为负值），但也可以进行附魔。
+衬衫是个例外；除非经过附魔，否则它不会提供任何防护。
+有些斗篷在未附魔时也不会提高AC，但所有斗篷都能为内层穿戴的盔甲提供一定的防锈或防腐蚀保护，并能抵御某些怪物的\f触摸\fP攻击。
 .pg
 如果一件护甲被附魔，那么这个护甲的防御力比起普通的护甲更加强（或弱），同时它们的‘加’（或‘减’）的值会从你的护甲等级中减去。例如，一件+1的锁子甲比起一般的锁子甲会提供更强的防御力，是你的AC进一步减少一个单位达到4。当你穿上一件护甲的时候，你会立刻了解你的护甲等级和护甲提供的加成。被诅咒的护甲通常带有负的减少值并且通常无法移除。
 .pg
 许多类型的护甲都会受限于某种损坏比如生锈。这样的损坏可以被修复。某些类型的护甲会限制咒语的施放。
 .pg
-The
+选项
 .op nudist
-option can be set (prior to game start) to attempt to play the entire
-game without wearing any armor (a self-imposed challenge which is
-extremely difficult to accomplish).
+可以在游戏开始前设置该，尝试在整个游戏过程中不穿任何护甲（这是一项自我设定的挑战，但要完成起来极其困难）。
 .pg
-Some interfaces support the
+某些界面支持
 .op armorstatus
-option.
-When it is enabled, an extra status condition is displayed, summarizing
-currently worn armor.
+选项。
+启用该选项后，将显示一个额外的状态条，汇总显示当前穿戴的护甲。
 .pg
 使用护甲的命令有‘W’（穿上）和‘T’（脱下）。
 ‘A’命令也可以用于像其他穿着的物品一样对护甲进行脱下。
-Also, \(oqP\(cq (put on) and \(oqR\(cq (remove) which are normally for
-accessories can be used for armor, but pieces of armor won't be shown
-as likely candidates in a prompt for choosing what to put on or remove.
+同时，通常用于配饰的‘P’（戴上）‘R’（移除）也可以用于护甲，但护甲部件不会在选择穿上或脱下什么的提示中显示为可能的选项。
 .hn 2
 食物（‘%’）
 .pg
@@ -2106,7 +1944,7 @@ as likely candidates in a prompt for choosing what to put on or remove.
 这些尸体大多数，但不是全部是可食用的；某些尸体在你食用后会给你特殊的力量。
 一个经验法则是“吃什么补什么”。
 .pg
-一些角色和一些怪物是素食主义者。素食主义的怪物完全不会吃任何动物的尸体，然而素食主义的玩家可能会，但是会伴随一些不好的副作用、。
+一些角色和一些怪物是素食主义者（vegetarian）。素食主义的怪物完全不会吃任何动物的尸体，然而素食主义的玩家可能会，但是会伴随一些不好的副作用、。
 .pg
 你可以给你喜欢吃的食物使用
 .op fruit
@@ -2121,10 +1959,10 @@ as likely candidates in a prompt for choosing what to put on or remove.
 卷轴中最有用的就是\fI鉴定卷轴\fP（scroll of identify），这种卷轴可以用于确定某个物品具体的一些内容：是否被诅咒或者被祝福，还有多少次能够使用。
 一些物品难以察觉的附魔在没有这种卷轴的帮助下将难以被鉴定。
 .pg
-A scroll whose label is known can be read even when the hero is blind.
-If a scroll has been discovered, it will be listed in inventory by type rather than by label, but the label is known in that situation even though it isn't shown.
+如果卷轴的名称已知，即使英雄失明也能读取它。
+如果发现了一卷卷轴，它会在物品栏中按类型而非名称列出，但在这种情况下，即使名称未显示，其名称也是已知的。
 .pg
-Many scrolls produce a different effect from usual if they are blessed or cursed, or read while the hero is confused.
+许多卷轴在受到祝福或诅咒时，或者在英雄处于混乱状态下被读取时，会产生与平时不同的效果。
 .pg
 在某些编译时选择了这个选项的版本中传信小鬼（Mail Daemon）可能会出现然后送达一份邮件卷轴。
 要想使用有这个NetHack邮件送达由电子邮件出现在你的系统邮箱时触发邮件送达的特性的版本，你必须要设置“MAIL”环境变量指明你的邮箱文件夹名（译者：这个涉及到本地邮箱系统的知识）来让NetHack知道需要在哪里寻找新的邮件。你可能也想设置“MAILREADER”环境变量来指明你喜欢的阅读器，从而能够在你阅读邮件卷轴时让NetHack能脱离到shell环境中调用该阅读器来进行阅读。
@@ -2164,15 +2002,13 @@ wands.
 .pg
 大多数戴上的戒指也会加快你变饥饿的速度。不同类型的戒指有不同的速率。
 .pg
-When wearing gloves, rings are worn underneath.
-If the gloves are cursed, rings cannot be put on and any already being
-worn cannot be removed.
-When worn gloves aren't cursed, you don't have to manually take them
-off before putting on or removing a ring and then re-wear them after.
-That's done implicitly to avoid unnecessary tedium.
+戴手套时，戒指需戴在手套内。
+如果手套被诅咒了，就无法戴上戒指，且已戴上的戒指也无法取下。
+如果戴在手上的手套未被诅咒，你无需在戴上或取下戒指前手动脱下手套，也无需在之后再重新戴上。
+这些操作会自动完成，以避免不必要的繁琐。
 .pg
 使用戒指的命令是‘P’（戴上）和‘R’（移除）。
-\(oqA\(cq, \(oqW\(cq, and \(oqT\(cq can also be used; see \fIAmulets\fP.
+也可以使用‘A’)、‘W’和‘T’；参见\fI护身符\fP。
 .hn 2
 魔法书（‘+’）
 .pg
@@ -2200,17 +2036,12 @@ That's done implicitly to avoid unnecessary tedium.
 .pg
 工具就是有着各种各样功能目标的的东西。某些工具类似于魔杖能量有着使用的次数。例如，灯燃烧一会儿就会灭掉。另外还有一类工具是容器，可以用来装东西或者从里面拿取东西。
 .pg
-Some tools (such as a blindfold) can be \fIworn\fP and can be put on and
-removed like other accessories (rings, amulets); see \fIAmulets\fP.
-Other tools (such as pick-axe) can be wielded as weapons in addition to
-being applied for their usual purpose, and in some cases (again, pick-axe)
-become wielded as a weapon even when applied.
+某些工具（例如眼罩（blindfold））可以\fI佩戴\fP，其穿戴和摘除方式与其他饰品（戒指、护身符）相同；参见\fI护身符\fP。
+其他工具（例如镐（pick-axe））除了用于其常规用途外，还可以作为武器挥舞，而在某些情况下（同样以镐为例），即使在进行常规操作时，也会被视为武器来挥舞。
 .pg
-The
+选项
 .op blind
-option can be set (prior to game start) to attempt to play the entire
-game without being able to see (a self-imposed challenge which is
-very difficult to accomplish).
+可在游戏开始前设置，尝试在整个游戏过程中不看屏幕进行游戏（这是一项自我设定的挑战，但要完成起来非常困难）。
 .pg
 使用工具的命令是‘a’。
 .hn 3
@@ -2222,29 +2053,18 @@ very difficult to accomplish).
 某些箱子其实是陷阱，在你打开它们的时候会造成不好的事情发生。
 你可以检查并试着用“#untrap”扩展命令解除它们。
 .pg
-When the contents of a container are known, that container will be
-described as something like \(lqa sack containing 3 items\(rq.
-In this example, the 3 refers to number of \fIstacks\fP of compatible
-items, not to the total number of individual items.
-So a sack holding 2 sky blue potions, 7 arrows, and 350 gold pieces would be
-described as having 3 items rather than 10 or 359.
-And you would need to have 3 unused inventory slots available in order
-to take everything out (for the case where the items you remove don't
-combine into bigger stacks with things you're already carrying).
+当容器的内容已知时，该容器将被描述为类似于\(lq装有3件物品的袋子\(rq（a sack containing 3 items）的形式。
+在此示例中，数字3指的是相容物品的\fIstacks\fP数量，而非单个物品的总数。
+因此，一个装有2个天蓝色药水、7支箭和350金币的麻袋，其描述应为包含3件物品，而非10件或359件。
+而且，你需要预留3个未使用的背包格子，才能将所有物品取出（前提是取出后的物品不会与你已携带的物品合并成更大的堆栈）。
 .pg
-If a chest or large box is described as \(lqbroken\(rq, that means that it
-can't be locked rather than that it no longer functions as a container.
+如果一个箱子或大盒子被描述为\(lq坏锁的\(rq（broken），这意味着它无法上锁，而非其作为容器的功能已失效。
 .pg
-The \fIapply\fP and \fIloot\fP commands allow you to take out and/or
-put in an arbitrary number of items in a single operation.
-If you want to take everything out of a container, you can use the
-\(lq#tip\(rq command to pour the contents onto the floor.
-This may be your only way to get things out if your hands are stuck
-to a cursed two-handed weapon.
-When your hands aren't stuck, you have the potential to pour the
-contents into another container.
-(As of this writing, the other container must be carried rather than on
-the floor.)
+\fI#apply\fP和\fI#loot\fP命令允许你在单次操作中取出和/或放入任意数量的物品。
+如果你想将容器中的所有物品取出，可以使用\(lq#tip\(rq命令将内容物倾倒在地面上。
+如果你的双手被诅咒的双持武器卡住，这可能是你取出物品的唯一方法。
+当双手未被占用时，你可以将内容物倾倒至另一个容器中。
+（截至本文撰写之时，另一个容器必须是正在携带的，而非置于地面上的。）
 .hn 2
 护身符（‘"’）
 .pg
@@ -2267,26 +2087,17 @@ the floor.)
 巨石（‘`’）
 .pg
 雕像和巨石不是特别有用，并且通常很重。
-有传言一些雕像并非它们看上去的那样。
+有传言说一些雕像并非它们看上去的那样。
 .pg
-Boulders occasionally block your path.
-You can push one forward (by attempting to walk onto its spot)
-when nothing blocks \fIits\fP path, or you can
-smash it into a pile of small rocks with breaking magic or a pick-axe.
-It is possible to move onto a boulder's location if certain conditions
-are met; ordinarily one of those conditions is that pushing it any
-further be blocked.
-Using the move-without-picking-up prefix (default key \(oq\f(CRm\fP\(cq)
-prior to the direction of movement will attempt to move to a boulder's
-location without pushing it in addition to the prefix's usual action of
-suppressing auto-pickup at the destination.
+巨石偶尔会挡住你的去路。
+当其路径上没有任何障碍物时，你可以将其向前推（尝试走到其所在位置），或者你可以使用破坏性魔法或镐将其砸成一堆碎石。
+在满足特定条件的情况下，你可以移动到巨石所在的位置；通常其中一个条件是，将其再推得更远会受到阻碍。
+在移动方向前使用“移动而不拾取”前缀（默认按键为‘\f(CRm\fP’)）将尝试移动到巨石的位置，同时不将其推开，此外该前缀还会执行其常规操作——即在目的地防止自动拾取。
 .pg
-非常巨大的类人生物（巨人和他们的亲属）会捡起巨石，并用作投掷武器。
+非常巨大的类人生物（巨人和他们的近亲）会捡起巨石，并用作投掷武器。
 .pg
-Unlike boulders, statues can't be pushed, but don't need to be because
-they don't block movement.
-.\" 'rumor' above is about statue traps; this is a hint about statue contents
-They can be smashed into rocks though.
+与巨石不同，雕像无法被推开，但也没有必要推开，因为它们不会阻碍移动。
+不过，它们可以被砸成碎石。
 .pg
 对于一些这个程序的配置，雕像不是用‘`’显示而是显示某些怪物的符号。
 .hn 2
@@ -2294,18 +2105,14 @@ They can be smashed into rocks though.
 .pg
 金币会添加到你的分数中，同时你可以在商店里面用它们来买东西。在地牢里面有许多的怪物都受到你携带的金币数的影响（商店主除外）。
 .pg
-Gold pieces are the only type of object where bless/curse state does not
-apply.
-They're always uncursed but never described as uncursed even if you turn
-off the
+金币是唯一一种不受祝福/诅咒状态影响的物品。
+它们始终处于未受诅咒状态，但即使你关闭了
 .op implicit_uncursed
-option.
-You can set the
+选项，也不会被描述为“未受诅咒”。
+如果你希望金币被视为具有祝福/诅咒状态，而非被明确标记为“无诅咒”，可以设置
 .op goldX
-option if you prefer to have gold pieces be treated as bless/curse state
-\fIunknown\fP rather than as known to be uncursed.
-Only matters when you're using an object selection prompt that can filter
-by \(lq\f(CRBUCX\fP\(rq state.
+选项。
+\fIunknown\fP仅在使用能够按\(lq\f(CRBUCX\fP\(rq状态进行筛选的物品选择提示时才起作用。
 .
 .hn 2
 物品的保持显示
@@ -2357,31 +2164,16 @@ Once the game is underway, you can acquire and use items, spells, and skills in 
 .pg
 文盲（illiterate）不能阅读或者书写文字。这包括了阅读卷轴，魔法书，幸运饼干的消息和T恤（T-shirt）；写卷轴；或者标记一个除了一个简单的‘X’（文盲角色进行标记的传统符号）以外的铭文。阅读一个铭文，或者一个对于这个游戏至关重要的东西，不算在违反这一行为。卷轴的标识和魔法书的标识（和咒语知识）在你初始的物品清单中被假定为是在游戏开始前从你老师那里学习而来的。
 .pg
-There is a side-branch to the main dungeon called \(lqSokoban,\(rq briefly
-described in the earlier section about \fITraps\fP.
-As mentioned there, the goal is to push boulders into pits and/or holes
-to plug those in order to both get the boulders out of the way and be
-able to go past the traps.
-There are some special \(lqrules\(rq that are active when in that branch
-of the dungeon.
-Some rules can't be bypassed, such as being unable to push a boulder
-diagonally.
-Other rules can, such as not smashing boulders with magic or tools,
-but doing so causes you to receive a luck penalty.
-No message about that is given at the time, but it is tracked as a conduct.
-The #conduct command and end of game disclosure will report whether
-you have abided by the special rules of Sokoban, and if not, how many
-times you violated them, providing you with a way to discover which
-actions incur bad luck so that you can be better informed about whether
-or not to avoid repeating those actions in the future.
-(Note:  the Sokoban conduct will only be displayed if you have
-entered the Sokoban branch of the dungeon during the current game.
-Once that has happened, it becomes part of disclosed conduct even if
-you haven't done anything interesting there.
-Ending the game with \(lqnever broke the Sokoban rules\(rq conduct is most
-meaningful if you also manage to perform
-the \(lqobtained the Sokoban prize\(rq achievement
-(see \fIAchievements\fP below).)
+主地牢中有一条支线，名为\(lq推箱子\(rq（Sokoban），在前文关于\fI陷阱\fP的章节中曾简要提及。
+如前所述，目标是将巨石推入坑洞中，以填塞这些坑洞，从而既能清除障碍，又能绕过陷阱。
+在该地牢分支中，会生效一些特殊的 \(lq规则\(rq。
+其中一些规则无法规避，例如无法对巨石进行对角线推动。
+而其他规则则可以规避，例如不使用魔法或工具击碎巨石，但若违反此规则，会导致你受到运气惩罚。
+当时不会显示相关提示，但这会被记录为一种行为。
+#conduct命令和游戏结束时的披露信息会报告你是否遵守了推箱子的特殊规则，若未遵守，则会显示你违反了多少次，这为你提供了一种发现哪些行为会导致厄运的方式，从而让你能更好地判断是否应避免在未来重复这些行为。
+（注：只有当你在当前游戏中进入地牢的“推箱子”分支时，才会显示“推箱子”行为记录。一旦进入该分支，即使你在此处未进行任何值得注意的操作，该行为记录也会被纳入最终披露的行为记录中。
+若你在游戏结束时显示\(lq从未违反推箱子规则\(rq 这一行为，且同时成功达成
+\(lq获得推箱子奖品\(rq成就，则该行为最具意义（参见下文\fI成就\fP）。）
 .pg
 还有一些其他的挑战被游戏所追踪。有可能通过灭绝（genocide）的方式来消除一个或多个怪物；不使用这样的特性（genocideless）来游玩游戏被视为一项挑战。
 当游戏给你提供一个机会来灭绝怪物的时候，如果你想要拒绝，你可以使用“none”。
@@ -2389,97 +2181,64 @@ the \(lqobtained the Sokoban prize\(rq achievement
 最后，你或许会有机会许愿；在游戏中不尝试进行许愿任何的东西（即使这个东西会立刻消失）（wishless）被视为一项挑战。
 当游戏中提供你一个可以许愿的机会的时候，你可以选择“nothing”来进行拒绝。
 .hn 2
-Achievements
+成就
 .pg
-End of game disclosure will also display various achievements
-representing progress toward ultimate ascension, if any have been
-attained.
-They aren't directly related to \fIconduct\fP but are grouped with
-it because they fall into the same category of \(lqbragging rights\(rq
-and to limit the number of questions during disclosure.
-Listed here roughly in order of difficulty and not necessarily in the order
-in which you might accomplish them.
+游戏结束时的信息披露环节还将显示各种成就，这些成就代表着通往最终升天的进度（如有达成）。
+它们虽与行为表现无直接关联，但因同属“炫耀的资本”这一类别，且为减少披露环节中的提问数量，故将其归入此处。此处列出的成就大致按难度排序，但不一定是你实际达成它们的顺序。
 .sp
 .TS
 center;
 L Lz2 L.
-\fIRank\fP	\-	Attained rank title \fIRank\fP.
-Shop	\-	Entered a shop.
-Temple	\-	Entered a temple.
-Mines	\-	Entered the Gnomish Mines.
-Town	\-	Entered Mine Town.
-Oracle	\-	Consulted the Oracle of Delphi.
-Novel	\-	Read a passage from a Discworld Novel.
-Sokoban	\-	Entered Sokoban.
-Big Room	\-	Entered the Big Room.
-Soko-Prize	\-	T{
-Explored to the top of Sokoban and found a special item there.
-T}
-Mines' End	\-	T{
-Explored to the bottom of the Gnomish Mines and found a special item
-there.
-T}
-Medusa	\-	Defeated Medusa.
-Tune	\-	T{
-Discovered the tune that can be used to open and close the drawbridge on
-the Castle level.
-T}
-Bell	\-	Acquired the Bell of Opening.
-Gehennom	\-	Entered Gehennom.
-Candle	\-	Acquired the Candelabrum of Invocation.
-Book	\-	Acquired the Book of the Dead.
-Invocation	\-	T{
-Gained access to the bottommost level of Gehennom.
-T}
-Amulet	\-	Acquired the fabled Amulet of Yendor.
-Endgame	\-	Reached the Elemental Planes.
-Astral	\-	Reached the Astral Plane level.
-Blind	\-	Blind from birth.
-Deaf	\-	Deaf from birth.
-Nudist	\-	Never wore any armor.
-Pauper	\-	Started out with no possessions.
-Ascended	\-	Delivered the Amulet to its final destination.
+\fIRank\fP	\-	获得了头衔\fIRank\fP。
+Shop	\-	进入了一个商店。
+Temple	\-	进入了一个神庙。
+Mines	\-	进入了侏儒矿坑。
+Town	\-	进入了矿洞镇。
+Oracle	\-	询问了德尔斐的神谕者。
+Novel	\-	读了一本碟形世界小说。
+Sokoban	\-	进入了推箱子关卡。
+Big Room	\-	进入了大房间。
+Soko-Prize	\-	探索到了推箱子关卡的顶层，并在那里发现了一个特殊道具。
+Mines' End	\-	探索到了侏儒矿坑的最深处，并在那里发现了一件特殊物品。
+Medusa	\-	击败了美杜莎。
+Tune	\-	发现了可以开关城堡吊桥的旋律。
+Bell	\-	获得了开启之铃。
+Gehennom	\-	进入了地狱。
+Candle	\-	获得了呼唤烛台。
+Book	\-	获得了死亡之书。
+Invocation	\-	进入了地狱的最底层。
+Amulet	\-	获得了假的岩德护身符。
+Endgame	\-	到达了元素位面。
+Astral	\-	到达了星界。
+Blind	\-	天生失明。
+Deaf	\-	天生失聪。
+Nudist	\-	从未穿戴任何盔甲。
+Pauper	\-	以一无所有开局。
+Ascended	\-	将护身符送达其最终目的地。
 .TE
 .sp
 .lp "Notes:  "
 .pg
-Achievements are recorded and subsequently reported in the order in which
-they happen during your current game rather than the order listed here.
+成就将按照你在当前游戏中达成时的顺序进行记录并随后显示，而非此处列出的顺序。
 .pg
-There are nine \fI<Rank>\fP titles for each role, bestowed at experience
-levels 1, 3, 6, 10, 14, 18, 22, 26, and 30.
-The one for experience level 1 is not recorded as an achievement.
-Losing enough levels to revert to lower rank(s) does not discard the
-corresponding achievement(s).
+每个角色都有九个\fI<Rank>\fP头衔，分别在经验等级 1、3、6、10、14、18、22、26 和 30 时授予。
+经验等级1对应的头衔不作为成就记录。
+即使因等级下降而降回较低等级，也不会取消相应的成就。
 .pg
-There's no guaranteed \fINovel\fP so the achievement to read one might
-not always be attainable (except perhaps by \fIwishing\fP).
-Similarly, the \fIBig Room\fP level is not always present.
-Unlike with the Novel, there's no way to wish for this opportunity.
+无法保证会出现\fI小说\fP，因此阅读它的成就可能并非总是可获得的（除非通过\fI许愿\fP）。
+同样，\fI大房间\fP关卡也并非总是存在。
+与小说不同，无法通过“许愿”获得这一机会。
 .pg
-The \(lqspecial items\(rq hidden in \fIMines'\~End\fP and \fISokoban\fP
-are not unique but are considered to be prizes or rewards
-for exploring those levels since doing so is not necessary to complete
-the game.
-Finding other instances of the same objects doesn't record the
-corresponding achievement.
+隐藏在\fI矿洞底\fP和\fI推箱子\fP中的\(lq特殊物品\(rq中隐藏的\(lq特殊物品\(rq并非唯一，但被视为探索这些关卡的奖品或奖励，因为探索这些关卡并非通关的必要条件。
+找到其他相同的物品不会记录相应的成就。
 .pg
-The \fIMedusa\fP achievement is recorded if she dies for any reason,
-even if you are not directly responsible, and only if she dies.
+只要\fI美杜莎\fP（Medusa）因任何原因死亡，即使并非由你直接导致，且仅当她死亡时，该成就才会被记录。
 .pg
-The 5-note \fItune\fP can be learned via trial and error with a musical
-instrument played closely
-enough\(embut not too close!\(emto
-the Castle level's drawbridge or can be given to you via prayer boon.
+5音符的\fI曲调\fP可以通过反复尝试，用乐器在距离城堡关卡吊桥足够近（但不要太近！）的地方演奏来习得，也可以通过祈祷恩赐获得。
 .pg
-\fIBlind\fP, \fIDeaf\fP, \fINudist\fP,
-and \fIPauper\fP are also conducts, and they can only be
-enabled by setting the correspondingly named option in NETHACKOPTIONS
-or run-time configuration file prior to game start.
-In the case of \fIBlind\fP and \fIDeaf\fP, the option also enforces the
-conduct.
-They aren't really significant accomplishments unless/until you make
-substantial progress into the dungeon.
+\fI盲人\fP（\fIBlind\fP）、\fI聋人\fP（\fIDeaf\fP）、\fI裸通\fP（\fINudist\fP），以及\fI贫民\fP（\fIPauper\fP）也是行为挑战，且只能通过在游戏开始前，在NETHACKOPTIONS 文件或运行时配置文件中设置相应名称的选项来启用。
+对于 \fIBlind\fP 和 \fIDeaf\fP，该选项还会强制执行该行为模式。
+除非/直到你在地牢中取得相当大的进展，否则这些并不算真正的成就。
 .
 .hn 1
 选项
@@ -2499,9 +2258,6 @@ substantial progress into the dungeon.
 .hw .nethackrc defaults.nh nethack.exe nethackW.exe %USERPROFILE%\NetHack\
 配置文件的默认名称取决于不同的操作系统。
 .pg
-On
-.UX ,
-Linux,
 在UNIX，Linux和macOS上，它是“.nethackrc”并且位于用户的目录下。
 这个文件或许不存在，但是它是一个ASCII文本文件并且你可以用任何文本编辑器来创建它。
 .pg
@@ -2514,8 +2270,8 @@ Linux,
 在配置文件中所有以‘#’开头的行将被视为注释。
 空行会被忽略。
 .pg
-任何以‘[’开头，‘]’结尾的行将被视为一个章节标识。(the closing \(oq\f(CR]\fP\(cq can be followed
-by whitespace and then an arbitrary comment beginning with \(oq\f(CR#\fP\(cq).
+任何以‘[’开头，‘]’结尾的行将被视为一个章节标识。(the closing ‘\f(CR]\fP’ can be followed
+by whitespace and then an arbitrary comment beginning with ‘\f(CR#\fP’).
 Section markers are only valid after a CHOOSE directive and their names
 are case-insensitive.
 Lines after a section marker belong to that section up until another
@@ -2693,7 +2449,7 @@ The NETHACKOPTIONS variable is a comma-separated list of initial
 values for the various options.
 Some can only be turned on or off.
 You turn one of these on by adding the name of the option to the list,
-and turn it off by typing a \(oq\f(CR!\fP\(cq or \(lq\f(CRno\fP\(rq
+and turn it off by typing a ‘\f(CR!\fP’ or \(lq\f(CRno\fP\(rq
 before the name.
 Others take a character string as a value.
 You can set string options by typing
@@ -2715,7 +2471,7 @@ you would enter the command
 .SD \*(sD
 \f(CR% setenv NETHACKOPTIONS "color,\\!leg,name:Blue Meanie,fruit:lime"\fP
 .ED
-in \fIcsh\fP (note the need to escape the \(oq!\(cq since it's special
+in \fIcsh\fP (note the need to escape the ‘!’ since it's special
 to that shell), or the pair of commands
 .SD \*(sD
 \f(CR$ NETHACKOPTIONS="color,!leg,name:Blue Meanie,fruit:lime"\fP
@@ -2733,9 +2489,9 @@ not allowed.
 Instead of a comma-separated list of options,
 NETHACKOPTIONS can be set to the full name of a configuration file you
 want to use.
-If that full name doesn't start with a slash, precede it with \(oq\f(CR@\fP\(cq
+If that full name doesn't start with a slash, precede it with ‘\f(CR@\fP’
 (at-sign) to let NetHack know that the rest is intended as a file name.
-If it does start with \(oq\f(CR/\fP\(cq, the at-sign is optional.
+If it does start with ‘\f(CR/\fP’, the at-sign is optional.
 .hn 2
 Customization options
 .pg
@@ -2769,7 +2525,7 @@ for a description of how to use negation to exclude choices.
 .lp ""
 If \f(CRalign\fP is not specified, there is no default value;
 player will be prompted unless role and/or race forces a choice for alignment.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 Persistent.
 .lp armorstatus
 Display an extra status condition which summarizes currently worn armor
@@ -2813,7 +2569,7 @@ Note: prior to version 3.7.0, the default for
 .op autopickup
 was \fIon\fP.
 .lp autoquiver
-This option controls what happens when you attempt the \(oqf\(cq (fire)
+This option controls what happens when you attempt the ‘f’ (fire)
 command when nothing is quivered or readied (default false).
 When true, the computer will fill
 your quiver or quiver sack or make ready some suitable weapon.
@@ -2821,9 +2577,9 @@ Note that it will not take
 into account the blessed/cursed status, enchantment, damage, or
 quality of the weapon; you are free to manually fill your quiver
 or quiver sack or make ready
-with the \(oqQ\(cq command instead.
+with the ‘Q’ command instead.
 If no weapon is found or the option is
-false, the \(oqt\(cq (throw) command is executed instead.
+false, the ‘t’ (throw) command is executed instead.
 Persistent.
 .lp autounlock
 Controls what action to take when attempting to walk into a locked door
@@ -2850,7 +2606,7 @@ has no effect on doors);
 none of the above; can't be combined with the other choices.
 .PE
 Omitting the value is treated as if \f(CRautounlock:apply-key\fP.
-Preceding \f(CRautounlock\fP with \(oq!\(cq or \(lqno\(rq is treated as
+Preceding \f(CRautounlock\fP with ‘!’ or \(lqno\(rq is treated as
 \f(CRautounlock:none\fP.
 .lp ""
 Applying a key might set off a trap if the door or container is trapped.
@@ -2868,10 +2624,10 @@ Allow saving and loading bones files (default true).
 Persistent.
 .lp "boulder "
 Set the character used to display boulders (default is the \(lqlarge rock\(rq
-class symbol, \(oq\`\(cq).
+class symbol, ‘\`’).
 .lp "catname "
 Name your starting cat (for example \(lqcatname:Morris\(rq).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp character
 Synonym for \(lqrole\(rq to pick the type of your character
 (for example \(lqcharacter:Monk\(rq).
@@ -2903,7 +2659,7 @@ or match a positive autopickup exception (default on).  Persistent.
 Controls what information the program reveals when the game ends.
 Value is a space separated list of prompting/category pairs
 (default is \(lq\fBni na nv ng nc no\fP\(rq,
-prompt with default response of \(oq\fBn\fP\(cq for each candidate).
+prompt with default response of ‘\fBn\fP’ for each candidate).
 Persistent.
 The possibilities are:
 .sd
@@ -2927,7 +2683,7 @@ lets you refine how it behaves.  Here are the valid prefixes:
 .ei
 .ed
 The listings of vanquished monsters and of genocided types can be sorted,
-so there are two additional choices for \(oqv\(cq and \(oqg\(cq:
+so there are two additional choices for ‘v’ and ‘g’:
 .sd
 .si
 .CC ? "prompt you and default to ask on the prompt;"
@@ -2935,14 +2691,14 @@ so there are two additional choices for \(oqv\(cq and \(oqg\(cq:
 .ei
 .ed
 Asking refers to picking one of the orderings from a menu.
-The \(oq+\(cq disclose without prompting choice,
-or being prompted and answering \(oqy\(cq rather than \(oqa\(cq,
+The ‘+’ disclose without prompting choice,
+or being prompted and answering ‘y’ rather than ‘a’,
 will default to showing monsters in the order specified by the
 .op sortvanquished
 option.
 .lp ""
-Omitted categories are implicitly added with \(oqn\(cq prefix.
-Specified categories with omitted prefix implicitly use \(oq+\(cq prefix.
+Omitted categories are implicitly added with ‘n’ prefix.
+Specified categories with omitted prefix implicitly use ‘+’ prefix.
 Order of the disclosure categories does not matter, program display for
 end-of-game disclosure follows a set sequence.
 .lp ""
@@ -2961,7 +2717,7 @@ And the dungeon overview shows all levels you had visited but does not
 reveal things about them that you hadn't discovered.
 .lp "dogname "
 Name your starting dog (for example \(lqdogname:Fang\(rq).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp "extmenu "
 Changes the extended commands interface to pop-up a menu of available
 commands.
@@ -2975,9 +2731,9 @@ or just the subset of commands which have traditionally been considered
 extended ones (off).
 .lp "female  "
 An obsolete synonym for \(lq\f(CRgender:female\fP\(rq.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp fireassist
-This option controls what happens when you attempt the \(oqf\(cq (fire)
+This option controls what happens when you attempt the ‘f’ (fire)
 and don't have an appropriate launcher, such as a bow or a sling, wielded.
 If on, you will automatically wield the launcher. Default is on.
 .lp "fixinv  "
@@ -3011,7 +2767,7 @@ for a description of how to use negation to exclude choices.
 .lp ""
 If \f(CRgender\fP is not specified, there is no default value;
 player will be prompted unless role and/or race forces a choice for gender.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 Persistent.
 .lp "goldX   "
 When filtering objects based on bless/curse state (BUCX), whether to
@@ -3023,7 +2779,7 @@ even when the
 option is \(lqoff\(rq.
 .lp "help    "
 If more information is available for an object looked at
-with the \(oq/\(cq command, ask if you want to see it (default on).
+with the ‘/’ command, ask if you want to see it (default on).
 Turning help off makes just looking at things faster, since you aren't
 interrupted with the \(lqMore info?\(rq prompt, but it also means that
 you might miss some interesting and/or important information.
@@ -3075,7 +2831,7 @@ To resize that, use the \f(CR#optionsfull\fP command to toggle the
 use the same command to toggle it back on.)
 .lp horsename
 Name your starting horse (for example \(lqhorsename:Trigger\(rq).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp "ignintr "
 Ignore interrupt signals, including breaks (default off).  Persistent.
 .lp implicit_uncursed
@@ -3092,20 +2848,20 @@ Show corridor squares seen by night vision or a light source held by your
 character as lit (default off).  Persistent.
 .lp "lootabc "
 When using a menu to interact with a container,
-use the old \(oqa\(cq, \(oqb\(cq, and \(oqc\(cq keyboard shortcuts
-rather than the mnemonics \(oqo\(cq, \(oqi\(cq, and \(oqb\(cq
+use the old ‘a’, ‘b’, and ‘c’ keyboard shortcuts
+rather than the mnemonics ‘o’, ‘i’, and ‘b’
 (default off).
 Persistent.
 .lp "mail    "
 Enable mail delivery during the game (default on).  Persistent.
 .lp "male    "
 An obsolete synonym for \(lq\f(CRgender:male\fP\(rq.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp mention_decor
 Give feedback when walking onto various dungeon features such as stairs,
 fountains, or altars which are ordinarily only described when covered
 by one or more objects (default off).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 Persistent.
 .lp mention_map
 Give feedback when interesting map locations change (default off).
@@ -3133,20 +2889,20 @@ prompting one-by-one.
 Full displays a menu of
 object classes rather than a character prompt, and then a menu of matching
 objects for selection.
-(Choosing its \(oqA\(cq (Autoselect-All) choice skips the second menu.
+(Choosing its ‘A’ (Autoselect-All) choice skips the second menu.
 To avoid choosing that by accident,
 set \f(CRparanoid_confirm:AutoAll\fP to require confirmation.)
 Partial skips the object class filtering and
 immediately displays a menu of all objects.
 .lp menu_deselect_all
 Key to deselect all items in a menu.
-Default \(oq\-\(cq.
+Default ‘\-’.
 .lp menu_deselect_page
 Key to deselect all items on this page of a menu.
-Default \(oq\\\(cq.
+Default ‘\\’.
 .lp menu_first_page
 Key to jump to the first page in a menu.
-Default \(oq\(ha\(cq.
+Default ‘\(ha’.
 .lp menu_headings
 Controls how the headings in a menu are highlighted.
 Takes a text attribute, or text color and attribute separated by ampersand.
@@ -3154,16 +2910,16 @@ For allowed attributes and colors, see \(lqConfiguring Menu Colors\(rq.
 Not all ports can actually display all types.
 .lp menu_invert_all
 Key to invert all items in a menu.
-Default \(oq@\(cq.
+Default ‘@’.
 .lp menu_invert_page
 Key to invert all items on this page of a menu.
-Default \(oq\(ti\(cq. \" ~
+Default ‘\(ti’. \" ~
 .lp menu_last_page
 Key to jump to the last page in a menu.
-Default \(oq|\(cq.
+Default ‘|’.
 .lp menu_next_page
 Key to go to the next menu page.
-Default \(oq>\(cq.
+Default ‘>’.
 .lp menu_objsyms
 ." [originally menu_objsyms was a boolean]
 ." Show object symbols in menu headings in menus where
@@ -3203,30 +2959,30 @@ menus to the right edge of the screen. Only for the tty port.
 (default on)
 .lp menu_previous_page
 Key to go to the previous menu page.
-Default \(oq<\(cq.
+Default ‘<’.
 .lp menu_search
 Key to search for some text and toggle selection state of matching menu items.
-Default \(oq:\(cq.
+Default ‘:’.
 .lp menu_select_all
 Key to select all items in a menu.
-Default \(oq.\(cq.
+Default ‘.’.
 .lp menu_select_page
 Key to select all items on this page of a menu.
-Default \(oq,\(cq.
+Default ‘,’.
 .lp menu_shift_left
 Key to scroll a menu\(emone which has been
 scrolled right\(emback to the left.
 Implemented for
 .op perm_invent
 only by curses and X11.
-Default \(oq{\(cq.
+Default ‘{’.
 .lp menu_shift_right
 Key to scroll a menu which has text beyond the
 right edge to the right.
 Implemented for
 .op perm_invent
 only by curses and X11.
-Default \(oq}\(cq.
+Default ‘}’.
 ." .lp menu_tab_sep
 ." Format menu entries using TAB to separate columns (default off).
 ." Only applicable to some menus, and only useful to some interfaces.
@@ -3255,12 +3011,12 @@ and negating
 is the same as specifying 0.
 .lp msghistory
 The number of top line messages to keep (and be able to recall
-with \(oq\(haP\(cq) (default 20).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+with ‘\(haP’) (default 20).
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp msg_window
 Allows you to change the way recalled messages are displayed.
 Currently it is only supported for tty (all four choices) and for curses
-(\(oq\f(CRf\fP\(cq and \(oq\f(CRr\fP\(cq choices, default \(oq\f(CRr\fP\(cq).
+(‘\f(CRf\fP’ and ‘\f(CRr\fP’ choices, default ‘\f(CRr\fP’).
 The possible values are:
 .sd
 .si
@@ -3285,11 +3041,11 @@ On some systems, the default is the player's user name;
 on others, there is no default and the player will be prompted.
 The former can made to behave like the latter by specifying a generic name
 such as ``player''.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp "news    "
 Read the NetHack news file, if present (default on).
 Since the news is shown at the beginning of the game, there's no point
-in setting this with the \(oqO\(cq command.
+in setting this with the ‘O’ command.
 .lp "nudist  "
 Start the character with no armor (default false).  Persistent.
 .lp "null    "
@@ -3301,28 +3057,28 @@ Valid settings are:
 .PL "\ 0"
 move by letters; \(lq\f(CRyuhjklbn\fP\(rq \" \f(CR = constant-width Roman font
 .PL "\ 1"
-move by numbers; digit \(oq5\(cq acts as \(oqG\(cq movement prefix
+move by numbers; digit ‘5’ acts as ‘G’ movement prefix
 .PL "\ 2"
-like 1 but \(oq5\(cq works as \(oqg\(cq prefix instead of as \(oqG\(cq
+like 1 but ‘5’ works as ‘g’ prefix instead of as ‘G’
 .PL "\ 3"
 by numbers using phone key layout; 123 above, 789 below
 .PL "\ 4"
 combines 3 with 2; phone layout plus MS-DOS compatibility
 .PL "-1"
-by letters but use \(oqz\(cq to go northwest, \(oqy\(cq to zap wands
+by letters but use ‘z’ to go northwest, ‘y’ to zap wands
 .PE
 For backward compatibility, omitting a value is the same as specifying 1
 and negating
 .op number_pad
 is the same as specifying 0.
 (Settings 2 and 4 are for compatibility with MS-DOS or old PC Hack;
-in addition to the different behavior for \(oq5\(cq, \(oqAlt-5\(cq acts
-as \(oqG\(cq and \(oqAlt-0\(cq acts as \(oqI\(cq.
+in addition to the different behavior for ‘5’, ‘Alt-5’ acts
+as ‘G’ and ‘Alt-0’ acts as ‘I’.
 Setting -1 is to accommodate some QWERTZ keyboards which have the
-location of the \(oqy\(cq and \(oqz\(cq keys swapped.)
+location of the ‘y’ and ‘z’ keys swapped.)
 When moving by numbers, to enter a count prefix for those commands
 which accept one (such as \(lq12s\(rq to search twelve times), precede it
-with the letter \(oqn\(cq (\(lqn12s\(rq).
+with the letter ‘n’ (\(lqn12s\(rq).
 .lp packorder
 .\" \(dq == double quote; literal '"' formats ok but confuses Emacs' nroff-mode
 Specify the order to list object types in (default \(lq\(dq)[%?+!=/(*\`0_\(rq).
@@ -3335,51 +3091,51 @@ prompting is desired.
 The default is \(lqparanoid_confirmation:pray swim trap\(rq.
 .PS Were-change
 .PL Confirm
-for any prompts which are set to require \(lqyes\(rq rather than \(oqy\(cq,
+for any prompts which are set to require \(lqyes\(rq rather than ‘y’,
 also require \(lqno\(rq to reject instead of accepting any non-yes response
-as no; changes pray and AutoAll to require \(lqyes\(rq or \(oqno\(cq too;
+as no; changes pray and AutoAll to require \(lqyes\(rq or ‘no’ too;
 .PL quit
-require \(lqyes\(rq rather than \(oqy\(cq to confirm quitting
+require \(lqyes\(rq rather than ‘y’ to confirm quitting
 the game or switching into non-scoring explore mode;
 .PL die
-require \(lqyes\(rq rather than \(oqy\(cq to confirm dying (not
+require \(lqyes\(rq rather than ‘y’ to confirm dying (not
 useful in normal play; applies to explore mode);
 .PL bones
-require \(lqyes\(rq rather than \(oqy\(cq to confirm saving
+require \(lqyes\(rq rather than ‘y’ to confirm saving
 bones data when dying in debug mode;
 .PL attack
-require \(lqyes\(rq rather than \(oqy\(cq to confirm attacking
+require \(lqyes\(rq rather than ‘y’ to confirm attacking
 a peaceful monster;
 .PL wand-break
-require \(lqyes\(rq rather than \(oqy\(cq to confirm breaking
+require \(lqyes\(rq rather than ‘y’ to confirm breaking
 a wand with the \f(CRapply\fP command;
 .PL eating
-require \(lqyes\(rq rather than \(oqy\(cq to confirm whether to
+require \(lqyes\(rq rather than ‘y’ to confirm whether to
 continue eating;
 .PL Were-change
-require \(lqyes\(rq rather than \(oqy\(cq to confirm changing form due
+require \(lqyes\(rq rather than ‘y’ to confirm changing form due
 to lycanthropy when hero has polymorph control;
 .PL pray
-require \(oqy\(cq to confirm an attempt to pray rather
+require ‘y’ to confirm an attempt to pray rather
 than immediately praying; on by default;
-(to require \(lqyes\(rq rather than just \(oqy\(cq, set Confirm too);
+(to require \(lqyes\(rq rather than just ‘y’, set Confirm too);
 .PL trap
-require \(oqy\(cq to confirm an attempt to move into or onto a known trap,
+require ‘y’ to confirm an attempt to move into or onto a known trap,
 unless doing so is considered to be harmless;
 when enabled, this confirmation is also used for moving into visible
 gas cloud regions;
-(to require \(lqyes\(rq rather than just \(oqy\(cq, set Confirm too);
-confirmation can be skipped by using the \(oq\f(CRm\fP\(cq movement prefix;
+(to require \(lqyes\(rq rather than just ‘y’, set Confirm too);
+confirmation can be skipped by using the ‘\f(CRm\fP’ movement prefix;
 .PL swim
 prevent walking into water or lava; on by default; (to deliberately step
-onto/into such terrain when this is set, use the \(oq\f(CRm\fP\(cq
+onto/into such terrain when this is set, use the ‘\f(CRm\fP’
 movement prefix when adjacent);
 .PL AutoAll
-require confirmation when the \(oqA\(cq (Autoselect-All) choice is selected
+require confirmation when the ‘A’ (Autoselect-All) choice is selected
 in object class filtering menus for \f(CRmenustyle:Full\fP;
-(to require \(lqyes\(rq rather than just \(oqy\(cq, set Confirm too);
+(to require \(lqyes\(rq rather than just ‘y’, set Confirm too);
 .PL Remove
-require selection from inventory for \(oqR\(cq and \(oqT\(cq
+require selection from inventory for ‘R’ and ‘T’
 commands even when wearing just one applicable item;
 .PL all
 turn on all of the above.
@@ -3397,9 +3153,9 @@ precede the first entry in the list with a minus sign,
 \f(CRparanoid_confirmation:-swim\fP.
 To both add some new entries and remove some old ones, you can use
 multiple \fIparanoid_confirmation\fP option settings, or you can
-use the \(oq\f(CR+\fP\(cq form and list entries to be added by their name
-and entries to be removed by \(oq\f(CR!\fP\(cq and name.
-The positive (no \(oq!\(cq) and negative (with \(oq!\(cq) entries
+use the ‘\f(CR+\fP’ form and list entries to be added by their name
+and entries to be removed by ‘\f(CR!\fP’ and name.
+The positive (no ‘!’) and negative (with ‘!’) entries
 can be intermixed.
 .lp pauper
 Start the character with no possessions (default false).  Persistent.
@@ -3462,12 +3218,12 @@ Possible values are \(lqcat\(rq, \(lqdog\(rq, \(lqhorse\(rq, and \(lqnone\(rq.
 If the choice is not allowed for the role you are currently playing,
 it will be silently ignored.
 For example, \(lqhorse\(rq will only be honored when playing a knight.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp pickup_burden
 When you pick up an item that would exceed this encumbrance
 level (Unencumbered, Burdened, streSsed, straiNed, overTaxed,
 or overLoaded), you will be asked if you want to continue.
-(Default \(oqS\(cq).
+(Default ‘S’).
 Persistent.
 .lp pickup_stolen
 If this option is on and
@@ -3504,7 +3260,7 @@ There is no way to set \f(CRpickup_types\fP to \(lq\fInone\fP\(rq.
 If you want to avoid automatically picking up any types of items but do
 want to have \f(CRautopickup\fP on in order to have
 \f(CRautopickup_exception\fP settings control what you do and don't pick
-up, you can set \f(CRpickup_types\fP to \(oq\f(CR.\fP\(cq.
+up, you can set \f(CRpickup_types\fP to ‘\f(CR.\fP’.
 That is the type symbol for \fIvenom\fP and you won't come across
 any venom items so won't unintentionally pick such up.
 .lp pile_limit
@@ -3535,9 +3291,9 @@ Many players may want to turn this on while identifying objects, and then
 turn it back off again for general play.
 Default is off.
 .lp pushweapon
-Using the \(oqw\(cq (wield) command when already wielding
+Using the ‘w’ (wield) command when already wielding
 something pushes the old item into your alternate weapon slot (default off).
-Likewise for the \(oqa\(cq (apply) command if it causes the applied item to
+Likewise for the ‘a’ (apply) command if it causes the applied item to
 become wielded.
 Persistent.
 .lp query_menu
@@ -3560,7 +3316,7 @@ for a description of how to use negation to exclude choices.
 .lp ""
 If \f(CRrace\fP is not specified, there is no default value;
 player will be prompted unless role forces a choice for race.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 Persistent.
 .lp reroll
 Allows rerolling your character's starting inventory and attributes (default
@@ -3573,7 +3329,7 @@ partly as an acknowledgement that some players will insist on doing so anyway,
 and partly because rerolling may be necessary for certain types of challenge
 games.
 .lp rest_on_space
-Make the space bar a synonym for the \(oq.\(cq (#wait) command (default off).
+Make the space bar a synonym for the ‘.’ (#wait) command (default off).
 Persistent.
 .lp "role    "
 Pick your type of character (for example, \f(CRrole:Samurai\fP);
@@ -3582,7 +3338,7 @@ synonym for
 See
 .op name
 for an alternate method of specifying your role.
-.\" Normally only the first letter of the value is examined; \(oqr\(cq is an
+.\" Normally only the first letter of the value is examined; ‘r’ is an
 .\" exception with \(lqRogue\(rq, \(lqRanger\(rq, and \(lqrandom\(rq values.
 .lp ""
 This option can also be used to limit selection when role is chosen
@@ -3590,7 +3346,7 @@ randomly.
 Use a space-separated list of roles and either negate each one or negate
 the option itself instead.
 Negation is accomplished in the same manner as with \fIboolean options\fP,
-by prefixing the option or its value(s) with \(oq!\(cq or \(lqno\(rq.
+by prefixing the option or its value(s) with ‘!’ or \(lqno\(rq.
 .BR 0
 Examples:
 .sd
@@ -3607,7 +3363,7 @@ option if they're all negations.
 .lp ""
 If \f(CRrole\fP is not specified, there is no default value;
 player will be prompted.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 Persistent.
 .lp roguesymset
 This option may be used to select one of the named symbol sets found
@@ -3650,7 +3406,7 @@ Debug mode only.
 .lp "scores  "
 Control what parts of the score list you are shown at the end (for example
 \(lqscores:5 top scores/4 around my score/own scores\(rq).
-Only the first letter of each category (\(oqt\(cq, \(oqa\(cq, or \(oqo\(cq)
+Only the first letter of each category (‘t’, ‘a’, or ‘o’)
 is necessary.
 Persistent.
 .lp showdamage
@@ -3689,8 +3445,8 @@ displays.
 Suppress terminal beeps (default on).
 Persistent.
 .lp sortdiscoveries
-Controls the sorting behavior for the output of the \(oq\f(CR\\\fP\(cq
-and \(oq\f(CR\`\fP\(cq commands.
+Controls the sorting behavior for the output of the ‘\f(CR\\\fP’
+and ‘\f(CR\`\fP’ commands.
 Persistent.
 .lp ""
 The possible values are:
@@ -3710,9 +3466,9 @@ list by class, alphabetically within each class;
 .PL \f(CRa\fP
 list alphabetically across all classes.
 .PE
-Can be interactively set via the \(oq\f(CRO\fP\(cq command or via using
-the \(oq\f(CRm\fP\(cq prefix before the \(oq\f(CR\\\fP\(cq
-or \(oq\f(CR\`\fP\(cq command.
+Can be interactively set via the ‘\f(CRO\fP’ command or via using
+the ‘\f(CRm\fP’ prefix before the ‘\f(CR\\\fP’
+or ‘\f(CR\`\fP’ command.
 .lp sortloot
 Controls the sorting behavior of the pickup lists for inventory
 and #loot commands and some others.  Persistent.
@@ -3758,8 +3514,8 @@ order by count, high to low; ties are broken by internal monster index;
 .PL \f(CRz\fP
 order by count, low to high; ties broken by internal index.
 .PE
-Can be interactively set via the \(oq\f(CRm O\fP\(cq command or via using
-the \(oq\f(CRm\fP\(cq prefix before either the #vanquished command
+Can be interactively set via the ‘\f(CRm O\fP’ command or via using
+the ‘\f(CRm\fP’ prefix before either the #vanquished command
 or the #genocided command.
 .lp "sounds "
 Allow sounds to be emitted from an integrated sound library (default on).
@@ -3815,7 +3571,7 @@ the score list around after game end on a terminal or emulating window.
 Allow the travel command via mouse click (default on).
 Turning this option off will prevent the game from attempting unintended
 moves if you make inadvertent mouse clicks on the map window.
-Does not affect traveling via the \(oq\f(CR_\fP\(cq (\(lq#travel\(rq) command.
+Does not affect traveling via the ‘\f(CR_\fP’ (\(lq#travel\(rq) command.
 Persistent.
 ." .lp travel_debug
 ." Display intended path during each step of travel (default off).
@@ -3840,7 +3596,7 @@ Some possible displayed values are:
 \f(CRdual-weps\fP - wielding two weapons.
 .ed
 .lp whatis_coord
-When using the \(oq/\(cq or \(oq;\(cq commands to look around on the map with
+When using the ‘/’ or ‘;’ commands to look around on the map with
 .op autodescribe
 on, display coordinates after the description.
 Also works in other situations where you are asked to pick a location.
@@ -3858,7 +3614,7 @@ The possible settings are:
 The
 .op whatis_coord
 option is also used with the \(lq/m\(rq, \(lq/M\(rq, \(lq/o\(rq,
-and \(lq/O\(rq sub-commands of \(oq/\(cq,
+and \(lq/O\(rq sub-commands of ‘/’,
 where the \(lqnone\(rq setting is overridden with \(lqmap\(rq.
 .lp whatis_filter
 When getting a location on the map, and using the keys to cycle through
@@ -3890,7 +3646,7 @@ move by skipping the same glyphs.
 When the program has been built to support multiple interfaces,
 select which one to use, such as \(lqtty\(rq or \(lqX11\(rq
 (default depends on build-time settings; use \(lq#version\(rq to check).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp ""
 When used, it should be the first option set since its value might
 enable or disable the availability of various other options.
@@ -3922,7 +3678,7 @@ can't it will silently ignore it.  You can find out if an
 option is supported by the window port that you are currently
 using by checking to see if it shows up in the Options list.
 Some options are dynamic and can be specified during the game
-with the \(oqO\(cq command.
+with the ‘O’ command.
 .lp align_message
 Where to align or place the message window (top, bottom, left, or right)
 .lp align_status
@@ -3990,7 +3746,7 @@ If NetHack can, it should preload tiles into memory.
 For example, in the protected mode MS-DOS version, control whether tiles
 get pre-loaded into RAM at the start of the game.  Doing so
 enhances performance of the tile graphics, but uses more memory. (default on).
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp scroll_amount
 If NetHack can, it should scroll the display by this number of cells
 when the hero reaches the scroll_margin.
@@ -4015,7 +3771,7 @@ When set to \f(CR3\fP, the \f(CRtty\fP interface moves some fields around and
 mainly shows status conditions on their own line.
 A display capable of showing at least 25 lines is recommended.
 The value can be toggled back and forth during the game with the
-\(oq\f(CRO\fP\(cq command.
+‘\f(CRO\fP’ command.
 .lp ""
 The \f(CRcurses\fP interface does likewise if the
 .op align_status
@@ -4036,7 +3792,7 @@ height needed.
 older than \f(CRqt-5.9\fP,
 .op statuslines
 can only be set in the run-time configuration file or via NETHACKOPTIONS,
-not during play with the \(oq\f(CRO\fP\(cq command.)
+not during play with the ‘\f(CRO\fP’ command.)
 .lp "term_cols\ \ \fIand\fP"
 .lp term_rows
 Curses interface only.
@@ -4085,7 +3841,7 @@ Acceptable values are
 .ei
 .ed
 .lp ""
-(The 26x82 size threshold for \(oq2\(cq refers to number of rows and
+(The 26x82 size threshold for ‘2’ refers to number of rows and
 columns of the display.
 A width of at least 110 columns (80+2+26+2) is needed to show borders if
 .op align_status
@@ -4169,10 +3925,10 @@ keys to move) on machines with an IBM PC compatible BIOS ROM (default off,
 OS/2, PC, and ST NetHack only).
 .lp "rawio   "
 Force raw (non-cbreak) mode for faster output and more
-bulletproof input (MS-DOS sometimes treats \(oq\(haP\(cq as a printer toggle
+bulletproof input (MS-DOS sometimes treats ‘\(haP’ as a printer toggle
 without it) (default off, OS/2, PC, and ST NetHack only).
 Note:  DEC Rainbows hang if this is turned on.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp subkeyvalue
 (Win32 tty NetHack only).
 May be used to alter the value of keystrokes that the operating system
@@ -4181,7 +3937,7 @@ OPTIONS=subkeyvalue:171/92
 will return 92 to NetHack, if 171 was originally going to be returned.
 You can use multiple subkeyvalue assignments in the configuration file
 if needed.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp video
 Set the video mode used (PC NetHack only).
 Values are \(lqautodetect\(rq, \(lqdefault\(rq, \(lqvga\(rq, or \(lqvesa\(rq.
@@ -4192,7 +3948,7 @@ in 16 colors, a mode that is compatible with all VGA hardware. Third party
 tilesets will probably not work.
 Setting \(lqautodetect\(rq attempts \(lqvesa\(rq, then \(lqvga\(rq, and
 finally sets \(lqdefault\(rq if neither of those modes works.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp video_height
 Set the VGA mode resolution height (MS-DOS only, with video:vesa)
 .lp video_width
@@ -4203,13 +3959,13 @@ Set the color palette for PC systems using NO_TERMS
 The order of colors is red, green, brown, blue, magenta, cyan,
 bright.white, bright.red, bright.green, yellow, bright.blue,
 bright.magenta, and bright.cyan.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .lp videoshades
 Set the intensity level of the three gray scales available
 (default dark normal light, PC NetHack only).
 If the game display is difficult to read, try adjusting these scales;
 if this does not correct the problem, try !color.
-Cannot be set with the \(oq\f(CRO\fP\(cq command.
+Cannot be set with the ‘\f(CRO\fP’ command.
 .hn 2
 Regular Expressions
 .pg
@@ -4217,8 +3973,8 @@ Regular expressions are normally POSIX extended regular expressions. It is
 possible to compile NetHack without regular expression support on a platform
 where there is no regular expression library. While this is not true of any
 modern platform, if your NetHack was built this way, patterns are instead glob
-patterns; regardless, this document refers to both as \(oqregular
-expressions.\(cq
+patterns; regardless, this document refers to both as ‘regular
+expressions.’
 This applies to Autopickup exceptions, Message types, Menu colors,
 and User sounds.
 .hn 2
@@ -4258,7 +4014,7 @@ The
 rules are processed in the order in which they appear in your configuration
 file, thus allowing a later rule to override an earlier rule.
 .lp ""
-Exceptions can be set with the \(oqO\(cq command, but because they are not
+Exceptions can be set with the ‘O’ command, but because they are not
 included in your configuration file, they won't be in effect if you save
 and then restore your game.
 .op autopickup_exception
@@ -4325,110 +4081,110 @@ Prefix key to start a count, to repeat a command this many times.
 With
 .op number_pad
 only.
-Default is \(oqn\(cq.
+Default is ‘n’.
 .lp getdir.help
 When asked for a direction, the key to show the help.
-Default is \(oq?\(cq.
+Default is ‘?’.
 .lp getdir.mouse
 When asked for a direction, the key to initiate a simulated mouse click.
 You will be asked to pick a location.
 Use movement keystrokes to move the cursor around the map, then type
-the getpos.pick.once key (default \(oq\f(CR,\fP\(cq)
-or the getpos.pick key (default \(oq\f(CR.\fP\(cq)
+the getpos.pick.once key (default ‘\f(CR,\fP’)
+or the getpos.pick key (default ‘\f(CR.\fP’)
 to finish as if performing a left or right click.
 Only useful when using the \f(CR#therecmdmenu\fP command.
-Default is \(oq_\(cq. \" underscore
+Default is ‘_’. \" underscore
 .lp getdir.self
 When asked for a direction, the key to target yourself.
-Default is \(oq.\(cq.
+Default is ‘.’.
 .lp getdir.self2
 When asked for a direction, an alternate key to target yourself.
-Default is \(oqs\(cq.
+Default is ‘s’.
 .lp getpos.autodescribe
 When asked for a location, the key to toggle autodescribe.
-Default is \(oq#\(cq.
+Default is ‘#’.
 .lp getpos.all.next
 When asked for a location, the key to go to next closest interesting thing.
-Default is \(oqa\(cq.
+Default is ‘a’.
 .lp getpos.all.prev
 When asked for a location, the key to go to previous closest interesting
 thing.
-Default is \(oqA\(cq.
+Default is ‘A’.
 .lp getpos.door.next
 When asked for a location, the key to go to next closest door or doorway.
-Default is \(oqd\(cq.
+Default is ‘d’.
 .lp getpos.door.prev
 When asked for a location, the key to go to previous closest door or doorway.
-Default is \(oqD\(cq.
+Default is ‘D’.
 .lp getpos.help
 When asked for a location, the key to show help.
-Default is \(oq?\(cq.
+Default is ‘?’.
 .lp getpos.mon.next
 When asked for a location, the key to go to next closest monster.
-Default is \(oqm\(cq.
+Default is ‘m’.
 .lp getpos.mon.prev
 When asked for a location, the key to go to previous closest monster.
-Default is \(oqM\(cq.
+Default is ‘M’.
 .lp getpos.obj.next
 When asked for a location, the key to go to next closest object.
-Default is \(oqo\(cq.
+Default is ‘o’.
 .lp getpos.obj.prev
 When asked for a location, the key to go to previous closest object.
-Default is \(oqO\(cq.
+Default is ‘O’.
 .lp getpos.menu
 When asked for a location, and using one of the next or previous keys to
 cycle through targets, toggle showing a menu instead.
-Default is \(oq!\(cq.
+Default is ‘!’.
 .lp getpos.moveskip
 When asked for a location, and using the shifted movement keys or meta-digit
 keys to fast-move around, move by skipping the same glyphs instead of
 by 8 units.
-Default is \(oq*\(cq.
+Default is ‘*’.
 .lp getpos.filter
 When asked for a location, change the filtering mode when using one of
 the next or previous keys to cycle through targets.
 Toggles between no
 filtering, in view only, and in the same area only.
-Default is \(oq\(dq\(cq. \" double quote
+Default is ‘\(dq’. \" double quote
 .lp getpos.pick
 When asked for a location, the key to choose the location, and possibly
 ask for more info.
 When simulating a mouse click after being asked for a direction (see
 getdir.mouse above), the key to use to respond as right click.
-Default is \(oq.\(cq.
+Default is ‘.’.
 .lp getpos.pick.once
 When asked for a location, the key to choose the location, and skip asking
 for more info.
 When simulating a mouse click after being asked for a direction,
 the key to respond as left click.
-Default is \(oq,\(cq.
+Default is ‘,’.
 .lp getpos.pick.quick
 When asked for a location, the key to choose the location, skip asking for
 more info, and exit the location asking loop.
-Default is \(oq;\(cq.
+Default is ‘;’.
 .lp getpos.pick.verbose
 When asked for a location, the key to choose the location, and show more
 info without asking.
-Default is \(oq:\(cq.
+Default is ‘:’.
 .lp getpos.self
 When asked for a location, the key to go to your location.
-Default is \(oq@\(cq.
+Default is ‘@’.
 .lp getpos.unexplored.next
 When asked for a location, the key to go to next closest unexplored location.
-Default is \(oqx\(cq.
+Default is ‘x’.
 .lp getpos.unexplored.prev
 When asked for a location, the key to go to previous closest unexplored
 location.
-Default is \(oqX\(cq.
+Default is ‘X’.
 .lp getpos.valid
 When asked for a location, the key to go to show valid target locations.
-Default is \(oq$\(cq.
+Default is ‘$’.
 .lp getpos.valid.next
 When asked for a location, the key to go to next closest valid location.
-Default is \(oqz\(cq.
+Default is ‘z’.
 .lp getpos.valid.prev
 When asked for a location, the key to go to previous closest valid location.
-Default is \(oqZ\(cq.
+Default is ‘Z’.
 .hn 2
 Configuring Message Types
 .pg
@@ -4621,8 +4377,8 @@ Allowed attributes are none, bold, dim, underline, italic, blink, and inverse.
 \(lqNormal\(rq is a synonym for \(lqnone\(rq; they should not be used in
 combination with any of the other attributes.
 .pg
-To specify both a color and an attribute, use \(oq&\(cq to combine them.
-To specify multiple attributes, use \(oq+\(cq to combine those.
+To specify both a color and an attribute, use ‘&’ to combine them.
+To specify multiple attributes, use ‘+’ to combine those.
 For example: \(lqmagenta&inverse+dim\(rq.
 .pg
 Note that the display may substitute or ignore particular attributes
@@ -4693,11 +4449,11 @@ the \(lqup\(rq or \(lqdown\(rq one takes precedence.)
 .lp "*"
 percentage sets the field attribute when the field value
 matches the percentage.
-It is specified as a number between 0 and 100, followed by \(oq%\(cq
+It is specified as a number between 0 and 100, followed by ‘%’
 (percent sign).
-If the percentage is prefixed with \(oq<=\(cq or \(oq>=\(cq,
+If the percentage is prefixed with ‘<=’ or ‘>=’,
 it also matches when value is below or above the percentage.
-Use prefix \(oq<\(cq or \(oq>\(cq to match when strictly below or above.
+Use prefix ‘<’ or ‘>’ to match when strictly below or above.
 (The numeric limit is relaxed slightly for those: \f(CR>-1%\fP
 and \f(CR<101%\fP are allowed.)
 Only four fields support percentage rules.
@@ -4721,11 +4477,11 @@ exactly 1 experience point short of the next level.
 .lp "*"
 absolute value sets the attribute when the field value matches
 that number.
-The number must be 0 or higher, except for \(lqarmor-class\(cq which
-allows negative values, and may optionally be preceded by \(oq=\(cq.
-If the number is preceded by \(oq<=\(cq or \(oq>=\(cq instead,
+The number must be 0 or higher, except for \(lqarmor-class’ which
+allows negative values, and may optionally be preceded by ‘=’.
+If the number is preceded by ‘<=’ or ‘>=’ instead,
 it also matches when value is below or above.
-If the prefix is \(oq<\(cq or \(oq>\(cq, only match when strictly
+If the prefix is ‘<’ or ‘>’, only match when strictly
 above or below.
 .lp "*"
 criticalhp only applies to the hitpoints field and only
@@ -5210,7 +4966,7 @@ Allows the following placeholders:
 .PS %M
 .\" \f(CR = set font to constant-width Roman; approximation of {\tt ...} in TeX
 .PL \f(CR%%\fP
-literal \(oq\f(CR%\fP\(cq
+literal ‘\f(CR%\fP’
 .PL \f(CR%v\fP
 version (eg. \(lq\f(CR3.7.0\-0\fP\(rq)
 .PL \f(CR%u\fP
