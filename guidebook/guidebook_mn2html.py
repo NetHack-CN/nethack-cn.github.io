@@ -781,7 +781,7 @@ class GuidebookRoffToHTML:
                 if len(parts) > 1 and parts[1].strip().isdigit():
                     level = int(parts[1].strip())
                     i += 1
-                    self.out.append('<div><table width="100%%"><tbody><tr><td width="33%" style="text-align:left">NetHack 3.6.7 （将来会改成5.0.0）</td><td width="33%" style="text-align:center">2026.06.21</td><td width="33%" style="text-align:right">[<a href="#_TOC">目录</a>]</td></tr></tbody></table></div><hr><br>')
+                    self.out.append('<div><table width="100%%"><tbody><tr><td width="33%" style="text-align:left">NetHack 5.0.0</td><td width="33%" style="text-align:center">2026.06.21</td><td width="33%" style="text-align:right">[<a href="#_TOC">目录</a>]</td></tr></tbody></table></div><hr><br>')
                     while i < len(self.lines) and not self.lines[i].strip():
                         i += 1
                     if i < len(self.lines) and not self.lines[i].lstrip().startswith('.'):
@@ -1086,7 +1086,7 @@ em{{font-style:italic}}
 &nbsp;|&nbsp;
 <a href="https://www.nethack.org/common/index.html">5.0.0版</a>
 &nbsp;|&nbsp;
-<a href="..contact/index.html">联系我们</a>
+<a href="../contact/index.html">联系我们</a>
 &nbsp;]
  </div>
 <div class="navrowrit">
@@ -1122,7 +1122,7 @@ def main() -> None:
     ap.add_argument("-o", "--output", type=Path, default=Path("Guidebook.html"), help="Output HTML path")
     args = ap.parse_args()
 
-    src = args.input.read_text("utf-8", errors="replace")
+    src = args.input.read_text("utf-8", errors="replace").replace('(tab)', '	')
     html_out = GuidebookRoffToHTML(center_to_table(src)).convert()
     html_out = html_out
     args.output.write_text(html_out, encoding="utf-8")
