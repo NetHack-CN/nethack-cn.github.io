@@ -21,7 +21,7 @@ def leng(a):
 	t = 0
 	for i in range(len(a)):
 		t += 1
-		if re.match(r'[\\u4e00-\\u9fa5]', a[i]):
+		if re.match(r'[\u4e00-\u9fa5]', a[i]):
 			t += 1
 	return t
 for i in range(len(mn)):
