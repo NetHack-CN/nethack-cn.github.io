@@ -1,3 +1,8 @@
+'''
+フランキウム-223：谁要是看到了这段代码，来救救我吧……如果有更好的解决方法的话。
+在我岂不是毫无帮助吗？智慧岂不是从我心中赶出净尽吗？ 
+2026.06.24（今夕何夕）
+'''
 import re
 mn = open('./Guidebook366-zh.mn', 'r', encoding='utf-8').readlines()
 latin = 'qwertyuioppasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'

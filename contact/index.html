@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>下载 - NetHack-cn</title>
+  <title>联系我们 - NetHack-cn</title>
   <meta name="description" content="NetHack-cn（基于NetHack 5.0.0）的汉化（本地化）版的介绍页面。提供游戏下载，并收录了社区网站和资源的链接……">
 
   <link rel="stylesheet" href="../assets/main.css">
@@ -40,28 +40,43 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">下载</h1>
+    <h1 class="post-title">联系我们</h1>
   </header>
 
   <div class="post-content">
-<h2 id="latest-experimental">正字法</h2>
-<p>
-  <b>s</b> = 大陆简体（该项目的单一事实来源，开发时使用的正字法）<br>
-  <b>t</b> = <a href="https://github.com/BYVoid/OpenCC/blob/master/DESIGN_PRINCIPLES.md">OpenCC标准繁体</a><br>
-  <b>tg</b> = <a href="https://www.gov.cn/gongbao/content/2013/content_2481095.htm">通用规范繁体</a>（脚本：<a href="https://github.com/amorphobia/opencc-tonggui">amorphobia/opencc-tonggui</a>）<br>
-  <b>twg</b> = 台湾繁体（同时转换词汇）
-</p>
-<p>（除s外其他正字法版本都由<a href="https://github.com/BYVoid/OpenCC"><b>OpenCC</b></a>进行<b>自动转换</b>得到，脚本本身具有局限性，以及源代码里也可能存在词汇不按一般人认知的词汇边界切割，因此不保证没有错误写法。）<br>
-*注意：<b>在哪种正字法的版本，许愿/灭绝就用哪种正字法的汉字。</b><span title="你知道的太多了" class="heimu">（应该没有人像某个老酒鬼一样<a href="https://upload.thbwiki.cc/a/a9/%E4%B8%9C%E6%96%B9%E7%81%B5%E5%BC%82%E4%BC%A0%E5%B0%81%E9%9D%A2.jpg">一个字写新字体另一个字写旧字体</a>吧，应该……）</span></p>
-    <h2 id="windows-releases">Windows</h2>
-<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/nethack-cn/actions/workflows/nethack-vs-package.yml/badge.svg" alt="Build Status" style="all: unset; max-width: 100%;"></a>
-<p>仓库：<a href="https://github.com/StackC00ki3/Nethack-cn/releases">StackC00ki3/Nethack-cn</a>。无需手动编译，可以直接下载基于GitHub Actions构建的汉化预览版。由于现在还在开发中，不保证能顺利升天。</p>
-    <h2 id="android-releases">Android</h2>
-<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/ANetHack-cn/actions/workflows/android-release.yml/badge.svg" alt="Build Status" style="all: unset; max-width: 100%;"></a>
-<p>仓库：<a href="https://github.com/StackC00ki3/ANetHack-cn">ANetHack-cn</a>。（原作：<a href="https://github.com/gurrhack/NetHack-Android">gurrhack/NetHack-Android</a>）</p>
-    <h2 id="3d-releases">NetHack-3D</h2>
-<p>仓库：<a href="https://github.com/StackC00ki3/nethack-3d">nethack-3d</a>。（原作：<a href="https://github.com/JamesIV4/nethack-3d">JamesIV4/nethack-3d</a>）</p>
+<p style="font-size: 20px">公告：欢迎<a href="./randomtext.html">在细微之处书写您的创意</a>——对这个仓库做贡献提供的最简单的方式。</p>
 
+<h2 id="questions">有疑问？</h2>
+<p>如果是游戏机制/没那么严肃的问题，欢迎直接<a href="https://github.com/StackC00ki3/Nethack-cn/issues/">来这里问</a>。</p>
+<p>上不去GitHub？那就<a class="u-email" href="mailto:wizardofyendor@outlook.com">发个E-mail</a>。</p>
+
+<h2 id="how-to-create-new-issues-properly">想提交bug？</h2>
+<p>GitHub Issues用于处理从bug报告到长期构想等方方面面的内容。因此，遵循一些简单的规则能让整个流程变得更加顺畅。</p>
+<h3 id="rule-zero">Rule zero</h3>
+<p>请尽可能为issue起一个有意义的标题，因为这是大家首先看到的内容。</p>
+<h3 id="bug-reports">Bug报告</h3>
+<p>在提交错误报告之前，请务必先搜索<a href="https://github.com/StackC00ki3/Nethack-cn/issues/">问题列表</a>，确认该问题是否已被报告过。</p>
+<p>您的bug报告应该包括：</p>
+<ul>
+  <li>您是在哪个操作系统（Windows、Linux、macOS等）上遇到这个bug的</li>
+  <li>使用的是什么界面（tty、curses、tiles）</li>
+  <li>版本号（在游戏里按<span class="kbdsym">V</span>后弹出的那一长串）</li>
+  <li>bug产生时的情况（最好能够稳定复现，如果不能也至少写一下之前你干了什么）</li>
+  <li>这里本应发生什么</li>
+</ul>
+<p>您的bug报告可以包括：</p>
+<ul>
+  <li>录屏/截图/终端文本导出（有些内容通过图片展示更直观）</li>
+  <li>发生bug时的存档文件，不确定是哪个就把存档目录打包过来</li>
+</ul>
+
+<h2 id="translation-discuss">讨论译名（GitHub）</h2>
+<p>物品：<a href="https://github.com/StackC00ki3/Nethack-cn/discussions/3">https://github.com/StackC00ki3/Nethack-cn/discussions/3</a></p>
+<p>汉化：<a href="https://github.com/StackC00ki3/Nethack-cn/discussions/4">https://github.com/StackC00ki3/Nethack-cn/discussions/4</a></p>
+<p>其他：<a href="https://github.com/StackC00ki3/Nethack-cn/discussions/7">https://github.com/StackC00ki3/Nethack-cn/discussions/7</a></p>
+
+<h2 id="enhancements">其他改进建议</h2>
+<p>请到<a href="https://github.com/NetHack/NetHack">原版仓库</a>提问。<b>这只是个汉化版，没有义务为移除Herobrine负责。</b></p>
   </div>
 
 </article>

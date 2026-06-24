@@ -1111,7 +1111,7 @@ Debug mode only.
 显示正在戴着的护身符。
 默认按键为‘"’。
 .lp ""
-使用前缀‘\f(CRm\fP’\)将强制在菜单中显示已佩戴的护身符，而不是仅显示一条消息。
+使用前缀‘\f(CRm\fP’将强制在菜单中显示已佩戴的护身符，而不是仅显示一条消息。
 .lp #seearmor
 显示正在穿着的防具。
 默认按键为‘[’。
@@ -1443,9 +1443,9 @@ No time elapses.
 #exploremode
 .lp ""
 .pg
-If the
+如果启用了
 .op number_pad
-option is on, some additional letter commands are available:
+选项，还有一些额外的字母命令可用：
 .lp h
 #help
 .lp j
@@ -1810,8 +1810,8 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 .pg
 会存在某些情况下你不想要手持任何的武器。想要实现那样的效果，使用‘-’，也可以使用‘A’命令来让你卸下当前的武器，此外也可以卸下其他穿着的装备。
 .pg
-那些AD\&D（专家级龙与地下城）的读者玩家，请注意每一件存在于AD\&D的武器在NetHack中都会造成相似的伤害。
-一些更加费解的武器（例如\fI链棒\fP（aklys），\fI苜蓿锤\fP（lucern hammer），以及\fI鸦啄战锤\fP（bec-de-corbin））被定义在AD\&D的附录《Unearthed Arcana》（被发掘的奥秘）中。
+那些AD&D（专家级龙与地下城）的读者玩家，请注意每一件存在于AD&D的武器在NetHack中都会造成相似的伤害。
+一些更加费解的武器（例如\fI链棒\fP（aklys），\fI苜蓿锤\fP（lucern hammer），以及\fI鸦啄战锤\fP（bec-de-corbin））被定义在AD&D的附录《Unearthed Arcana》（被发掘的奥秘）中。
 .pg
 有的界面支持
 .op weaponstatus

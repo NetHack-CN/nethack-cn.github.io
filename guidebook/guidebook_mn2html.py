@@ -1111,11 +1111,11 @@ em{{font-style:italic}}
  </div>
  <div class="navrowctr">
 [&nbsp;
-<a href="../index.html">返回主页</a>
+<a href="/index.html">返回主页</a>
 &nbsp;|&nbsp;
 <a href="https://www.nethack.org/common/index.html">5.0.0版</a>
 &nbsp;|&nbsp;
-<a href="../contact/index.html">联系我们</a>
+<a href="/contact/index.html">联系我们</a>
 &nbsp;]
  </div>
 <div class="navrowrit">
