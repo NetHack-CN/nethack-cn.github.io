@@ -1764,10 +1764,8 @@ NetHack将会告诉你你现在的负载状况有多糟糕。
 .op implicit_uncursed
 选项可以用于控制这个情况；关闭这个选项使得即使该属性能被其他属性推断出也依然显示该描述。
 .pg
-Sometimes the bless or curse state of objects is referred to as their
-\(lq\f(CRBUC\fP\(rq attribute, for Blessed, Uncursed, or Cursed state,
-or \(lq\f(CRBUCX\fP\(rq for Blessed, Uncursed, Cursed, or unknown.
-(The term \fIbeatitude\fP is occasionally used as well.)
+有时，物体的被祝福或被诅咒状态被称为其\(lq\f(CRBUC\fP\(rq属性（分别代表“被祝福”、“未被诅咒”或“被诅咒”状态），或\(lq\f(CRBUCX\fP\(rq（分别代表“被祝福”、“未被诅咒”、“被诅咒”或“未知”状态）。
+（偶尔也会用“\fIbeatitude\fP”。）
 .hn 2
 神器
 .pg
@@ -2153,10 +2151,9 @@ wands.
 .pg
 无神论者（atheist）是反对宗教信仰的。这意味着你无法使用“#pray”祈祷，使用“#offer”来向任何神献祭，使用“#turn”来驱赶不死族，使用“#chat”来和神父对话。特别挑剔的读者可能会主张玩武僧或者牧师，这样则会违反这个挑战（无神论）；当然，这个留给玩家自己去选择。将岩德的护身符献祭给你的神是赢得这个游戏的关键，所以这样做不会打破无神论挑战。你当然也不会因为生气的神，祭司或者其他宗教人士主动向你说话而受到惩罚；一个真正的无神论者只会听他们的话但是不会附加这些话语其他的意义。
 .pg
-贫民（pauper）A pauper starts the game with no possessions, no spells, and no weapon or spell skills (and if playing as a knight, your pony will not have a saddle).
-Can only be initiated by starting a new game with \f(CROPTIONS=pauper\fP set in your run-time configurtion file or \f(CRNETHACKOPTIONS\fP environment
-variable.
-Once the game is underway, you can acquire and use items, spells, and skills in the usual way.
+贫民（pauper）在游戏开始时一无所有，既没有法术，也没有武器或法术技能（如果扮演骑士，你的小马也不会配有马鞍）。
+只能通过在运行时配置文件中设置\f(CROPTIONS=pauper\fP或通过\f(CRNETHACKOPTIONS\fP环境变量来启动新游戏。
+一旦游戏开始，你就可以像往常一样获取和使用物品、法术和技能。
 .pg
 大多数的玩家手持武器（或者手持但是作为武器的工具）来进行战斗。另一个挑战就是在不手持任何武器（weaponless）的情况下赢得游戏。你依然被允许利用投掷类武器，发射或者踢武器；使用魔杖，咒语，或者其他类型的；或者用你的拳头或者脚来战斗。
 .pg
