@@ -1,0 +1,6 @@
+!.gitignore
+!Guidebook.txt
+!Guidebook.html
+!Guidebook366-zh.mn
+!guidebook_mn2html.py
+!guidebook_mn2txt.py

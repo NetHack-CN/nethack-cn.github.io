@@ -1125,8 +1125,8 @@ em{{font-style:italic}}
 <div role="main" id="mainskip">
 没有
 <a href="http://www.nethack.org/download/5.0.0/nethack-500-Guidebook.pdf">pdf</a>
-，因为我懒。（<a href="https://www.gnu.org/software/groff/">用来parse这个文本的工具</a>年龄比我都大！）但有
-<a href="http://www.nethack.org/download/5.0.0/nethack-500-Guidebook.txt">ASCII</a>
+，因为我懒。但有
+<a href="./guidebook.txt">ASCII</a>
 。
 <hr>
 <h2 style="text-align:center">
@@ -1147,7 +1147,7 @@ em{{font-style:italic}}
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="Convert NetHack Guidebook.mn to HTML.")
-    ap.add_argument("input", type=Path, help="Path to Guidebook.mn")
+    ap.add_argument("input", nargs='?', type=Path, default=Path("Guidebook366-zh.mn"), help="Path to Guidebook.mn")
     ap.add_argument("-o", "--output", type=Path, default=Path("Guidebook.html"), help="Output HTML path")
     args = ap.parse_args()
 
