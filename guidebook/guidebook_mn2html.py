@@ -1126,7 +1126,7 @@ em{{font-style:italic}}
 没有
 <a href="http://www.nethack.org/download/5.0.0/nethack-500-Guidebook.pdf">pdf</a>
 ，因为我懒。但有
-<a href="./guidebook.txt">ASCII</a>
+<a href="./Guidebook.txt">ASCII</a>
 。
 <hr>
 <h2 style="text-align:center">
