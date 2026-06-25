@@ -72,7 +72,7 @@ for i in range(len(mn)):
 	   or line.startswith(".BR") or line.startswith(".ft") or line.startswith(".TS") \
 	   or line.startswith(".sd") or line.startswith(".ed") or line.startswith(".ei") \
 	   or line.startswith(".ce") or line.startswith(".if") or line.startswith(".L") \
-	   or line.startswith(".tr") or line.startswith('C C.') or line == '.':
+	   or line.startswith(".tr") or line.startswith('C C.') or line.startswith('\\*(f2') or line == '.':
 		continue
 	if line == '.pg':
 		continue

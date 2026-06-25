@@ -896,6 +896,11 @@ class GuidebookRoffToHTML:
                 i += 1
                 continue
 
+            if line.startswith('\\*(f2'):
+                self.emit_para()
+                i += 1
+                continue
+
             if line.startswith('.BR'):
                 self.emit_para()
                 self.out.append('<br>')
