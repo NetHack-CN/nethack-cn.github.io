@@ -226,7 +226,7 @@ Dlvl:1 T:752                                  Conf
 如果你当前\fB无负重\fP（\fBUnencumbered\fP），这里将不会有任何显示。
 .lp ""
 致命情形：
-\fB石化\fP（\fBStone，又叫\fBPetrifying\fP\fP）、\fB黏液化\fP（\fBSlime\fP）、\fB窒息\fP（\fBStrngl，即strangulation\fP）、\fB食物中毒\fP（\fBFoodPois，即food poisoning\fP）、\fB绝症\fP（\fBTermIll，即terminal illness\fP）。
+\fB石化\fP（\fBStone，又叫\fBPetrifying\fP\fP）、\fB黏液化\fP（\fBSlime\fP）、\fB窒息\fP（\fBStrngl，即strangulation\fP）、\fB食物中毒\fP（\fBFoodPois，即food poisoning\fP）、\fB不治之症\fP（\fBTermIll，即terminal illness\fP）。
 .lp ""
 非致命情形：
 \fB失明\fP（\fBBlind\fP）、\fB失聪\fP（\fBDeaf\fP)、\fB眩晕\fP（\fBStun\fP）、\fB混乱\fP（\fBConf\fP）、\fB幻觉\fP（\fBHallu\fP）。
