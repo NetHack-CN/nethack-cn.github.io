@@ -655,11 +655,11 @@ h2.nhtheme-bw {
 <div class="lp"><span class="label">F[yuhjklbn]</span> 前缀：攻击一个怪物（即使你只是猜想这里有个怪物）。</div>
 <div class="lp"><span class="label">M[yuhjklbn]</span> 前缀：移动，但移动过程中不捡起物品。</div>
 <div class="lp"><span class="label">g[yuhjklbn]</span> 前缀：移动，直到你发现一些让你感兴趣的事情。</div>
-<div class="lp"><span class="label">G[yuhjklbn]或&lt;CONTROL-&gt;[yuhjklbn]</span> 前缀：类似前缀‘g’，但走廊的分叉路由不会作为触发感兴趣。</div>
+<div class="lp"><span class="label">G[yuhjklbn]或&lt;CONTROL-&gt;[yuhjklbn]</span> 前缀：类似前缀‘g’，但走廊的分叉路口不会作为感兴趣的事情触发。</div>
 <p>注意：&lt;Control&gt;+&lt;key&gt;指的是打字时按下&lt;Shift&gt;一样按下&lt;Control&gt;或者&lt;Ctrl&gt;，然后再按下&lt;key&gt;，松开&lt;key&gt;，再松开&lt;Control&gt;。说明手册里的^&lt;key&gt;意思是一样的。Control加的字母是大小写无关的，所以^x和^X一样的。</p>
 <div class="lp"><span class="label">M[yuhjklbn]</span> 旧版本支持‘<code>M</code>’作为一个移动前缀，结合了‘<code>m</code>’和<code>&lt;Control&gt;</code>+&lt;direction&gt;。 这个前缀已经不再支持，但是可以用‘<code>m</code>’和<code>G</code>&lt;direction&gt;组合实现类似的效果。 <code>m</code>也可以和<code>g</code>&lt;direction&gt;、<code>&lt;Control&gt;</code>+&lt;direction&gt;或者<code>&lt;Shift&gt;</code>+&lt;direction&gt;组合起来。</div>
 <div class="lp"><span class="label">_</span> 使用最短路径算法移动到地图上的某个位置。</div>
-<p>该最短路劲由英雄已知的地图位置计算得出（例如看到的或先前走过的）。如果这里无法计算出一个最短路径，那么会使用一个猜测的路径来替代。其停止条件大多数情况和‘G’前缀类似，但是不会捡起物品，因此隐式地强制使用‘m’前缀。对于支持鼠标的移植，当在非当前位置鼠标点击发生时，同样会被调用。</p>
+<p>该最短路径由英雄已知的地图位置计算得出（例如看到的或先前走过的）。如果这里无法计算出一个最短路径，那么会使用一个猜测的路径来替代。其停止条件大多数情况和‘G’前缀类似，但是不会捡起物品，因此隐式地强制使用‘m’前缀。对于支持鼠标的移植，当在非当前位置鼠标点击发生时，同样会被调用。</p>
 <div class="lp"><span class="label">.</span> 停下，什么都不做。 如果safe_wait打开的话，在前面加上‘m’前缀，即使身边有敌对怪物也能等待一回合。</div>
 <div class="lp"><span class="label">a</span> 激活（使用）工具（鹤嘴锄，钥匙，提灯……）。</div>
 <p>如果选择一把魔杖，该魔杖将会被破坏，并在这个过程中施放它的魔法。操作前会要求确认。</p>
@@ -689,13 +689,13 @@ h2.nhtheme-bw {
 <div><span data-nh="1" style="display:inline-block;vertical-align:top;text-indent:0ch;width:5.1ch"><span style="font:normal 16px serif">D%u</span></span><span data-nh="2" style="display:inline-block;width:2ch;vertical-align:top">&nbsp;<span style="font:normal 16px serif">-</span></span><span data-nh="3" style="display:inline-block;width:calc(95% - 5.1ch)"><span style="font:normal 16px serif">只丢弃未付款的食物</span>&nbsp;<span style="font:normal 16px serif"> </span></span></div>
 </dl></div>
 <p>最后一个例子展示了一个组合。这里有个四种类别物品过滤：类别（（‘!’，用于毒药；‘?’，用于卷轴，等等），商店状态（‘u’用于未付款，换句话说，仅用于购物），祝福/诅咒状态（如上所示的‘B’、‘U’、‘C’以及‘X’），还有新版的‘P’, 最近捡起的物品；通过捡起或放下物品来控制，而非受时间因素影响）。</p>
-<p>如果你在一项类别上，指定了不止一个值（例如“!?”对于毒药和卷轴或者是“BU”对于被祝福的和未被诅咒的），一项物品如果它匹配了指定值的任意一个将会满足条件（因此“!?”意味着‘!’或者‘?’）。如果你指定了多个类别，物品将会匹配每个类别的条件（因此“%u”意味着种类‘%’和未付款‘u’）。最后，你可能会在多个类别中指定多个值：“!?BU”将会选择所有被祝福或未被诅咒的毒药和卷轴。（在早于3.6的版本中，过滤组合的行为是不一样的。）</p>
+<p>如果你在一项类别上，指定了不止一个值（例如“!?”对于毒药和卷轴或者是“BU”对于被祝福的和未被诅咒的），一项物品如果它匹配了指定值的任意一个将会满足条件（因此“!?”意味着‘!’或者‘?’）。如果你指定了多个类别，物品将会匹配每个类别的条件（因此“%u”意味着种类‘%’和未付款‘u’）。最后，你可能会在多个类别中指定多个值：“!?BU”将会选择所有被祝福或未被诅咒的毒药和卷轴。（在3.6之前，过滤组合的行为是不一样的。）</p>
 <div class="lp"><span class="label">^D</span> 踢某些东西（通常是门）。</div>
 <div class="lp"><span class="label">e</span> 吃东西。</div>
 <p>通常优先检查在地上的可食用物品，如果找不到可选择的，就检查在物品清单中的。在‘e’之前使用‘m’前缀将会直接忽视去吃地上的食物。</p>
 <p>如果你试图在已经处于饱腹状态的时候进食，你可能会因为噎住窒息而死。如果你冒这个险，那么<em>如果你在第一口活了下来</em>，你将会被询问“continue eating?”。你可以设置paranoid_confirmation:eating选项：要求在回应时输入\f(CRyes\fP来替代\f(CRy\fP。</p>
 <div class="lp"><span class="label">E</span> 在地板上刻字。</div>
-<div style="text-indent:0ch;margin-left:10ch">E- - 在地板上用你的手指写字.</div>
+<div style="text-indent:0ch;margin-left:10ch">E- - 在地板上用你的手指写字。</div>
 <p>刻下“Elbereth”将会造成大多数的怪物在接近你的时候不会攻击你（但是一旦你进行了攻击，你将破坏你的刻字）；这个方法通常有助于给你自己争取喘息的机会。</p>
 <div class="lp"><span class="label">f</span> 从箭袋中发射发射物。你或许可以使用‘Q’命令来选择弹药，或者autoquiver为true的时候，让电脑选择一个合适的。</div>
 <p>如果当前持有的武器具有“投掷并返回”属性，且你的箭袋为空，并且autoquiver为false，则会投掷该武器，而非将箭袋填满。</p>
@@ -729,7 +729,7 @@ h2.nhtheme-bw {
 <div class="lp"><span class="label">q</span> 喝东西。</div>
 <p>当出现喷泉或水槽时，系统会询问是否要从那里喝水。如果拒绝，则会提供从背包中选择一瓶药水的机会。在‘q’前面加上‘m’前缀，即可跳过关于是否从喷泉或水槽喝水的询问。</p>
 <div class="lp"><span class="label">Q</span> 选择准备弹药。你可以在那之后使用‘f’命令进行投射。</div>
-<p>（在早于3.3的版本，这个命令用于退出游戏，现在已经迁移至“#quit”命令。）</p>
+<p>（在3.3之前，这个命令用于退出游戏，现在已经迁移至“#quit”命令。）</p>
 <div class="lp"><span class="label">r</span> 读卷轴或者书。</div>
 <div class="lp"><span class="label">R</span> 摘下配饰（戒指，护身符等）。</div>
 <p>如果你正戴着不止一件，你会被提示需要移除哪一件。当你只戴着一件，默认情况下你将被不会询问而是直接移除，但是你可以设置paranoid_confirmation:Remove选项来提示。</p>
@@ -759,7 +759,7 @@ h2.nhtheme-bw {
 <div class="lp"><span class="label">x</span> 切换主武器和副武器。</div>
 <p>当你正在进行双持武器进行战斗的时候，后者将会成为你的副武器。需要注意的是如果主要或者副武器槽是空的，交换依然会进行。</p>
 <div class="lp"><span class="label">X</span> 开关双持战斗。这个命令也可以通过“#twoweapon”扩展命令来实现。</div>
-<p>（在早于3.6版本之前，这个键位曾用于开启“探索模式”，也被称作“发现模式”，现在被迁移至“#exploremode”和M-X。）</p>
+<p>（在3.6版本之前，这个键位曾用于开启“探索模式”，也被称作“发现模式”，现在被迁移至“#exploremode”和M-X。）</p>
 <div class="lp"><span class="label">^X</span> 显示你的属性。</div>
 <p>展示名称，角色，种族，性别（除非角色名称已经能够指明，例如穴居人（Caveman）或者牧师（Preiestess），和阵营，连同你的神和他或她的敌人。该命令也显示来自于状态行的各种各样的信息在一个简洁的表格里，包括一系列额外的因为显示空间有限而没有出现在正常状态显示栏的东西。</p>
 <p>在正常的游戏中，‘^X’会显示所有的东西。在探索模式中，角色与状态的反馈信息通过被启蒙魔法提供的信息而被增强显示。</p>
@@ -915,7 +915,7 @@ h2.nhtheme-bw {
 <div class="lp"><span class="label">#swap    </span> 切换主武器和副武器。 默认按键为‘x’。</div>
 <div class="lp"><span class="label">#takeoff </span> 脱下一件防具。 默认按键为‘T’。</div>
 <div class="lp"><span class="label">#takeoffall</span> 脱下所有防具。 默认按键为‘A’。</div>
-<div class="lp"><span class="label">#teleport</span> 层间传送。 默认按键为‘^T’。</div>
+<div class="lp"><span class="label">#teleport</span> 层内传送。 默认按键为‘^T’。</div>
 <div class="lp"><span class="label">#terrain </span> 显示没有挡住的地图。 在正常游戏中，您可以查看当前关卡中已探索部分的地图，其中可选择显示：仅显示怪物；仅显示怪物和物体；或仅显示怪物、物体和陷阱。</div>
 <p>如果视野中可见气体云，在决定是显示气体云还是其下方的地面时，会将其视为陷阱。</p>
 <p>在探索模式下，你可以选择查看完整地图，而不仅仅是其已探索的部分。在调试模式下，还有其他选项。</p>
@@ -1064,7 +1064,7 @@ BIND=@:toggle(autopickup)</div>
 <div><table width="100%%"><tbody><tr><td width="33%" style="text-align:left">NetHack 5.0.0</td><td width="33%" style="text-align:center">2026.06.21</td><td width="33%" style="text-align:right">[<a href="#_TOC">目录</a>]</td></tr></tbody></table></div><hr><br>
 <h3 id="toc_5.5">5.5. 移动反馈</h3>
 <p>在地图上移动时，通常不会收到任何反馈，—除了将英雄绘制到新位置之外，或者你踩到一个或多个物体，或者踩到陷阱，或者试图移动到有怪物驻守的位置。有几种选项可以用来增强常规反馈。</p>
-<p>选项pile_limit控制一个堆中可以包含多少个对象，这些对象位于同一地图位置，以便游戏显示“此处有对象”而非列出具体对象。</p>
+<p>选项pile_limit控制一个堆中可以包含多少个物品，这些物品位于同一地图位置，以便游戏显示“此处有物品”而非列出具体物品。</p>
 <p>默认值为<code>5</code>。将其设置为<code>1</code>时，系统将始终显示该提示，而非列出任何物品。将其设置为<code>0</code>属于特殊情况，无论堆栈规模多大，系统都会始终列出所有物品。请注意，该数字指的是当前存在的独立物品堆栈的数量，而非这些堆栈中物品数量的总和（因此，<code>7支箭</code>或<code>25金币</code>各自都将计为1，而非分别计为7和25，当两者位于同一位置时，总计为2）。</p>
 <p>命令前缀“nopickup”（默认‘<code>m</code>’）可置于移动方向之前，用于踩过物体，同时不尝试自动拾取，也不显示相关反馈。</p>
 <p>选项mention_walls控制当你试图撞向墙壁、实心石块或地图边缘时，是否会收到反馈。</p>
