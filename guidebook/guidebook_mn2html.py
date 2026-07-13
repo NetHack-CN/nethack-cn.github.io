@@ -1073,7 +1073,7 @@ class GuidebookRoffToHTML:
         body = "\n".join(self.out)
         toc = self.build_toc()
         return f"""<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
