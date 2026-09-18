@@ -1,5 +1,6 @@
 ---
 ---
+<!DOCTYPE html>
 <html lang="zh-CN"><head>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta charset="utf-8">
@@ -8,27 +9,10 @@
   <title>NetHack中文版 - Nethack-cn | 汉化版介绍、下载与社区资源</title>
   <meta name="description" content="NetHack中文版（NetHack-cn）的非官方本地化项目页面，基于NetHack 5.0.0版本。提供Windows、Android和3D网页版的游戏下载，收录了中文社区的入门教程、攻略指南、相关仓库链接以及完整的中文说明手册，帮助新手快速上手这款经典Roguelike游戏。">
   <link rel="stylesheet" href="assets/main.css">
-  <link rel="canonical" href="index.html">
+  <link rel="canonical" href="https://nethack-cn.github.io/">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrapper">
-      <a class="site-title" rel="author" href="index.html">NetHack-cn</a>
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger">
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
-            </svg>
-          </span>
-        </label>
-        <div class="trigger">
-        {% include pagelinks.html %}
-        </div>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
  
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
@@ -40,37 +24,37 @@
         <div class="post-content">
 {% include notice.html %}
             <h2 id="introduction">介绍</h2>
-          <p style="font-size: 18px;"><a href="https://nethack.org"><b>NetHack</b></a>是一款以文本显示为主的<b>类《<a href="https://dnd.fandom.com/zh/">龙与地下城</a>》（<a href="https://dungeons.fandom.com/wiki/">Dungeons &amp; Dragons(tm)</a> - like）</b>游戏。其标准<b>tty</b>显示界面和命令结构类似于<a href="https://nethackwiki.com/wiki/Rogue_(game)"><b>Rogue</b></a>。大多数平台还提供了其他更具图形化的显示选项。本站是该游戏其中一种基于<a href="https://github.com/NetHack/NetHack/tree/NetHack-5.0">原版5.0.0</a>（以后会有更多）的非官方汉化版（<a href="https://github.com/StackC00ki3/Nethack-cn">Nethack-cn</a>）的介绍页面。</p>
+          <p class="size-18"><a href="https://nethack.org"><b>NetHack</b></a>是一款以文本显示为主的<b>类《<a href="https://dnd.fandom.com/zh/">龙与地下城</a>》（<a href="https://dungeons.fandom.com/wiki/">Dungeons &amp; Dragons(tm)</a> - like）</b>游戏。其标准<b>tty</b>显示界面和命令结构类似于<a href="https://nethackwiki.com/wiki/Rogue_(game)"><b>Rogue</b></a>。大多数平台还提供了其他更具图形化的显示选项。本站是该游戏其中一种基于<a href="https://github.com/NetHack/NetHack/tree/NetHack-5.0">原版5.0.0</a>（以后会有更多）的非官方汉化版（<a href="https://github.com/StackC00ki3/Nethack-cn">Nethack-cn</a>）的介绍页面。</p>
  
           <figure>
-            <img src="assets/images/screenshot3.png" alt="游戏画面">
+            <img src="assets/images/screenshot3.png" alt="游戏画面" width="1115" height="666">
             <figcaption>
               <em>开发中画面，使用外观：curses</em>
             </figcaption>
           </figure>
  
-            <p id="intro"></p>
+            <p id="intro">最近，你开始发现自己在日常工作中感到无所适从、心不在焉。探矿，偷窃，十字军和战斗等奇异梦境困扰了你数月，然而你却不知这是为何。你不禁怀疑，这些是否本是真实的记忆，只是直到此刻才重新浮现。有些夜晚，你从梦中惊醒，泪水涟涟，回想起那些在梦境中奇异而强大的生物，你不禁感到恐惧，这些生物似乎潜伏在梦境中地牢的每个角落。这些萦绕不去的梦境，究竟是真实的吗？每当夜幕降临，想要踏入远郊废墟深处那座神秘洞穴的冲动便愈发强烈。然而到了清晨，那些探险者有去无回的惨痛传言，又会让你将这疯狂的念头强压下去。最终，你抑制住了寻找那个在梦境中的神秘之地的想法。毕竟，那些在洞中待了一段时日、循原路返回的探险者，往往比初入时更显从容。谁能说那些没有回来的人不是在继续探索着呢？<br>经过四处打听，你得知一个叫做<b>岩德护身符（Amulet of Yendor）</b>的宝物。如果能找到它，它能为你带来巨大的财富。还有传说称“寻得此符者，将蒙诸神赐予永生”。有传言说护身符位于<b>地狱（Gehennom）</b>之外，在<b>险境迷宫（Mazes of Menace）</b>内的深处。听到这些传说后，你立即意识到一定有一种深远而隐秘的原因，促使你必须深入洞穴里去寻找传说中的那个护身符。即使关于护身符力量的谣言是不真实的，你还是觉得至少你的冒险经历能给当地的吟游诗人卖个好价钱，尤其是在一路上遭遇到的任何恐怖或者神奇的生物。你在当地酒馆度过了最后一夜，望着墙上愈发低落的成功率数字，心中不免沉重。早晨你醒来，收拾好你的东西，动身前往地牢。数日平淡无奇的跋涉后，你看到了古老的遗迹，标志着险境迷宫的入口。夜深了，你就在门口扎营，在空旷的天空下过夜。早上，你再次收拾好你的装备，在洞外用了也许是最后一顿的早餐，然后你进入了地牢…… <a id="introbutton" class="fake-link" onclick="togglebutton();">[为什么人们喜欢NetHack?]</a></p>
  
             <h2 id="gameplay">游戏玩法</h2>
             <p>要开始游戏，你实际上只需掌握两个<a href="guidebook/guidebook.html#toc_4"><b>命令</b></a>。命令<span class="kbdsym"><a href="guidebook/guidebook.html#toc_4" class="mw-redirect" title="?">?</a></span>会显示可用命令列表（以及其他信息），而命令<span class="kbdsym"><a href="guidebook/guidebook.html#toc_4" class="mw-redirect" title="?">/</a></span>则可识别你所看到的屏幕上的事物。<br>要赢得游戏（而非仅仅为了打破他人的高分记录而玩），你必须找到位于地牢第20层以下某处的<b>岩德护身符</b>，并将其带出。很少有人能达成这一目标；大多数人终其一生都未能成功。那些成功者将作为英雄中的英雄载入史册——随后他们又会想方设法让游戏变得更加困难。如果这款游戏对你来说已经变得太容易了，请参阅手册中的“<a href="guidebook/guidebook.html#toc_8">conduct</a>”章节。<br>当游戏结束时，无论是因为你死亡、退出，还是从洞穴中逃脱，NetHack都会向你提供一份得分榜。评分基于你行为的许多方面，但粗略估算约等于可将你在洞穴中发现的金币数量+(你的（实际）经验值×4)。带到出口的宝石可能价值不菲。若因自身原因死亡，将扣除10%的分数。</p>
  
             <h2 id="downloads">下载</h2>
-            <p style="font-size: 20px;">目前Nethack-cn可<a href="releases/index.html">下载</a>的二进制文件（binary）有：</p>
+            <p class="size-20">目前Nethack-cn可<a href="releases/index.html">下载</a>的二进制文件（binary）有：</p>
             <ul>
-              <li style="font-size: 18px;"><a href="releases/index.html#windows-releases">原版</a>（目前只有Windows）</li>
-              <li style="font-size: 18px;"><a href="releases/index.html#android-releases">Android版</a>（原作：<a href="https://github.com/gurrhack/NetHack-Android">gurrhack/NetHack-Android</a>）</li>
-              <li style="font-size: 18px;"><a href="https://stackc00ki3.github.io/nethack-3d/">NetHack-3D（<b>点击即可开始</b>）</a>（原作：<a href="https://github.com/JamesIV4/nethack-3d">JamesIV4/nethack-3d</a>）</li>
+              <li class="size-18"><a href="releases/index.html#windows-releases">原版</a>（目前只有Windows）</li>
+              <li class="size-18"><a href="releases/index.html#android-releases">Android版</a>（原作：<a href="https://github.com/gurrhack/NetHack-Android">gurrhack/NetHack-Android</a>）</li>
+              <li class="size-18"><a href="https://stackc00ki3.github.io/nethack-3d/">NetHack-3D（<b>点击即可开始</b>）</a>（原作：<a href="https://github.com/JamesIV4/nethack-3d">JamesIV4/nethack-3d</a>）</li>
             </ul>
 
             <h2 id="project-managed-resources">有用的链接</h2>
-            <p style="font-size: 20px;">相关仓库：</p>
+            <p class="size-20">相关仓库：</p>
             <ul>
-              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/Nethack-cn">StackC00ki3/Nethack-cn</a></li>
-              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/ANetHack-cn">StackC00ki3/ANetHack-cn</a></li>
-              <li style="font-size: 18px;"><a href="https://github.com/StackC00ki3/nethack-3d">StackC00ki3/nethack-3d</a></li>
+              <li class="size-18"><a href="https://github.com/StackC00ki3/Nethack-cn">StackC00ki3/Nethack-cn</a></li>
+              <li class="size-18"><a href="https://github.com/StackC00ki3/ANetHack-cn">StackC00ki3/ANetHack-cn</a></li>
+              <li class="size-18"><a href="https://github.com/StackC00ki3/nethack-3d">StackC00ki3/nethack-3d</a></li>
             </ul>
  
-            <p style="font-size: 20px;">以下是一些教程，对新手非常有用（不分先后）：</p>
+            <p class="size-20">以下是一些教程，对新手非常有用（不分先后）：</p>
             <ul>
               <li><a href="https://lug.ustc.edu.cn/planet/2021/09/nethack-gitgud/">菜鸡写给菜鸡的 NetHack 入门教程</a></li>
               <li><a href="http://www.melankolia.net/nethack/nethack.guide.html">Absolute Beginner's Guide for NetHack 3.4.1 v.1.81 (18.6.2002)</a>（有<a href="https://zhuanlan.zhihu.com/p/398740743">翻译</a>）</li>
@@ -87,7 +71,7 @@
               <li>（广告位招租，欢迎<a class="u-email" href="mailto:wizardofyendor@outlook.com">联系</a>）</li>
             </ul>
  
-            <p style="font-size: 20px;">有用的建议，来自NetHackWiki（可能有剧透，请自行选择观看）</p>
+            <p class="size-20">有用的建议，来自NetHackWiki（可能有剧透，请自行选择观看）</p>
             <ul>
               <li><a href="https://nethackwiki.com/wiki/Standard_strategy">基本策略</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）</li>
               <li><a href="https://nethackwiki.com/wiki/Role_difficulty">职业难度</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">待翻译</a>）（省流：<span title="你知道的太多了" class="heimu">开局直接输入名字然后nvdy回车，通常是最简单的</span>）</li>
@@ -99,7 +83,7 @@
               <li>（广告位招租，欢迎<a class="u-email" href="mailto:wizardofyendor@outlook.com">联系</a>）</li>
             </ul>
  
-            <p style="font-size: 20px;">有关的第三方网站，不属于本仓库：</p>
+            <p class="size-20">有关的第三方网站，不属于本仓库：</p>
             <ul>
               <li><a href="https://nethackwiki.com/">NetHackWiki</a>（<a href="https://nethackwiki.com/wiki/NetHackWiki:How_to_help/zh-CN">急需中文翻译</a>）</li>
               <li><a href="https://nethack.org">NetHack官网（英语）</a></li>
@@ -126,41 +110,22 @@
 
             <h4 id="how-to-contribute">我想要为这个项目做出贡献，要怎么做？</h4>
             <p>请查看“<a href="contributions/index.html">贡献</a>”页面.</p>
-          </div>
         </div>
       </article>
     </div>
   </main>
  
-  <footer class="site-footer h-card">
-    <data class="u-url" href="/"></data>
-    <div class="wrapper">
-      <h2 class="footer-heading">NetHack中文版 （NetHack-CN）</h2>
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">NetHack中文版 （NetHack-CN）</li>
-            <li>网页制作者：<a href="https://github.com/Francium-223/">Francium-233</a> &lt;<a class="u-email" href="mailto:wizardofyendor@outlook.com">wizardofyendor@outlook.com</a>&gt;</li>
-          </ul>
-        </div>
-        <div class="footer-col footer-col-2">
-          <ul class="social-media-list"></ul>
-        </div>
-        <div class="footer-col footer-col-3">
-          <p>NetHack-cn（基于NetHack 5.0.0）的汉化（本地化）版的介绍页面。提供游戏下载，并收录了社区网站和资源的链接。</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include footer.html description="NetHack-cn（基于NetHack 5.0.0）的汉化（本地化）版的介绍页面。提供游戏下载，并收录了社区网站和资源的链接。" %}
  
   <script>
-    var a = 0;
-    var introtext = ["最近，你开始发现自己在日常工作中感到无所适从、心不在焉。探矿，偷窃，十字军和战斗等奇异梦境困扰了你数月，然而你却不知这是为何。你不禁怀疑，这些是否本是真实的记忆，只是直到此刻才重新浮现。有些夜晚，你从梦中惊醒，泪水涟涟，回想起那些在梦境中奇异而强大的生物，你不禁感到恐惧，这些生物似乎潜伏在梦境中地牢的每个角落。这些萦绕不去的梦境，究竟是真实的吗？每当夜幕降临，想要踏入远郊废墟深处那座神秘洞穴的冲动便愈发强烈。然而到了清晨，那些探险者有去无回的惨痛传言，又会让你将这疯狂的念头强压下去。最终，你抑制住了寻找那个在梦境中的神秘之地的想法。毕竟，那些在洞中待了一段时日、循原路返回的探险者，往往比初入时更显从容。谁能说那些没有回来的人不是在继续探索着呢？<br>经过四处打听，你得知一个叫做<b>岩德护身符（Amulet of Yendor）</b>的宝物。如果能找到它，它能为你带来巨大的财富。还有传说称“寻得此符者，将蒙诸神赐予永生”。有传言说护身符位于<b>地狱（Gehennom）</b>之外，在<b>险境迷宫（Mazes of Menace）</b>内的深处。听到这些传说后，你立即意识到一定有一种深远而隐秘的原因，促使你必须深入洞穴里去寻找传说中的那个护身符。即使关于护身符力量的谣言是不真实的，你还是觉得至少你的冒险经历能给当地的吟游诗人卖个好价钱，尤其是在一路上遭遇到的任何恐怖或者神奇的生物。你在当地酒馆度过了最后一夜，望着墙上愈发低落的成功率数字，心中不免沉重。早晨你醒来，收拾好你的东西，动身前往地牢。数日平淡无奇的跋涉后，你看到了古老的遗迹，标志着险境迷宫的入口。夜深了，你就在门口扎营，在空旷的天空下过夜。早上，你再次收拾好你的装备，在洞外用了也许是最后一顿的早餐，然后你进入了地牢…… <a id=\"introbutton\" class=\"fake-link\" onclick=\"togglebutton();\">[为什么人们喜欢NetHack?]</a>", "NetHack在小众圈子里颇受欢迎。数学家、程序员、物理学家、工程师、语言学家和作家都对其情有独钟，不过只要具备对细节的敏锐观察力、对完整性的追求、对复杂性的敬畏以及对数字的敏锐头脑，任何人都能在此如鱼得水。<br>乍看之下，这款游戏是一款类《<a href=\"https://dnd.fandom.com/zh/\">龙与地下城</a>》的砍杀类克隆作品，但其微妙的幽默感和严谨的逻辑思维，使其从略带书呆子气的范畴升华到了极具极客风范的境界。<br>正如数学家追求优雅的表达而非模糊的概括一样，NetHack摒弃了图形界面，转而采用精心设计、定义明确的<a href=\"https://www.ascii-code.com/\">ASCII字符</a>。当其他游戏因界面过时而显得陈旧时，NetHack却以一种禁欲式的纯粹感得以永存。<br>程序员之所以被NetHack吸引，是因为它堪称操作系统的延伸。其文化与<a href=\"https://www.unix.org/\">Unix</a>系统文化紧密交织，事实上它也是任何优质Unix系统中不可或缺的组成部分——一个已知量，历久弥新，熟悉而令人安心；无论需要处理多么棘手的命令行任务，nethack(6)始终在那里。<br>NetHack很难：虽然其他游戏一个下午就能通关，但你可能玩上好几年也无法通关NetHack。<br>NetHack毫不留情：<a href=\"https://www.roguebasin.com/index.php/Permadeath\">一旦死亡，便永不复生。</a>这里没有“保存并重新加载”这种依赖手段。简而言之，NetHack是一位严苛的主人，你必须通过努力赢得它的尊重。随着时间的推移，你也会学会反过来尊重它。<br>NetHack内涵深邃：在你的第一局游戏中，你会很快死亡，复活后会忧心忡忡地思考如何生存。最终，你会从中学习，并将关注点转向更深层次的问题。你会不再纠结于得分，而是开始思考最优解、效率和优雅性。你会查阅各种表格和指南以寻求优势，因为众所周知，在游戏中获得乐趣的最佳方式，是不断“掷20次”直到攻克一个不可能的难度系数（DC），而不是尝试真正完成某项艰难但可能完成的任务。你甚至可能会深入研究<a href=\"https://github.com/NetHack/NetHack/\">源代码</a>，试图解释你刚刚完成的那个千分之一概率的壮举。你很可能会学点C语言，甚至可能就<a href=\"https://nethackwiki.com/wiki/Random_number_generator\">伪随机数生成器</a>的优劣、预期回报、相互竞争的神话体系之间的矛盾，以及利用漏洞的道德问题展开激烈的辩论。<br>NetHack已成历史：作为<a href=\"https://nethackwiki.com/wiki/Rogue_(game)\">Rogue</a>的后继者，NetHack拥有41年的发展历程。它是少数几款玩家年龄普遍小于其游戏年龄的电脑游戏之一。正是这份历史积淀，赋予了它一种权威性。（摘自<a href=\"https://nethackwiki.com/wiki/NetHack#Why_do_people_like_NetHack.3F\">Wiki</a>） <a id=\"introbutton\" class=\"fake-link\" onclick=\"togglebutton();\">[背景故事]</a>"];
     const intro = document.getElementById("intro");
-    intro.innerHTML = introtext[0];
+    const introStory = intro.innerHTML;
+    const introWhy = "NetHack在小众圈子里颇受欢迎。数学家、程序员、物理学家、工程师、语言学家和作家都对其情有独钟，不过只要具备对细节的敏锐观察力、对完整性的追求、对复杂性的敬畏以及对数字的敏锐头脑，任何人都能在此如鱼得水。<br>乍看之下，这款游戏是一款类《<a href=\"https://dnd.fandom.com/zh/\">龙与地下城</a>》的砍杀类克隆作品，但其微妙的幽默感和严谨的逻辑思维，使其从略带书呆子气的范畴升华到了极具极客风范的境界。<br>正如数学家追求优雅的表达而非模糊的概括一样，NetHack摒弃了图形界面，转而采用精心设计、定义明确的<a href=\"https://www.ascii-code.com/\">ASCII字符</a>。当其他游戏因界面过时而显得陈旧时，NetHack却以一种禁欲式的纯粹感得以永存。<br>程序员之所以被NetHack吸引，是因为它堪称操作系统的延伸。其文化与<a href=\"https://www.unix.org/\">Unix</a>系统文化紧密交织，事实上它也是任何优质Unix系统中不可或缺的组成部分——一个已知量，历久弥新，熟悉而令人安心；无论需要处理多么棘手的命令行任务，nethack(6)始终在那里。<br>NetHack很难：虽然其他游戏一个下午就能通关，但你可能玩上好几年也无法通关NetHack。<br>NetHack毫不留情：<a href=\"https://www.roguebasin.com/index.php/Permadeath\">一旦死亡，便永不复生。</a>这里没有“保存并重新加载”这种依赖手段。简而言之，NetHack是一位严苛的主人，你必须通过努力赢得它的尊重。随着时间的推移，你也会学会反过来尊重它。<br>NetHack内涵深邃：在你的第一局游戏中，你会很快死亡，复活后会忧心忡忡地思考如何生存。最终，你会从中学习，并将关注点转向更深层次的问题。你会不再纠结于得分，而是开始思考最优解、效率和优雅性。你会查阅各种表格和指南以寻求优势，因为众所周知，在游戏中获得乐趣的最佳方式，是不断“掷20次”直到攻克一个不可能的难度系数（DC），而不是尝试真正完成某项艰难但可能完成的任务。你甚至可能会深入研究<a href=\"https://github.com/NetHack/NetHack/\">源代码</a>，试图解释你刚刚完成的那个千分之一概率的壮举。你很可能会学点C语言，甚至可能就<a href=\"https://nethackwiki.com/wiki/Random_number_generator\">伪随机数生成器</a>的优劣、预期回报、相互竞争的神话体系之间的矛盾，以及利用漏洞的道德问题展开激烈的辩论。<br>NetHack已成历史：作为<a href=\"https://nethackwiki.com/wiki/Rogue_(game)\">Rogue</a>的后继者，NetHack拥有41年的发展历程。它是少数几款玩家年龄普遍小于其游戏年龄的电脑游戏之一。正是这份历史积淀，赋予了它一种权威性。（摘自<a href=\"https://nethackwiki.com/wiki/NetHack#Why_do_people_like_NetHack.3F\">Wiki</a>） <a id=\"introbutton\" class=\"fake-link\" onclick=\"togglebutton();\">[背景故事]</a>";
+
+    let showingWhy = false;
     function togglebutton() {
-      a++;
-      intro.innerHTML = introtext[a % 2];
+      showingWhy = !showingWhy;
+      intro.innerHTML = showingWhy ? introWhy : introStory;
     }
   </script>
 

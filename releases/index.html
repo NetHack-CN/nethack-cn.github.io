@@ -11,28 +11,11 @@
   <meta name="description" content="NetHack中文版（NetHack-cn）的各平台二进制文件下载页面。提供基于GitHub Actions自动构建的Windows版、Android版及网页3D版的游戏下载与运行地址，并对大陆简体、OpenCC标准繁体、通规繁体、台湾繁体等不同正字法版本的压缩包进行了详细说明，方便玩家选择适合自己平台与语言习惯的游戏版本。">
 
   <link rel="stylesheet" href="../assets/main.css">
-  <link rel="canonical" href="index.html">
-  <link rel="alternate" type="application/rss+xml" title="NetHack-cn" href="../feed.xml">
+  <link rel="canonical" href="https://nethack-cn.github.io/releases/">
   
   
 </head>
-<body><header class="site-header">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="../index.html">NetHack-cn</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger">
-          {% include pagelinks.html %}
-        </div>
-      </nav></div>
-</header>
+<body>{% include header.html %}
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
@@ -43,21 +26,20 @@
 
   <div class="post-content">
 {% include notice.html %}
-
-<h2 id="latest-experimental">正字法</h2>
-<p>
-  <b>s</b> = 大陆简体（该项目的单一事实来源，开发时使用的正字法）<br>
-  <b>t</b> = <a href="https://github.com/BYVoid/OpenCC/blob/master/DESIGN_PRINCIPLES.md">OpenCC标准繁体</a><br>
-  <b>tg</b> = <a href="https://www.gov.cn/gongbao/content/2013/content_2481095.htm">通用规范繁体</a>（脚本：<a href="https://github.com/amorphobia/opencc-tonggui">amorphobia/opencc-tonggui</a>）<br>
-  <b>twg</b> = 台湾繁体（同时转换词汇）
-</p>
+<h2>如何选择版本</h2>
+<h3>1. 选择操作系统和CPU架构</h3>
+<div class="table-wrapper"><table><thead><tr><th>文件名片段</th><th>说明</th></tr></thead><tbody><tr><td>win-x64 / .zip</td><td>Windows 64位</td></tr><tr><td>linux-amd64</td><td>Linux 64位</td></tr><tr><td>linux-i386</td><td>Linux 32位</td></tr><tr><td>linux-arm64</td><td>Linux ARM64</td></tr><tr><td>macos-arm64</td><td>macOS Apple Silicon芯片</td></tr><tr><td>NetHack-cn-src-*</td><td>源代码包</td></tr></tbody></table></div>
+<h3>2. Linux用户：选择glibc还是static</h3>
+<div class="table-wrapper"><table><thead><tr><th>变体</th><th>说明</th></tr></thead><tbody><tr><td>glibc</td><td>体积更小，但运行时系统需要已安装ncurses库（多数发行版自带）</td></tr><tr><td>static</td><td>解压即玩。如果在glibc版本上遇到库缺失或版本不兼容问题，请选这个</td></tr></tbody></table></div>
+<h3 id="orthography">3. 选择汉字规范（文件名结尾的 -s / -t / -tg / -twp）</h3>
+<div class="table-wrapper"><table><thead><tr><th>后缀</th><th>规范</th></tr></thead><tbody><tr><td>-s</td><td>简体（原文，该项目的单一事实来源，开发时使用的正字法）</td></tr><tr><td>-t</td><td><a href="https://github.com/BYVoid/OpenCC/blob/master/DESIGN_PRINCIPLES.md">OpenCC 标准繁体</a></td></tr><tr><td>-tg</td><td><a href="https://www.gov.cn/gongbao/content/2013/content_2481095.htm">通用规范繁体</a>（脚本：<a href="https://github.com/amorphobia/opencc-tonggui">amorphobia/opencc-tonggui</a>）</td></tr><tr><td>-twp</td><td>台湾繁体（同时转换词汇）</td></tr></tbody></table></div>
 <p>（除s外其他正字法版本都由<a href="https://github.com/BYVoid/OpenCC"><b>OpenCC</b></a>进行<b>自动转换</b>得到，脚本本身具有局限性，以及源代码里也可能存在词汇不按一般人认知的词汇边界切割，因此不保证没有错误写法。）<br>
-*注意：<b>在哪种正字法的版本，查询/许愿/灭绝就用哪种正字法的汉字。</b><span title="你知道的太多了" class="heimu">（应该没有人像某个老酒鬼一样<a href="https://upload.thbwiki.cc/a/a9/%E4%B8%9C%E6%96%B9%E7%81%B5%E5%BC%82%E4%BC%A0%E5%B0%81%E9%9D%A2.jpg">一个字写新字体另一个字写旧字体</a>吧，应该……）</span></p>
+注意：<b>在哪种正字法的版本，查询/许愿/灭绝就用哪种正字法的汉字。</b><span title="你知道的太多了" class="heimu">（应该没有人像某个老酒鬼一样<a href="https://upload.thbwiki.cc/a/a9/%E4%B8%9C%E6%96%B9%E7%81%B5%E5%BC%82%E4%BC%A0%E5%B0%81%E9%9D%A2.jpg">一个字写新字体另一个字写旧字体</a>吧，应该……）</span></p>
     <h2 id="windows-releases">Windows</h2>
-<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/nethack-cn/actions/workflows/nethack-vs-package.yml/badge.svg" alt="Build Status" style="all: unset; max-width: 100%;"></a>
+<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/nethack-cn/actions/workflows/nethack-vs-package.yml/badge.svg" alt="Build Status" class="badge"></a>
 <p>仓库：<a href="https://github.com/StackC00ki3/Nethack-cn/releases">StackC00ki3/Nethack-cn</a>。无需手动编译，可以直接下载基于GitHub Actions构建的汉化预览版。</p>
     <h2 id="android-releases">Android</h2>
-<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/ANetHack-cn/actions/workflows/android-release.yml/badge.svg" alt="Build Status" style="all: unset; max-width: 100%;"></a>
+<a href="http://github.com/stackC00ki3/nethack-cn/releases"><img src="https://github.com/StackC00ki3/ANetHack-cn/actions/workflows/android-release.yml/badge.svg" alt="Build Status" class="badge"></a>
 <p>仓库：<a href="https://github.com/StackC00ki3/ANetHack-cn">ANetHack-cn</a>。（原作：<a href="https://github.com/gurrhack/NetHack-Android">gurrhack/NetHack-Android</a>）</p>
     <h2 id="3d-releases">NetHack-3D</h2>
 <p>仓库：<a href="https://github.com/StackC00ki3/nethack-3d">nethack-3d</a>。（原作：<a href="https://github.com/JamesIV4/nethack-3d">JamesIV4/nethack-3d</a>）</p>
@@ -67,27 +49,8 @@
 </article>
 
       </div>
-    </main>  <footer class="site-footer h-card">
-    <data class="u-url" href="/"></data>
-    <div class="wrapper">
-      <h2 class="footer-heading">NetHack中文版 （NetHack-CN）</h2>
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">NetHack中文版 （NetHack-CN）</li>
-            <li>网页制作者：<a href="https://github.com/Francium-223/">Francium-233</a> &lt;<a class="u-email" href="mailto:wizardofyendor@outlook.com">wizardofyendor@outlook.com</a>&gt;</li>
-          </ul>
-        </div>
-        <div class="footer-col footer-col-2">
-          <ul class="social-media-list"></ul>
-        </div>
-        <div class="footer-col footer-col-3">
-          <p>NetHack-cn 各平台游戏下载。提供 Windows、Android 及 3D 网页版等多种版本。</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </main>  {% include footer.html description="NetHack-cn 各平台游戏下载。提供 Windows、Android 及 3D 网页版等多种版本。" %}
 
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</body>
 
 </html>

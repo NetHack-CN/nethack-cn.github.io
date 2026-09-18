@@ -11,28 +11,11 @@
   <meta name="description" content="NetHack中文版（NetHack-cn）的随机文本征集页面。面向社区征集bogusmon假怪物名、rumors谣言、engrave刻字、epitaph墓志铭及T恤文字等游戏内随机文本的创意投稿。提供详细示例、投稿要求与注意事项，并附有GitHub Discussions投稿渠道，鼓励玩家参与游戏本地化内容的创作。">
 
   <link rel="stylesheet" href="../assets/main.css">
-  <link rel="canonical" href="index.html">
-  <link rel="alternate" type="application/rss+xml" title="NetHack-cn" href="../feed.xml">
+  <link rel="canonical" href="https://nethack-cn.github.io/contact/randomtext.html">
   
   
 </head>
-<body><header class="site-header">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="../index.html">NetHack-cn</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger">
-          {% include pagelinks.html %}
-        </div>
-      </nav></div>
-</header>
+<body>{% include header.html %}
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
@@ -43,7 +26,7 @@
   </header>
 
   <div class="post-content">
-<p style="font-size:18px">鉴于NetHack本身也是社区驱动的游戏，做汉化的人当然应该集思广益。你可以在此投稿：</p>
+<p class="size-18">鉴于NetHack本身也是社区驱动的游戏，做汉化的人当然应该集思广益。你可以在此投稿：</p>
 <ul>
 <li><a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/dat/bogusmon.txt">bogusmon.txt</a>（幻觉时可能出现的怪物名称）</li>
 <li><a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/dat/rumors.tru">rumors.tru</a></li>
@@ -52,7 +35,7 @@
 <li><a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/dat/epitaph.txt">epitaph.txt</a></li>
 <li><a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/src/read.c">read.c</a>中的<a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/src/read.c#L100">T恤</a>和<a href="https://github.com/StackC00ki3/Nethack-cn/blob/Nethack-CN-5.0.0/src/read.c#L254">炼金术罩衫</a>上写的字</li>
 </ul>
-<p style="font-size:18px">的内容。</p>
+<p class="size-18">的内容。</p>
 <h2 id="notice">投稿前请注意</h2>
 <b>1.投稿前先打开这个文件看看有没有，防止撞车。</b><br>
 2.以<b>规范汉字</b>书写的<b>汉语</b>（该改版的语言）为载体，除非有足够多的理由使用非规范字/非汉语（比如<b>翻译后会大打折扣的名句</b>（《神曲》第一句、伊吕波歌等）、<b>无法翻译的文字游戏</b>（Madam, I'm Adam!）、<b>高度标识性的文本</b>（bouba、kiki、wug）等）。<br>
@@ -68,7 +51,7 @@
 <b>12.投稿时解释一下这是个什么东西，有什么字面/引申义。坐在屏幕对面的我是个什么都一窍不通的智障，体谅一下。</b><br>
 13.理论上这种文本不能太多（不然会冲淡原版的氛围），所以<b>您一旦投稿，就应做好投稿被修改/删除的准备。</b><br>
 <h2><span class="mw-headline" id="Examples">例子</span></h2>
-<p style="font-size:20px">优秀的投稿应当在不破坏原本氛围的同时满足本土化，以下是一些原版的例子（摘自<a href="https://nethackwiki.com/">Wiki</a>）：</p>
+<p class="size-20">优秀的投稿应当在不破坏原本氛围的同时满足本土化，以下是一些原版的例子（摘自<a href="https://nethackwiki.com/">Wiki</a>）：</p>
 <h3><span class="mw-headline" id="True_rumors">rumors.tru</span></h3>
 <dd>传闻#330：<i>把食物扔向野生的狗可能驯服他。</i></dd>
 <p>这会鼓励玩家向狗扔牛肚来驯服它们。
@@ -182,32 +165,14 @@ fat.FEM.NOM.SG sing.PERF.IND.3SG<br>
 </p>
 <h3><span class="mw-headline" id="bogusmon">bogusmon.c、engrave.c、read.c</span></h3>
 <p>自行查看<a href="https://nethackwiki.com/wiki/Hallucinatory_monster">幻觉怪物</a>、<a href="https://nethackwiki.com/wiki/Graffiti">涂鸦</a>、<a href="https://nethackwiki.com/wiki/T-shirt/zh-CN">T恤</a>、<a href="https://nethackwiki.com/wiki/Alchemy_smock/zh-CN">炼金术罩衫</a>的Wiki页面。</p>
-<p style="font-size:22px">投稿可在<a href="https://github.com/StackC00ki3/Nethack-cn/discussions/15">该讨论</a>下提交。</p><br>
-</p>
+<p class="size-22">投稿可在<a href="https://github.com/StackC00ki3/Nethack-cn/discussions/15">该讨论</a>下提交。</p><br>
+
+  </div>
 
 </article>
 
       </div>
-    </main>  <footer class="site-footer h-card">
-    <data class="u-url" href="/"></data>
-    <div class="wrapper">
-      <h2 class="footer-heading">NetHack中文版 （NetHack-CN）</h2>
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">NetHack中文版 （NetHack-CN）</li>
-            <li>网页制作者：<a href="https://github.com/Francium-223/">Francium-233</a> &lt;<a class="u-email" href="mailto:wizardofyendor@outlook.com">wizardofyendor@outlook.com</a>&gt;</li>
-          </ul>
-        </div>
-        <div class="footer-col footer-col-2">
-          <ul class="social-media-list"></ul>
-        </div>
-        <div class="footer-col footer-col-3">
-          <p>NetHack-cn 游戏内随机文本创意征集。欢迎为假怪物名、谣言、刻字、墓志铭等贡献创意。</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </main>  {% include footer.html description="NetHack-cn 游戏内随机文本创意征集。欢迎为假怪物名、谣言、刻字、墓志铭等贡献创意。" %}
 
 <script>
 	var epibutt = document.getElementById('epitaph_button');

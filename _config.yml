@@ -1,0 +1,16 @@
+# GitHub Pages（Jekyll）构建配置
+
+# 站点根地址。jekyll-sitemap 用它把 <loc> 拼成绝对 URL；
+# 不设的话生成出来的 <loc> 会是 /releases/ 这类没有域名的路径。
+url: "https://nethack-cn.github.io"
+
+# 启用 sitemap 自动生成。GitHub Pages 内置 jekyll-sitemap 1.4.0，
+# 但必须在 plugins 里列出才会为本站启用。
+#
+# 注意：仓库里不要再放手写的 sitemap.xml —— 插件检测到同名文件存在就会跳过生成。
+# 生成规则（1.4.0 源码）：
+#   - 带 front matter 的页面全部收录，/index.html 会改写成目录形式 /
+#   - 静态文件只收录 .htm / .html / .xhtml / .pdf（所以 Guidebook.txt 不在其中）
+#   - 页面没有 last_modified_at 时不输出 <lastmod>
+plugins:
+  - jekyll-sitemap

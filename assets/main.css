@@ -190,6 +190,108 @@ pre > code { border: 0; padding: 0; background: none; color: inherit; }
 }
 
 
+/* 正文表格（Markdown 表格通用样式） */
+
+.table-wrapper {
+    margin-bottom: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #FFF;
+    border: 1px solid #DDE1D8;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: 0 1px 2px rgba(26, 60, 52, 0.05);
+}
+
+.post-content table th {
+    background: #1A3C34;
+    color: #F5F7F4;
+    text-align: left;
+    font-family: Consolas, monospace, "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 11px 16px;
+    white-space: nowrap;
+}
+
+.post-content table td {
+    padding: 11px 16px;
+    line-height: 1.6;
+    border-top: 1px solid #E8EAE3;
+    vertical-align: top;
+}
+
+.post-content table tbody tr:nth-child(even) td { background: #F7F8F4; }
+.post-content table tbody tr:hover td { background: #FFF8E3; }
+
+.post-content table td:first-child {
+    font-family: Consolas, monospace, "Microsoft YaHei";
+    font-weight: bold;
+    color: #1A3C34;
+    white-space: nowrap;
+}
+
+.post-content table tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 #8B9D8E; }
+
+/* 左列（键）与右列（说明）保持一致的 32 : 68 分栏 */
+.post-content table th:first-child { width: 32%; }
+
+.post-content table code {
+    border: 0;
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+.post-content table thead th:first-child { border-top-left-radius: 3px; }
+.post-content table thead th:last-child { border-top-right-radius: 3px; }
+.post-content table tbody tr:last-child td:first-child { border-bottom-left-radius: 3px; }
+.post-content table tbody tr:last-child td:last-child { border-bottom-right-radius: 3px; }
+
+@media screen and (max-width: 600px) {
+    .post-content table { font-size: 14px; }
+    .post-content table th,
+    .post-content table td { padding: 9px 12px; }
+    .post-content table th { white-space: normal; }
+}
+
+@media print {
+    .post-content table { box-shadow: none; }
+    .post-content table th { background: #EEE; color: #000; border-bottom: 1px solid #999; }
+}
+
+
+/* 公告与导语的字号工具类（替代原先散落的内联 font-size） */
+
+.post-content .notice p { font-size: 20px; }
+.post-content .size-18 { font-size: 18px; }
+.post-content .size-20 { font-size: 20px; }
+.post-content .size-22 { font-size: 22px; }
+
+
+/* 徽章图片：不受全局 img 边框影响 */
+.post-content img.badge { border: 0; padding: 0; background: none; }
+
+
+/* 正文右侧浮动插图（服务器页的神庙图），窄屏改为整幅显示 */
+.post-content figure.figure-float {
+    float: right;
+    width: 42%;
+    margin: 0 0 20px 24px;
+}
+@media screen and (max-width: 700px) {
+    .post-content figure.figure-float { float: none; width: 100%; margin: 0 0 20px; }
+}
+
+
 .fake-link {
     color: #0044CC;
     font-family: monospace;
