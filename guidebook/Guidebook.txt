@@ -2750,7 +2750,7 @@ SOUND	An entry that maps a sound file to a user-specified message pattern.
 Each SOUND entry is broken down into the following parts:
 .PS "sound index"
 .PL MESG
-message window mapping (the only one supported in 3.7.0);
+message window mapping (the only one supported in 5.0.0 and beyond);
 .PL msgtype
 optional; message type to use, see “Configuring Message Types”
 .PL pattern
